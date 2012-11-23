@@ -1,0 +1,702 @@
+<h1 id="iwisdom_user_guide">iWisdom User Guide</h1>
+
+<h2 id="toc">Table of Contents</h2>
+
+<div id="toc-div">
+
+<ul>
+<li><a href="#intro">Introduction</a></li>
+<li><a href="#starting">Getting Started</a>
+<ul>
+<li><a href="#sysrqmts">System Requirements</a></li>
+<li><a href="#license">License</a></li>
+<li><a href="#install">Installation</a></li>
+<li><a href="#exec">Launching iWisdom</a></li>
+<li><a href="#demo">Demo Mode</a></li>
+<li><a href="#filelocs">File Locations</a></li>
+<li><a href="#import">Import Quotations</a></li>
+<li><a href="#import-wikiquote">Import Quotations from WikiQuote</a></li>
+<li><a href="#backups">Backing Up and Restoring Quotations</a></li>
+</ul></li>
+<li><a href="#ui">Overall User Interface</a>
+<ul>
+<li><a href="#tabs-and-windows">Tabs and Windows</a></li>
+<li><a href="#tool-bar">Tool Bar</a></li>
+<li><a href="#menus">Menus and Keyboard Shortcuts</a></li>
+<li><a href="#gen-prefs">Customizing the Look and Feel</a></li>
+</ul></li>
+<li><a href="#data">Wisdom Data</a>
+<ul>
+<li><a href="#get-info">Get Info</a></li>
+<li><a href="#list-tab">Your Wisdom List</a></li>
+<li><a href="#add-edit">Adding and Editing Wisdom</a></li>
+<li><a href="#format-body">Formatting Wisdom</a></li>
+<li><a href="#categories">Categories</a></li>
+<li><a href="#authors-titles">Authors and Source Titles</a></li>
+<li><a href="#links">Book and Author Links</a></li>
+<li><a href="#lastaw">Copying Last Author and Work</a></li>
+</ul></li>
+<li><a href="#display">Displaying Wisdom</a></li>
+<li><a href="#output">Getting Wisdom out of iWisdom</a>
+<ul>
+<li><a href="#transfer">Transfer/Update</a></li>
+<li><a href="#export">Export</a></li>
+<li><a href="#publish">Publish</a></li>
+</ul></li>
+<li><a href="#help">Help</a></li>
+</ul>
+
+</div>
+
+<h2 id="intro">Introduction</h2>  
+
+<p>iWisdom is a desktop application for storing, organizing and displaying small bits of wisdom, such as quotations. Some of its special features are:</p>
+
+<ul>
+<li><p>a number of related fields, including title, category, author, source, year of initial publication, and rights;</p></li>
+<li><p>storage of your wisdom in one of two open, non-proprietary formats: XML or Structured Text;</p></li>
+<li><p>multiple sorting and selection fields;</p></li>
+<li><p>multiple files with remembered viewing options for each;</p></li>
+<li><p>multiple categories and levels of categorization, with a tree view to let you see your items within categories;</p></li>
+<li><p>automatic Web Publishing;</p></li>
+<li><p>automatic XML publishing (to create RSS feeds, for example);</p></li>
+<li><p>a Find function;</p></li>
+<li><p>a Category Mass Change function;</p></li>
+<li><p>Web Page validation;</p></li>
+<li><p>an import capability that can extract existing wisdom from a number of different file formats;</p></li>
+<li><p>options to modify the look and feel of iWisdom;</p></li>
+<li><p>a transfer function to convert a wisdom item to readable plain text, with a corresponding accept function to convert the plain text (after possible transmission via e-mail, etc.) into a new wisdom item on another iWisdom list.</p></li>
+</ul>
+
+<h2 id="starting">Getting Started</h2>
+
+<h3 id="sysrqmts">System Requirements</h3>  
+
+<p>iWisdom is written in Java, which allows it to be easily run on almost any modern operating system, including Apple&#8217;s Mac OS X and Microsoft&#8217;s Windows. iWisdom requires a Java Runtime Environment (JRE), also known as a Java Virtual Machine (JVM). The version of this JRE/JVM must be at least 1.5 (aka 5.0). Visit <a href="http://www.java.com">www.java.com</a> to download a recent version for most operating systems. The JVM is pre-installed as part of Mac OS X thru 10.6.8, and may be updated from the Mac OS X Software Update panel for those versions. </p>
+
+<h3 id="license">License</h3>
+
+<p>When running in demonstration mode, iWisdom will store no more than 20 wisdom items. Please visit our <a href="http://www.powersurgepub.com/store.html">store</a> to purchase a license and remove the demo restrictions.</p>
+
+<p>Copyright &copy; 2006 - 2011, Herb Bowie <br />
+<a href="http://www.powersurgepub.com/">PowerSurgePub.com</a> <br />
+All rights reserved.</p>
+
+<p>Redistribution and use in binary forms, without modification, is permitted provided that the software retains attribution using the above copyright notice.</p>
+
+<p>This software is provided &#8220;as is&#8221; and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose, are disclaimed. In no event shall the copyright owner or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.</p>
+
+<h3 id="install">Installation</h3>
+
+<p>Download the latest version from <a href="http://www.powersurgepub.com/downloads.html">PowerSurgePub.com</a>. Decompress the downloaded file. Drag the resulting file or folder into the location where you normally store your applications. If a folder is present, then drag the entire folder, and keep the inner files and folders in the same folder, without changing their names or locations. </p>
+
+<h3 id="exec">Launching iWisdom</h3>
+
+<p>The iWisdom program can normally be launched by opening (double-clicking on) the file named &#8220;iwisdom.jar&#8221; or, on a Mac, the application simply named &#8220;iWisdom&#8221;. </p>
+
+<h3 id="demo">Demo Mode</h3>
+
+<p>Each time that iWisdom is launched in demo mode, a small window will appear offering the opportunity to purchase a license, to enter your registration code, and/or to continue execution in demo mode. Once the program is registered, this window will cease to appear. </p>
+
+<h3 id="filelocs">File Locations</h3>
+
+<p>The default location for your initial Wisdom collection is in your <strong>home directory</strong>, then in a folder named <strong>Wisdom</strong>, then in a folder named <strong>iWisdom</strong>. This collection will open automatically when you launch iWisdom.</p>
+
+<p>You can create other Wisdom collections by selecting <strong>New</strong> from the File Menu. You can set one collection to be your primary collection by selecting <strong>Get Info</strong> from the File menu and then clicking on the check box to make the current folder your primary collection: your primary collection will then open automatically when launching iWisdom.</p>
+
+<p>Note that an iWisdom collection consists of a folder and a number of files and possibly sub-folders. </p>
+
+<p>Once you have created an iWisdom collection, you may open it be selecting <strong>Open</strong> from the File Menu, and then selecting the collection&#8217;s folder. You may also use the <strong>Open Known</strong> item on the File Menu, to be able to select a collection from a list of previously opened collections. </p>
+
+<p>The name of the current iWisdom collection appears at the bottom left of your main window. This display consists of the collection&#8217;s folder and its parent folder, followed by &#8220;(P)&#8221; if this is your primary collection. Hover over the display to see the full path to the collection. </p>
+
+<h3 id="import">Import Quotations</h3>
+
+<p>To jump-start your Wisdom collection, select <strong>Import</strong> from the File menu, then select the Portable Wisdom collection from the Favorites drop-down, then click on Import. (You will need an active Internet connection to import any of the Favorites.)</p>
+
+<p>iWisdom is able to import wisdom from a number of different formats (including plain text and multiple XML-based formats). When importing, iWisdom will recognize duplicates (based on the actual content of each item&#8217;s body) and intelligently combine duplicates if they contain differing degrees of detail. </p>
+
+<h3 id="import-wikiquote">Import Quotations from WikiQuote</h3>
+
+<p>Quotations may also be imported from <a href="http://www.wikiquote.org">www.WikiQuote.org</a>. Select <strong>Import from WikiQuote</strong> from the File menu. In the resulting panel, select your desired language, then enter the name of an author and/or a particular work (book, movie, etc.). You may also optionally enter a word or phrase in the Containing field, to search for a quotation containing the entered text (capitalization is not significant). </p>
+
+<p>Click on the Search button to initiate the search of the specified WikiQuote page. You may then click on the Next button repeatedly to see each matching quotation, one by one. When you see a quotation you wish to capture for your collection, click on the Import button. Clicking on the Browse button will open the specified WikiQuote page in your Web browser. </p>
+
+<p>Please note that, due to variability in the way quotations are entered into WikiQuote, not all quotations may appear as candidates for import. If you wish to specific examples of failures to our attention, drop us a note at <a href="mailto:support@powersurgepub.com">support@powersurgepub.com</a>.</p>
+
+<h3 id="backups">Backing Up and Restoring Quotations</h3>
+
+<p>The File menu contains a <strong>Backup</strong> command, and a <strong>Revert from Backup</strong> command. When performing a backup, the file location and name will default to a folder in your current iWisdom folder, and a name containing the current date and time. The <strong>Revert from Backup</strong> command will default to the same folder.  </p>
+
+<p>It is recommended that you perform a backup before each <strong>Import</strong> (see the next section for info about this) so that you can easily revert to your prior state if the import creates unwanted results. It is also recommended that you perform a backup before installing a new version of iWisdom, or changing any of the storage options.</p>
+
+<p>The Backup Preferences allow you to choose one of three backup modes:</p>
+
+<ul>
+<li><p><strong>Manual Only</strong> &#8212; Backups will only be performed when they are explicitly initiated by the user, via the <strong>File</strong> / <strong>Backup</strong> menu item. </p></li>
+<li><p><strong>Occasional Suggestions</strong> &#8212; iWisdom will remind the user to perform a backup every seven days, and prior to major events such as imports and program upgrades. </p></li>
+<li><p><strong>Automatic Backups</strong> &#8212; Backups will be performed automatically whenever the program quits, as well as prior to major events such as imports and program upgrades. </p></li>
+</ul>
+
+<p>The program will default to occasional suggestions. </p>
+
+<h2 id="ui">Overall User Interface</h2>
+
+<h3 id="tabs-and-windows">Tabs and Windows</h3>
+
+<p>The iWisdom user interface consists of a number of <strong>windows</strong>. The main window shows a split pane. On the left/top you will see your current collection, either in a List or grouped by Categories. On the right/bottom you will see the currently selected piece of wisdom, either in Display mode or in Edit mode. </p>
+
+<p>Opening the Preferences window will allow you to modify a number of the operating characteristics of the program. The Preferences window can be found under the iWisdom menu on the Mac, and under Tools / Options on other operating systems.</p>
+
+<h3 id="tool-bar">Tool Bar</h3>
+
+<p>The iWisdom interface also contains a <strong>Tool Bar</strong> containing a number of <strong>Buttons</strong>: the &#8220;OK&#8221; button saves your changes after adding/editing a wisdom item; the &#8220;+&#8221; and &#8220;-&#8221; buttons allow you to add a new item or delete an existing one, respectively. The next four buttons move you to the first item in your collection, the next item, the prior item or the last item, again respectively. Two other buttons allow you to quickly add or remove enclosing quotation marks around the Body of a piece of wisdom. The <strong>Scan</strong> button starts a process of briefly showing each item in your collection on a rotating basis. </p>
+
+<p>The following text box allows you to enter a text string you wish to search for. The following button, initially labeled <strong>Find</strong>, causes the first item containing that text string to be found and displayed. After the first item is found, this button will be relabeled <strong>Again</strong>, and will then allow you to continue forward through the list of found items.</p>
+
+<h3 id="menus">Menus and Keyboard Shortcuts</h3>
+
+<p>There are also a number of <strong>Menus</strong> listed across the top. If a command has a keyboard shortcut, then it will be listed as part of the command&#8217;s menu item. </p>
+
+<p>The most commonly used commands are accessible in multiple ways. For example, you may navigate to the first item in the collection by clicking on the Tool Bar Button, or by selecting the command from the Item Menu, or through a keyboard shortcut.</p>
+
+<p>Following is a list of all the menus, with a brief description of each menu&#8217;s purpose. </p>
+
+<ul>
+<li>File &#8212; Functions to open and save external disk files</li>
+<li>Edit &#8212; Standard Cut, Copy and Paste commands.</li>
+<li>List &#8212; Functions that affect the list as a whole.</li>
+<li>Item &#8212; Functions that affect a particular wisdom item.</li>
+<li>Tabs &#8212; Provides Keyboard Shortcuts for accessing Tabs</li>
+<li>View &#8212; List of Named Views.</li>
+<li>Tools &#8212; Access to Options/Preferences.</li>
+<li>Window &#8212; Access to special windows.</li>
+<li>Help &#8212; Access the iWisdom User Guide or Web Site.</li>
+</ul>
+
+<p>Following is a list of all keyboard shortcuts. The command key is used in conjunction with another key to invoke shortcuts on a Mac, while the control key is used on other platforms. </p>
+
+<table class="graybox" border="0" cellspacing="1" cellpadding="4">
+
+  <tr>
+    <th class="graybox">
+      Key
+    </th>
+    <th class="graybox">
+      Menu
+    </th>
+    <th class="graybox">
+      Menu Item
+    </th>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      A
+    </td>
+    <td class="graybox">
+      Edit
+    </td>
+    <td class="graybox">
+      Select All
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      B
+    </td>
+    <td class="graybox">
+      File
+    </td>
+    <td class="graybox">
+      Backup
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      C
+    </td>
+    <td class="graybox">
+      Edit
+    </td>
+    <td class="graybox">
+      Copy
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      D
+    </td>
+    <td class="graybox">
+      Item
+    </td>
+    <td class="graybox">
+      Delete
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      E
+    </td>
+    <td class="graybox">
+      File
+    </td>
+    <td class="graybox">
+      Export
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      F
+    </td>
+    <td class="graybox">
+      List
+    </td>
+    <td class="graybox">
+      Find
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      G
+    </td>
+    <td class="graybox">
+      List
+    </td>
+    <td class="graybox">
+      Find Again
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      H
+    </td>
+    <td class="graybox">
+      App (Mac) / <br />Help (Other)
+    </td>
+    <td class="graybox">
+      Hide / <br />User Guide (Other)
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      I
+    </td>
+    <td class="graybox">
+      File
+    </td>
+    <td class="graybox">
+      Get Info
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      L
+    </td>
+    <td class="graybox">
+      Item
+    </td>
+    <td class="graybox">
+      Last Author and Work
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      N
+    </td>
+    <td class="graybox">
+      Item
+    </td>
+    <td class="graybox">
+      New
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      O
+    </td>
+    <td class="graybox">
+      File
+    </td>
+    <td class="graybox">
+      Open
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      P
+    </td>
+    <td class="graybox">
+      File
+    </td>
+    <td class="graybox">
+      Publish
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      Q
+    </td>
+    <td class="graybox">
+      App (Mac) / <br />File (Other)
+    </td>
+    <td class="graybox">
+      Quit / <br />Exit
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      T
+    </td>
+    <td class="graybox">
+      Item
+    </td>
+    <td class="graybox">
+      Transfer
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      U
+    </td>
+    <td class="graybox">
+      Item
+    </td>
+    <td class="graybox">
+      Update
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      V
+    </td>
+    <td class="graybox">
+      Edit
+    </td>
+    <td class="graybox">
+      Paste
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      W
+    </td>
+    <td class="graybox">
+      Help
+    </td>
+    <td class="graybox">
+      Reduce Window Size
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      X
+    </td>
+    <td class="graybox">
+      Edit
+    </td>
+    <td class="graybox">
+      Cut
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      1
+    </td>
+    <td class="graybox">
+      Tabs
+    </td>
+    <td class="graybox">
+      List
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      2
+    </td>
+    <td class="graybox">
+      Tabs
+    </td>
+    <td class="graybox">
+      Categories
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      3
+    </td>
+    <td class="graybox">
+      Tabs
+    </td>
+    <td class="graybox">
+      Edit
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      ,
+    </td>
+    <td class="graybox">
+      App (Mac)
+    </td>
+    <td class="graybox">
+      Preferences
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      ]
+    </td>
+    <td class="graybox">
+      Item
+    </td>
+    <td class="graybox">
+      Next
+    </td>
+  </tr>
+
+  <tr>
+    <td class="graybox">
+      [
+    </td>
+    <td class="graybox">
+      Item
+    </td>
+    <td class="graybox">
+      Prior
+    </td>
+  </tr>
+
+</table>
+
+<h3 id="gen-prefs">Customizing the Look and Feel</h3>
+
+<p>The program&#8217;s Common Preferences contain a number of options for modifying the program&#8217;s look and feel. Feel free to experiment with these to find your favorite configuration. Some options may require you to quit and re-launch iWisdom before the changes will take effect. </p>
+
+<h2 id="data">Wisdom Data</h2>
+
+<h3 id="get-info">Get Info</h3>
+
+<p>Selecting <strong>Get Info</strong> from the <strong>File</strong> menu will bring up a window that allows you to enter a number of information items applicable to an entire wisdom collection. </p>
+
+<ul>
+<li><p>Folder: Identifies the folder containing your wisdom collection.</p></li>
+<li><p>Format: The default is &#8220;XML&#8221;, but you may also choose &#8220;Text - Structured&#8221;. The latter is easier to edit, and may be preferable if you choose to sync your wisdom collection to &#8220;the cloud&#8221; or to other devices, using a service such as DropBox. </p></li>
+<li><p>Organize within Folders? If checked, then your wisdom items will be organized within folders named after the authors and their works. If unchecked, your wisdom items will all be stored at the top level of your collection&#8217;s folder. </p></li>
+<li><p>Wisdom File Naming: Name by Item Number simply names your wisdom files using a sequential numbering scheme. Name by Title names your files based on the titles you assign each item. </p></li>
+<li><p>Title: The overall title of your wisdom collection. This will be used when publishing your collection. </p></li>
+<li><p>Link: A web link, if available, for the location of your published wisdom. </p></li>
+<li><p>Path: The path to your wisdom collection. </p></li>
+<li><p>Editor: Your name, as the editor of your collection.</p></li>
+<li><p>Description: A brief description of the intent of this wisdom collection. </p></li>
+<li><p>Primary? If checked, this will become your primary collection, which will be automatically opened whenever you launch iWisdom. </p></li>
+<li><p>Forget? Check this box as a way of telling iWisdom to drop this collection from its list of known collections, available from the <strong>Open Known</strong> menu. </p></li>
+</ul>
+
+<h3 id="list-tab">Your Wisdom List</h3>
+
+<p>The <strong>List Tab</strong> will list all the items in your collection. You may change the sequence of the items on the List Tab by selecting the appropriate <strong>View</strong> from the <strong>View Menu</strong>. You may create a new View in the <strong>View Preferences</strong>, by clicking on the + sign and then entering the name of your View and its sort fields.</p>
+
+<h3 id="add-edit">Adding and Editing Wisdom</h3>
+
+<p>The Edit Tab allows you to enter or modify information associated with a Wisdom item. To create a new item, click on the &#8220;+&#8221; Button on the Tool Bar, or select <strong>New</strong> from the Item Menu.  The data fields to be entered are then split between the Content, Author and Work tabs. </p>
+
+<p>When you are done editing an item, simply click on the Display Tab, or click on the OK button on the Tool Bar, in order to leave the Edit Tab and save all your entries to disk.</p>
+
+<h3 id="format-body">Formatting Wisdom</h3>
+
+<p>On the Edit Tab, the Body field contains the actual wisdom or quotation. This field may be formatted using common HTML commands. If you wish to use quotation marks, enter normal &#8220;straight&#8221; quotation marks. For an em dash (or long dash), use two consecutive hyphens. Separate paragraphs with a blank line.</p>
+
+<h3 id="categories">Categories</h3>
+
+<p>For each piece of wisdom, you may enter one or more categories and, for each, one or more sub-categories. Each category level is separated from the next by a forward slash or a period. Each separate category (including sub-categories) is separated from others by a comma.</p>
+
+<p>Once a category is established for one piece of wisdom, you may assign it to other pieces of wisdom by selecting the desired category from the drop-down menu. You may do this by scrolling and clicking, or by typing the beginning letters of the desired category and pressing Return/Enter. </p>
+
+<p>If you don&#8217;t see an appropriate category on the drop-down list, simply type in the new category that you want. Once you complete your edits for that item, your new category will become available the next time you select the drop-down list. </p>
+
+<p>If you decide to stop using a category, simply remove it or change it on all the items to which it has been assigned. The next time you quit and relaunch iWisdom unused categories will disappear from the list.  </p>
+
+<p>If you&#8217;d like to change a Category name, use the <strong>Add/Replace Category</strong> Menu Item from the <strong>List</strong> menu to change all occurrence of one Category to a new one. </p>
+
+<p>The Categories Tab organizes your collection by Category. Click on a disclosure triangle to view enclosed items and sub-categories.</p>
+
+<h3 id="authors-titles">Authors and Source Titles</h3>
+
+<p>When entering an author, you may select an existing author from the drop-down menu by entering the beginning characters of their name (either first name first or last name first), or by scrolling down the list, then pressing Return/Enter to select the desired author.   </p>
+
+<p>Selecting an existing source title may be done in the same way.</p>
+
+<h3 id="links">Book and Author Links</h3>
+
+<p>On the Edit tab, enter a book&#8217;s 10-digit ISBN in the Source ID field, to enable access to the book&#8217;s entry on Amazon.com from the Display tab.  </p>
+
+<p>Similarly, entering the Author&#8217;s name on the Edit tab will allow the author&#8217;s Wikipedia entry to be accessed from the Display tab.</p>
+
+<h3 id="lastaw">Copying Last Author and Work </h3>
+
+<p>When entering multiple quotations from the same source, you can use the <strong>Last Author and Work</strong> command from the <strong>Item</strong> menu to copy information about the Author and Work from the last item you entered to the new item you are currently entering. </p>
+
+<h2 id="display">Displaying Wisdom</h2>
+
+<p>The <strong>Display Tab</strong> allows you to view a piece of wisdom. Click on an author&#8217;s name to use your Web browser to view the author&#8217;s entry in Wikipedia. Click on the name of a book to view the books&#8217;s entry on Amazon.com.</p>
+
+<p>Note that the Display Preferences allow the display to be customized. You can select a particular font, font size, and colors for the background and the text. </p>
+
+<p>You may also tailor which fields are displayed along with the wisdom body and its author, with Title, Source, Source Type, Added Date and Time, and iWisdom ID number all being optional. </p>
+
+<h2 id="output">Getting Wisdom out of iWisdom</h2>
+
+<p>iWisdom offers several different ways to get your wisdom out of iWisdom, in a variety of formats. </p>
+
+<h3 id="transfer">Transfer/Update</h3>
+
+<p>A Transfer works like a Copy, with a couple of differences:</p>
+
+<ul>
+<li>An entire wisdom item is copied, and not just one particular wisdom field;</li>
+<li>You may select the format you wish to use for the copied data.</li>
+</ul>
+
+<p>Use the Transfer Preferences to specify the format you wish to use. The following options are currently available:</p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Fortune_(Unix)">Fortune</a> &#8212; A simple text format, with minimal data and minimal markup. </li>
+<li><a href="http://daringfireball.net/projects/markdown/">Markdown</a> &#8212; A plain text format, using simplified markup, designed for easy conversion to HTML. </li>
+<li><a href="http://en.wikipedia.org/wiki/OPML">OPML</a> &#8212; An XML format designed for outlines.</li>
+<li>Text Block &#8212; A simple format that will allow the wisdom item to easily be Updated (i.e., pasted) back into iWisdom (on a different computer or in a different collection), using the <strong>Upate</strong> command from the <strong>Item</strong> Menu. </li>
+<li>XML &#8212; A format using XML markup.</li>
+<li>Text - Structured &#8212; A subset of YAML that is easy for humans to read and edit. </li>
+</ul>
+
+<p>Note that Transfer and Update both make use of the System clipboard &#8212; the same area used by Cut/Copy/Paste commands. So, for example, the following sequence of commands, using the Text Block format, will allow you to move a Wisdom item from one collection on one computer to a different collection on a different computer. </p>
+
+<ol>
+<li>From within iWisdom, select the desired item in the first collection. </li>
+<li>Select Transfer from the Item Menu.</li>
+<li>Compose an e-mail to be sent to the owner of the second computer. </li>
+<li>Perform a normal Paste command in your E-mail program to paste the wisdom item into the body of your e-mail. </li>
+<li>Send the e-mail.</li>
+<li>Upon receipt of the e-mail, select the entire text block containing the wisdom item and perform a normal copy.</li>
+<li>Fire up iWisdom, and select Update from the Item menu.</li>
+</ol>
+
+<h3 id="export">Export</h3>
+
+<p>The <strong>Export</strong> command, available from the <strong>File</strong> menu, allows you to export part or all of your collection into an external file that can be used by other programs. </p>
+
+<p>The following Export options are available, once you select the Export command. </p>
+
+<h4 id="field_scope">Field Scope</h4>
+
+<p>Allows you to select one of the following options. </p>
+
+<ul>
+<li>All Fields &#8212; This options can be used for exporting into a format that preserves all iWisdom data fields as discrete entities in the resulting output file. This option is best when you will be using the output from iWisdom as import to another program (or to another iWisdom collection).</li>
+<li>Wisdom List &#8212; This option creates a list of the desired wisdom entries, but formatted primarily to be read by a human, rather than a computer. </li>
+</ul>
+
+<h4 id="item_scope">Item Scope</h4>
+
+<p>Allows you to select one of the following options.</p>
+
+<ul>
+<li>Current Item &#8212; Exports only the single item that is currently selected. </li>
+<li>Selected Category &#8212; Exports all items in the Category that you select below. </li>
+<li>Entire Collection &#8212; Exports all items in the currently opened collection. </li>
+</ul>
+
+<h4 id="format">Format</h4>
+
+<p>If you selected a Field Scope of All Fields, then you can select from one of the following formats. </p>
+
+<ul>
+<li>XML &#8212; Using the format used internally by iWisdom.</li>
+<li>Tab-Delimited Text &#8212; Formatted in rows and columns, with tabs between each column. Suitable for importing into spreadsheets and databases. </li>
+<li>Text Block &#8212; A format that can be easily read by humans and by iWisdom. </li>
+<li>Text - Structured &#8212; A subset of YAML that is easily human-readable and easy for humans to update. </li>
+</ul>
+
+<p>If you selected a field scope of Wisdom List, then you may select from any of the following output formats. </p>
+
+<ul>
+<li><a href="http://en.wikipedia.org/wiki/Fortune_(Unix)">Fortune</a> &#8212; A simple text format, with minimal data and minimal markup. </li>
+<li>HTML &#8212; The native language of the World-Wide Web. </li>
+<li><a href="http://daringfireball.net/projects/markdown/">Markdown</a> &#8212; A plain text format, using simplified markup, designed for easy conversion to HTML. </li>
+<li><a href="http://en.wikipedia.org/wiki/OPML">OPML</a> &#8212; An XML format designed for outlines.</li>
+<li><a href="http://textism.com/tools/textile/">Textile</a> Syntax 1 &#8212; Another lightweight markup language. </li>
+<li><a href="http://textism.com/tools/textile/">Textile</a> Syntax 2 &#8212; Textile again, but with links encoded differently. </li>
+</ul>
+
+<h3 id="publish">Publish</h3>
+
+<p>The publish option allows you to easily publish your entire wisdom collection as a Web site or E-Book. </p>
+
+<p>See <a href="http://www.portablewisdom.org">PortableWisdom.org</a> for an example of a Web site that can be produced via this mechanism. </p>
+
+<p>To begin the publication process, select the <strong>Publish&#8230;</strong> command from the <strong>File</strong> menu.</p>
+
+<p>You will then see a window with the following fields available to you. </p>
+
+<dl>
+    <dt>Publish to:</dt>
+    <dd>You may use the Browse button above and to the right to select a folder on your computer to which you wish to publish your iWisdom collection. You may also enter or modify the path directly in the text box. When modifying this field, you will be prompted to specify whether you wish to update the existing publication location, or add a new one. By specifying that you wish to add a new one, you may create multiple publications, and then later select the publication of interest by using the drop-down arrow to the right of this field. </dd>
+    <dt>Equivalent URL:</dt>
+    <dd>If the folder to which you are publishing will be addressable from the World-Wide Web, then enter its Web address here. </dd>
+    <dt>Templates:</dt>
+    <dd>This is the address of a folder containing one or more publishing templates. This will default to the location of the templates provided along with the iWisdom executable. You may use the Browse button above and to the right to pick a different location, if you have your own templates you wish to use for publishing. </dd>
+    <dt>Select:</dt>
+    <dd>Use the drop-down list to select the template you wish to use. 
+<br />&nbsp;<br /><strong>E-Book</strong> &#8212; This template will produce a file named &#8216;iwisdom.epub&#8217;. You can drag and drop this file into iTunes, then sync it with your mobile device in order to access your collection from an iPhone, iPod Touch, or iPad.
+<br />&nbsp;<br /><strong>Web Site</strong> &#8212; This template will produce a Web site that can be browsed from a computer or mobile device. See <a href="http://www.portablewisdom.org">PortableWisdom.org</a> for an example. Note that, if you&#8217;re a <a href="http://www.me.com">Mobile Me</a> subscriber, you can easily publish to the Sites folder of your iDisk.
+</dd>
+    <dt>Apply</dt>
+    <dd>Press this button to apply the selected template. This will copy the contents of the template folder to the location specified above as the Publish to location. </dd>
+    <dt>Publish Script:</dt>
+    <dd>Specify the location of the script to be used. iWisdom now uses the <a href="http://www.powersurgepub.com/products/pstextmerge.html">PSTextMerge</a> templating system for publishing. A PSTextMerge script will usually end with a &#8216;.tcz&#8217; file extension.  </dd>
+    <dt>Publish when:</dt>
+    <dd>You may specify publication &#8216;On Close&#8217; (whenever you Quit iWisdom or close a Wisdom collection) or &#8216;On Demand&#8217;. Note that when you Quit iWisdom or close a collection, iWisdom will publish to all of the publishing locations that you&#8217;ve said to publish &#8216;On Close&#8217;, if you&#8217;ve specified more than one. </dd>
+    <dt>Publish Now</dt>
+    <dd>Press this button to publish to the currently displayed location. Note that, if you&#8217;ve specified &#8216;On Demand&#8217;, then this is the only time that publication will occur. </dd>
+    <dt>View:</dt>
+    <dd>Select the local file location or the equivalent URL location.</dd>
+    <dt>View Now</dt>
+    <dd>Press this button to view the resulting Web site in your Web browser.</dd>
+</dl>
+
+<h2 id="help">Help</h2>
+
+<p>The following commands are available. Note that the first two commands open local documentation installed with your application, while the next group  of commands will access the Internet and access the latest program documentation, where applicable. </p>
+
+<ul>
+<li><p><strong>Purchase License</strong> &#8212; Takes you to a Web page from which you may register your copy of iWisdom. </p></li>
+<li><p><strong>Product Registration</strong> &#8212; Pops up a dialogue box in which you can enter your User Name and Registration Code.</p></li>
+<li><p><strong>Program History</strong> &#8212; Opens the program&#8217;s version history in your preferred Web browser.</p></li>
+<li><p><strong>User Guide</strong> &#8212; Opens the program&#8217;s user guide in your preferred Web browser.</p></li>
+<li><p><strong>iWisdom Home Page</strong> &#8212; Open&#8217;s the iWisdom product page on the World-Wide Web. </p></li>
+<li><p><strong>iWisdom Import Sources</strong> &#8212; Takes you to a Web page where you will find a number of potential iWisdom import sources. </p></li>
+<li><p><strong>Reduce Window Size</strong> &#8212; Restores the main iWisdom window to its default size and location. Note that this command has a shortcut so that it may be executed even when the iWisdom window is not visible. This command may sometimes prove useful if you use multiple monitors, but occasionally in different configurations. On Windows in particular, this sometimes results in iWisdom opening on a monitor that is no longer present, making it difficult to see.</p></li>
+</ul>

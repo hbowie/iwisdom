@@ -1,0 +1,9 @@
+Source Types:
+
+Article
+Book
+CD
+Essay
+Film
+Poem
+Story

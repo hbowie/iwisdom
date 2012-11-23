@@ -1,0 +1,37 @@
+<?output "../rss.xml"?>
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+  <channel>
+		<title>
+			Portable Wisdom.org
+		</title>
+		<link>
+			http://www.PortableWisdom.org/
+		</link>
+		<description>
+			Herb Bowie&apos;s primary collection of insightful quotations.
+		</description>
+		<language>en-us</language>
+    <pubDate>Mon, 25 Oct 2010 :27:46 PDT</pubDate>
+    <lastBuildDate>Mon, 25 Oct 2010 :27:46 PDT</lastBuildDate>
+		<generator>iWisdom</generator>
+		<managingEditor>Herb Bowie</managingEditor>
+<?set items = 0 ?>
+<?nextrec?>
+<?if =$items$= < 10 ?>
+		<item>
+			<title>
+			=$title&x$=
+			</title>
+			<link>http://www.PortableWisdom.org/wisdom/w=$itemid&r4$=.html</link>
+			<description>
+				=$body&x$=
+			</description>
+			<pubDate>=$dateadded&EEE, dd MMM yyyy HH:mm:ss zzz$=</pubDate>
+			<guid>http://www.PortableWisdom.org/wisdom/w=$itemid&r4$=.html</guid>
+		</item>
+<?endif?>
+<?set items ++ ?>
+<?loop?>
+	</channel>
+</rss>

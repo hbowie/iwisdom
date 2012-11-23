@@ -1,0 +1,27 @@
+<?output "../authors/index.html"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<?include "head.html" copy ?>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Authors</h1>
+      </div>
+<?include "nav.html" copy ?>
+      <div id="content"
+        <div id="indexlist">
+          <ul>
+<?nextrec?>
+<?definegroup 1 "=$authorfilename$=" ?>
+<?ifnewgroup 1 ?>
+            <li><a href="=$authorfilename$=.html">
+              =$authorlastnamestrong$=</a></li>
+<?endif?>
+<?loop?>
+          </ul>
+        </div>
+      </div> <!-- end content -->
+    </div> <!-- end container -->
+  </body>
+</html>

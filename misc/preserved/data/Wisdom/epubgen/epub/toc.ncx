@@ -1,0 +1,2140 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="http://www.PortableWisdom.org/wisdom/Portable Wisdom.epub"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+     <text>Portable Wisdom</text>
+  </docTitle>
+
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+	    <navLabel>
+		    <text>Title Page</text>
+	    </navLabel>
+	    <content src="title.html"/>
+	  </navPoint>
+     <navPoint id="w0002" playOrder="2">
+       <navLabel>
+		     <text>Eric Abrahamson and David H. Freeman</text>
+       </navLabel>
+       <content src="w0002.html"/>
+		 <navPoint id="w0002" playOrder="2">
+		   <navLabel>
+			   <text>Keep Creating throughout the Construction Process</text>
+		   </navLabel>
+		   <content src="w0002.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0001" playOrder="3">
+       <navLabel>
+		     <text>Ansel Adams</text>
+       </navLabel>
+       <content src="w0001.html"/>
+		 <navPoint id="w0001" playOrder="3">
+		   <navLabel>
+			   <text>Fuzzy Concept</text>
+		   </navLabel>
+		   <content src="w0001.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0004" playOrder="4">
+       <navLabel>
+		     <text>Margery Allingham</text>
+       </navLabel>
+       <content src="w0004.html"/>
+		 <navPoint id="w0004" playOrder="4">
+		   <navLabel>
+			   <text>A Dark Procession</text>
+		   </navLabel>
+		   <content src="w0004.html"/>
+		 </navPoint>
+		 <navPoint id="w0005" playOrder="5">
+		   <navLabel>
+			   <text>Occasions When the Intellect Retires Gracefully</text>
+		   </navLabel>
+		   <content src="w0005.html"/>
+		 </navPoint>
+		 <navPoint id="w0006" playOrder="6">
+		   <navLabel>
+			   <text>The Only Sign of Mental Activity</text>
+		   </navLabel>
+		   <content src="w0006.html"/>
+		 </navPoint>
+		 <navPoint id="w0007" playOrder="7">
+		   <navLabel>
+			   <text>The Sanctity and Importance of Sudden Death</text>
+		   </navLabel>
+		   <content src="w0007.html"/>
+		 </navPoint>
+		 <navPoint id="w0008" playOrder="8">
+		   <navLabel>
+			   <text>Merely Thoroughly Outrageous</text>
+		   </navLabel>
+		   <content src="w0008.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0009" playOrder="9">
+       <navLabel>
+		     <text>Chris Argyris and Donald Schön</text>
+       </navLabel>
+       <content src="w0009.html"/>
+		 <navPoint id="w0009" playOrder="9">
+		   <navLabel>
+			   <text>Model II Decision-Making</text>
+		   </navLabel>
+		   <content src="w0009.html"/>
+		 </navPoint>
+		 <navPoint id="w0010" playOrder="10">
+		   <navLabel>
+			   <text>Model II Values</text>
+		   </navLabel>
+		   <content src="w0010.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0011" playOrder="11">
+       <navLabel>
+		     <text>Aristotle</text>
+       </navLabel>
+       <content src="w0011.html"/>
+		 <navPoint id="w0011" playOrder="11">
+		   <navLabel>
+			   <text>Entertain a Thought</text>
+		   </navLabel>
+		   <content src="w0011.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0012" playOrder="12">
+       <navLabel>
+		     <text>Angeles Arrien</text>
+       </navLabel>
+       <content src="w0012.html"/>
+		 <navPoint id="w0012" playOrder="12">
+		   <navLabel>
+			   <text>The Four-Fold Way</text>
+		   </navLabel>
+		   <content src="w0012.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0014" playOrder="13">
+       <navLabel>
+		     <text>Rob Austin and Lee Devin</text>
+       </navLabel>
+       <content src="w0014.html"/>
+		 <navPoint id="w0014" playOrder="13">
+		   <navLabel>
+			   <text>Artful Making</text>
+		   </navLabel>
+		   <content src="w0014.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0013" playOrder="14">
+       <navLabel>
+		     <text>Robert D. Austin</text>
+       </navLabel>
+       <content src="w0013.html"/>
+		 <navPoint id="w0013" playOrder="14">
+		   <navLabel>
+			   <text>Cockpits with Instruments Controlled by Gremlins</text>
+		   </navLabel>
+		   <content src="w0013.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0015" playOrder="15">
+       <navLabel>
+		     <text>Joseph L. Badaracco, Jr.</text>
+       </navLabel>
+       <content src="w0015.html"/>
+		 <navPoint id="w0015" playOrder="15">
+		   <navLabel>
+			   <text>Careful, thoughtful, small, practical efforts</text>
+		   </navLabel>
+		   <content src="w0015.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0220" playOrder="16">
+       <navLabel>
+		     <text>The Beatles</text>
+       </navLabel>
+       <content src="w0220.html"/>
+		 <navPoint id="w0220" playOrder="16">
+		   <navLabel>
+			   <text>It is Us, and It is What We're About</text>
+		   </navLabel>
+		   <content src="w0220.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0016" playOrder="17">
+       <navLabel>
+		     <text>Don Beck and Chris Cowan</text>
+       </navLabel>
+       <content src="w0016.html"/>
+		 <navPoint id="w0016" playOrder="17">
+		   <navLabel>
+			   <text>Ancient ethnic sores belching fire</text>
+		   </navLabel>
+		   <content src="w0016.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0017" playOrder="18">
+       <navLabel>
+		     <text>Scott Berkun</text>
+       </navLabel>
+       <content src="w0017.html"/>
+		 <navPoint id="w0017" playOrder="18">
+		   <navLabel>
+			   <text>Real Creation is Sloppy</text>
+		   </navLabel>
+		   <content src="w0017.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0018" playOrder="19">
+       <navLabel>
+		     <text>Isaiah Berlin</text>
+       </navLabel>
+       <content src="w0018.html"/>
+		 <navPoint id="w0018" playOrder="19">
+		   <navLabel>
+			   <text>The hedgehog and the fox</text>
+		   </navLabel>
+		   <content src="w0018.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0222" playOrder="20">
+       <navLabel>
+		     <text>Leonard Bernstein</text>
+       </navLabel>
+       <content src="w0222.html"/>
+		 <navPoint id="w0222" playOrder="20">
+		   <navLabel>
+			   <text>Our Reply to Violence</text>
+		   </navLabel>
+		   <content src="w0222.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0019" playOrder="21">
+       <navLabel>
+		     <text>Yogi Berra</text>
+       </navLabel>
+       <content src="w0019.html"/>
+		 <navPoint id="w0019" playOrder="21">
+		   <navLabel>
+			   <text>Déjà Vu All Over Again</text>
+		   </navLabel>
+		   <content src="w0019.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0020" playOrder="22">
+       <navLabel>
+		     <text>William Blake</text>
+       </navLabel>
+       <content src="w0020.html"/>
+		 <navPoint id="w0020" playOrder="22">
+		   <navLabel>
+			   <text>Art, Science and Empire</text>
+		   </navLabel>
+		   <content src="w0020.html"/>
+		 </navPoint>
+		 <navPoint id="w0021" playOrder="23">
+		   <navLabel>
+			   <text>Expectations of holiness</text>
+		   </navLabel>
+		   <content src="w0021.html"/>
+		 </navPoint>
+		 <navPoint id="w0022" playOrder="24">
+		   <navLabel>
+			   <text>Minute Particulars</text>
+		   </navLabel>
+		   <content src="w0022.html"/>
+		 </navPoint>
+		 <navPoint id="w0023" playOrder="25">
+		   <navLabel>
+			   <text>To see a world in a grain of sand</text>
+		   </navLabel>
+		   <content src="w0023.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0024" playOrder="26">
+       <navLabel>
+		     <text>Derek Bok</text>
+       </navLabel>
+       <content src="w0024.html"/>
+		 <navPoint id="w0024" playOrder="26">
+		   <navLabel>
+			   <text>Cost of Education</text>
+		   </navLabel>
+		   <content src="w0024.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0207" playOrder="27">
+       <navLabel>
+		     <text>Nathaniel S. Borenstein</text>
+       </navLabel>
+       <content src="w0207.html"/>
+		 <navPoint id="w0207" playOrder="27">
+		   <navLabel>
+			   <text>Judgments of Users</text>
+		   </navLabel>
+		   <content src="w0207.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0219" playOrder="28">
+       <navLabel>
+		     <text>Herb Bowie</text>
+       </navLabel>
+       <content src="w0219.html"/>
+		 <navPoint id="w0219" playOrder="28">
+		   <navLabel>
+			   <text>The Tautness of this Resonant Connection</text>
+		   </navLabel>
+		   <content src="w0219.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0026" playOrder="29">
+       <navLabel>
+		     <text>Joe Boyd</text>
+       </navLabel>
+       <content src="w0026.html"/>
+		 <navPoint id="w0026" playOrder="29">
+		   <navLabel>
+			   <text>A Sailor's Life</text>
+		   </navLabel>
+		   <content src="w0026.html"/>
+		 </navPoint>
+		 <navPoint id="w0027" playOrder="30">
+		   <navLabel>
+			   <text>Chaos and Mediocrity</text>
+		   </navLabel>
+		   <content src="w0027.html"/>
+		 </navPoint>
+		 <navPoint id="w0028" playOrder="31">
+		   <navLabel>
+			   <text>Counter-Culture's own values and aesthetics decayed</text>
+		   </navLabel>
+		   <content src="w0028.html"/>
+		 </navPoint>
+		 <navPoint id="w0029" playOrder="32">
+		   <navLabel>
+			   <text>Dylan at Newport in 1965</text>
+		   </navLabel>
+		   <content src="w0029.html"/>
+		 </navPoint>
+		 <navPoint id="w0030" playOrder="33">
+		   <navLabel>
+			   <text>History as Postmodern Collage</text>
+		   </navLabel>
+		   <content src="w0030.html"/>
+		 </navPoint>
+		 <navPoint id="w0031" playOrder="34">
+		   <navLabel>
+			   <text>Little I recognized as music</text>
+		   </navLabel>
+		   <content src="w0031.html"/>
+		 </navPoint>
+		 <navPoint id="w0032" playOrder="35">
+		   <navLabel>
+			   <text>Never Knew Cocaine to Improve Anything</text>
+		   </navLabel>
+		   <content src="w0032.html"/>
+		 </navPoint>
+		 <navPoint id="w0033" playOrder="36">
+		   <navLabel>
+			   <text>Records we made together in the sixties</text>
+		   </navLabel>
+		   <content src="w0033.html"/>
+		 </navPoint>
+		 <navPoint id="w0034" playOrder="37">
+		   <navLabel>
+			   <text>Sixties Surpluses of Money and Time</text>
+		   </navLabel>
+		   <content src="w0034.html"/>
+		 </navPoint>
+		 <navPoint id="w0035" playOrder="38">
+		   <navLabel>
+			   <text>South-East London adaption of the Excello style</text>
+		   </navLabel>
+		   <content src="w0035.html"/>
+		 </navPoint>
+		 <navPoint id="w0036" playOrder="39">
+		   <navLabel>
+			   <text>Tiny Dead Recording Spaces</text>
+		   </navLabel>
+		   <content src="w0036.html"/>
+		 </navPoint>
+		 <navPoint id="w0037" playOrder="40">
+		   <navLabel>
+			   <text>Two-Inch Sixteen-Track Recording</text>
+		   </navLabel>
+		   <content src="w0037.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0038" playOrder="41">
+       <navLabel>
+		     <text>George Brackett</text>
+       </navLabel>
+       <content src="w0038.html"/>
+		 <navPoint id="w0038" playOrder="41">
+		   <navLabel>
+			   <text>Principle of Least Astonishment</text>
+		   </navLabel>
+		   <content src="w0038.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0039" playOrder="42">
+       <navLabel>
+		     <text>Wernher Von Braun</text>
+       </navLabel>
+       <content src="w0039.html"/>
+		 <navPoint id="w0039" playOrder="42">
+		   <navLabel>
+			   <text>One test result</text>
+		   </navLabel>
+		   <content src="w0039.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0040" playOrder="43">
+       <navLabel>
+		     <text>Bertolt Brecht</text>
+       </navLabel>
+       <content src="w0040.html"/>
+		 <navPoint id="w0040" playOrder="43">
+		   <navLabel>
+			   <text>Art is a Hammer</text>
+		   </navLabel>
+		   <content src="w0040.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0041" playOrder="44">
+       <navLabel>
+		     <text>Fred Brooks</text>
+       </navLabel>
+       <content src="w0041.html"/>
+		 <navPoint id="w0041" playOrder="44">
+		   <navLabel>
+			   <text>Conceptual Integrity</text>
+		   </navLabel>
+		   <content src="w0041.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0042" playOrder="45">
+       <navLabel>
+		     <text>William J. Brown, Hays W. McCormick III and Scott W. Thomas</text>
+       </navLabel>
+       <content src="w0042.html"/>
+		 <navPoint id="w0042" playOrder="45">
+		   <navLabel>
+			   <text>Drive-Through Coding</text>
+		   </navLabel>
+		   <content src="w0042.html"/>
+		 </navPoint>
+		 <navPoint id="w0043" playOrder="46">
+		   <navLabel>
+			   <text>Nirvana Antipattern</text>
+		   </navLabel>
+		   <content src="w0043.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0044" playOrder="47">
+       <navLabel>
+		     <text>William Jennings Bryan</text>
+       </navLabel>
+       <content src="w0044.html"/>
+		 <navPoint id="w0044" playOrder="47">
+		   <navLabel>
+			   <text>Two ideas of government</text>
+		   </navLabel>
+		   <content src="w0044.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0045" playOrder="48">
+       <navLabel>
+		     <text>Marcus Buckingham and Curt Coffman</text>
+       </navLabel>
+       <content src="w0045.html"/>
+		 <navPoint id="w0045" playOrder="48">
+		   <navLabel>
+			   <text>Focus on High Performers</text>
+		   </navLabel>
+		   <content src="w0045.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0046" playOrder="49">
+       <navLabel>
+		     <text>Albert Camus</text>
+       </navLabel>
+       <content src="w0046.html"/>
+		 <navPoint id="w0046" playOrder="49">
+		   <navLabel>
+			   <text>Work, Soul and Life</text>
+		   </navLabel>
+		   <content src="w0046.html"/>
+		 </navPoint>
+		 <navPoint id="w0047" playOrder="50">
+		   <navLabel>
+			   <text>An Invincible Summer</text>
+		   </navLabel>
+		   <content src="w0047.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0221" playOrder="51">
+       <navLabel>
+		     <text>Lewis Carroll</text>
+       </navLabel>
+       <content src="w0221.html"/>
+		 <navPoint id="w0221" playOrder="51">
+		   <navLabel>
+			   <text>Six Impossible Things Before Breakfast</text>
+		   </navLabel>
+		   <content src="w0221.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0048" playOrder="52">
+       <navLabel>
+		     <text>Michael Chabon</text>
+       </navLabel>
+       <content src="w0048.html"/>
+		 <navPoint id="w0048" playOrder="52">
+		   <navLabel>
+			   <text>A mind is blown</text>
+		   </navLabel>
+		   <content src="w0048.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0049" playOrder="53">
+       <navLabel>
+		     <text>Raymond Chandler</text>
+       </navLabel>
+       <content src="w0049.html"/>
+		 <navPoint id="w0049" playOrder="53">
+		   <navLabel>
+			   <text>Down These Mean Streets</text>
+		   </navLabel>
+		   <content src="w0049.html"/>
+		 </navPoint>
+		 <navPoint id="w0050" playOrder="54">
+		   <navLabel>
+			   <text>Vital and Significant Forms of Art</text>
+		   </navLabel>
+		   <content src="w0050.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0227" playOrder="55">
+       <navLabel>
+		     <text>G. K. Chesterton</text>
+       </navLabel>
+       <content src="w0227.html"/>
+		 <navPoint id="w0227" playOrder="55">
+		   <navLabel>
+			   <text>One of the deepest and strangest of all human</text>
+		   </navLabel>
+		   <content src="w0227.html"/>
+		 </navPoint>
+		 <navPoint id="w0228" playOrder="56">
+		   <navLabel>
+			   <text>Mysticism has kept men sane</text>
+		   </navLabel>
+		   <content src="w0228.html"/>
+		 </navPoint>
+		 <navPoint id="w0229" playOrder="57">
+		   <navLabel>
+			   <text>The center of every man's existence is a dream</text>
+		   </navLabel>
+		   <content src="w0229.html"/>
+		 </navPoint>
+		 <navPoint id="w0230" playOrder="58">
+		   <navLabel>
+			   <text>Conservatives and Progressives</text>
+		   </navLabel>
+		   <content src="w0230.html"/>
+		 </navPoint>
+		 <navPoint id="w0231" playOrder="59">
+		   <navLabel>
+			   <text>The difference between construction and creation</text>
+		   </navLabel>
+		   <content src="w0231.html"/>
+		 </navPoint>
+		 <navPoint id="w0232" playOrder="60">
+		   <navLabel>
+			   <text>Generosity Among the Rich</text>
+		   </navLabel>
+		   <content src="w0232.html"/>
+		 </navPoint>
+		 <navPoint id="w0233" playOrder="61">
+		   <navLabel>
+			   <text>The cause which is blocking all progress</text>
+		   </navLabel>
+		   <content src="w0233.html"/>
+		 </navPoint>
+		 <navPoint id="w0234" playOrder="62">
+		   <navLabel>
+			   <text>We are in Eden still</text>
+		   </navLabel>
+		   <content src="w0234.html"/>
+		 </navPoint>
+		 <navPoint id="w0235" playOrder="63">
+		   <navLabel>
+			   <text>Taking a Fence Down</text>
+		   </navLabel>
+		   <content src="w0235.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0051" playOrder="64">
+       <navLabel>
+		     <text>Winston Churchill</text>
+       </navLabel>
+       <content src="w0051.html"/>
+		 <navPoint id="w0051" playOrder="64">
+		   <navLabel>
+			   <text>Democracy is Worst Form of Government</text>
+		   </navLabel>
+		   <content src="w0051.html"/>
+		 </navPoint>
+		 <navPoint id="w0223" playOrder="65">
+		   <navLabel>
+			   <text>We are Doing our Best</text>
+		   </navLabel>
+		   <content src="w0223.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0052" playOrder="66">
+       <navLabel>
+		     <text>Alistair Cockburn</text>
+       </navLabel>
+       <content src="w0052.html"/>
+		 <navPoint id="w0052" playOrder="66">
+		   <navLabel>
+			   <text>System Architects as Storytellers</text>
+		   </navLabel>
+		   <content src="w0052.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0053" playOrder="67">
+       <navLabel>
+		     <text>Larry Constantine and Lucy Lockwood</text>
+       </navLabel>
+       <content src="w0053.html"/>
+		 <navPoint id="w0053" playOrder="67">
+		   <navLabel>
+			   <text>Prototyping No Substitute for Analysis and Design</text>
+		   </navLabel>
+		   <content src="w0053.html"/>
+		 </navPoint>
+		 <navPoint id="w0054" playOrder="68">
+		   <navLabel>
+			   <text>System Simplification</text>
+		   </navLabel>
+		   <content src="w0054.html"/>
+		 </navPoint>
+		 <navPoint id="w0055" playOrder="69">
+		   <navLabel>
+			   <text>User Interface Architectures</text>
+		   </navLabel>
+		   <content src="w0055.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0056" playOrder="70">
+       <navLabel>
+		     <text>Alan M. Davis</text>
+       </navLabel>
+       <content src="w0056.html"/>
+		 <navPoint id="w0056" playOrder="70">
+		   <navLabel>
+			   <text>Difficulty of Requirements Discovery</text>
+		   </navLabel>
+		   <content src="w0056.html"/>
+		 </navPoint>
+		 <navPoint id="w0057" playOrder="71">
+		   <navLabel>
+			   <text>Multiple Design Approaches</text>
+		   </navLabel>
+		   <content src="w0057.html"/>
+		 </navPoint>
+		 <navPoint id="w0058" playOrder="72">
+		   <navLabel>
+			   <text>Just Enough Requirements</text>
+		   </navLabel>
+		   <content src="w0058.html"/>
+		 </navPoint>
+		 <navPoint id="w0059" playOrder="73">
+		   <navLabel>
+			   <text>Level of Requirements Detail</text>
+		   </navLabel>
+		   <content src="w0059.html"/>
+		 </navPoint>
+		 <navPoint id="w0060" playOrder="74">
+		   <navLabel>
+			   <text>Lists of Requirements</text>
+		   </navLabel>
+		   <content src="w0060.html"/>
+		 </navPoint>
+		 <navPoint id="w0061" playOrder="75">
+		   <navLabel>
+			   <text>Requirements Elicitation, Triage and Specification</text>
+		   </navLabel>
+		   <content src="w0061.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0062" playOrder="76">
+       <navLabel>
+		     <text>Richard Dawkins</text>
+       </navLabel>
+       <content src="w0062.html"/>
+		 <navPoint id="w0062" playOrder="76">
+		   <navLabel>
+			   <text>Evolutionary Drive Towards Complexity</text>
+		   </navLabel>
+		   <content src="w0062.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0063" playOrder="77">
+       <navLabel>
+		     <text>Tom DeMarco and Timothy Lister</text>
+       </navLabel>
+       <content src="w0063.html"/>
+		 <navPoint id="w0063" playOrder="77">
+		   <navLabel>
+			   <text>Belief in Impossible Things</text>
+		   </navLabel>
+		   <content src="w0063.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0064" playOrder="78">
+       <navLabel>
+		     <text>Tom DeMarco, Peter Hruschka, Tim Lister, Steve McMenamin, James Robertson and Suzanne Robertson</text>
+       </navLabel>
+       <content src="w0064.html"/>
+		 <navPoint id="w0064" playOrder="78">
+		   <navLabel>
+			   <text>Template Zombies</text>
+		   </navLabel>
+		   <content src="w0064.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0065" playOrder="79">
+       <navLabel>
+		     <text>DeMarco, Tom, Hruschka, Peter, Lister, Tim, McMenamin, Steve, Robertson, James and Suzanne Robertson</text>
+       </navLabel>
+       <content src="w0065.html"/>
+		 <navPoint id="w0065" playOrder="79">
+		   <navLabel>
+			   <text>Paper Mill</text>
+		   </navLabel>
+		   <content src="w0065.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0066" playOrder="80">
+       <navLabel>
+		     <text>Ken Dymond</text>
+       </navLabel>
+       <content src="w0066.html"/>
+		 <navPoint id="w0066" playOrder="80">
+		   <navLabel>
+			   <text>The Power of Thought</text>
+		   </navLabel>
+		   <content src="w0066.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0067" playOrder="81">
+       <navLabel>
+		     <text>Albert Einstein</text>
+       </navLabel>
+       <content src="w0067.html"/>
+		 <navPoint id="w0067" playOrder="81">
+		   <navLabel>
+			   <text>Simplicity and Complexity</text>
+		   </navLabel>
+		   <content src="w0067.html"/>
+		 </navPoint>
+		 <navPoint id="w0068" playOrder="82">
+		   <navLabel>
+			   <text>Moral Religion</text>
+		   </navLabel>
+		   <content src="w0068.html"/>
+		 </navPoint>
+		 <navPoint id="w0069" playOrder="83">
+		   <navLabel>
+			   <text>This Highest Kind of Religious Feeling</text>
+		   </navLabel>
+		   <content src="w0069.html"/>
+		 </navPoint>
+		 <navPoint id="w0070" playOrder="84">
+		   <navLabel>
+			   <text>To Give in the Same Measure</text>
+		   </navLabel>
+		   <content src="w0070.html"/>
+		 </navPoint>
+		 <navPoint id="w0071" playOrder="85">
+		   <navLabel>
+			   <text>The Supreme Goal of All Theory</text>
+		   </navLabel>
+		   <content src="w0071.html"/>
+		 </navPoint>
+		 <navPoint id="w0072" playOrder="86">
+		   <navLabel>
+			   <text>A Happy Man</text>
+		   </navLabel>
+		   <content src="w0072.html"/>
+		 </navPoint>
+		 <navPoint id="w0073" playOrder="87">
+		   <navLabel>
+			   <text>Only a Human Being</text>
+		   </navLabel>
+		   <content src="w0073.html"/>
+		 </navPoint>
+		 <navPoint id="w0215" playOrder="88">
+		   <navLabel>
+			   <text>Violent Opposition from Mediocre Minds</text>
+		   </navLabel>
+		   <content src="w0215.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0074" playOrder="89">
+       <navLabel>
+		     <text>Ralph Waldo Emerson</text>
+       </navLabel>
+       <content src="w0074.html"/>
+		 <navPoint id="w0074" playOrder="89">
+		   <navLabel>
+			   <text>A foolish consistency</text>
+		   </navLabel>
+		   <content src="w0074.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0075" playOrder="90">
+       <navLabel>
+		     <text>F. Scott Fitzgerald</text>
+       </navLabel>
+       <content src="w0075.html"/>
+		 <navPoint id="w0075" playOrder="90">
+		   <navLabel>
+			   <text>A First-Rate Intelligence</text>
+		   </navLabel>
+		   <content src="w0075.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0076" playOrder="91">
+       <navLabel>
+		     <text>Henry Ford</text>
+       </navLabel>
+       <content src="w0076.html"/>
+		 <navPoint id="w0076" playOrder="91">
+		   <navLabel>
+			   <text>Faster Horses</text>
+		   </navLabel>
+		   <content src="w0076.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0077" playOrder="92">
+       <navLabel>
+		     <text>E. M. Forster</text>
+       </navLabel>
+       <content src="w0077.html"/>
+		 <navPoint id="w0077" playOrder="92">
+		   <navLabel>
+			   <text>Wriggling</text>
+		   </navLabel>
+		   <content src="w0077.html"/>
+		 </navPoint>
+		 <navPoint id="w0078" playOrder="93">
+		   <navLabel>
+			   <text>Only Connect</text>
+		   </navLabel>
+		   <content src="w0078.html"/>
+		 </navPoint>
+		 <navPoint id="w0079" playOrder="94">
+		   <navLabel>
+			   <text>The Rainbow Bridge</text>
+		   </navLabel>
+		   <content src="w0079.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0080" playOrder="95">
+       <navLabel>
+		     <text>Benjamin Franklin</text>
+       </navLabel>
+       <content src="w0080.html"/>
+		 <navPoint id="w0080" playOrder="95">
+		   <navLabel>
+			   <text>Education and Genius</text>
+		   </navLabel>
+		   <content src="w0080.html"/>
+		 </navPoint>
+		 <navPoint id="w0081" playOrder="96">
+		   <navLabel>
+			   <text>Every Body cries, a Union is absolutely necessary</text>
+		   </navLabel>
+		   <content src="w0081.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0082" playOrder="97">
+       <navLabel>
+		     <text>John Kenneth Galbraith</text>
+       </navLabel>
+       <content src="w0082.html"/>
+		 <navPoint id="w0082" playOrder="97">
+		   <navLabel>
+			   <text>Conventional Views</text>
+		   </navLabel>
+		   <content src="w0082.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0083" playOrder="98">
+       <navLabel>
+		     <text>Tom Gilb</text>
+       </navLabel>
+       <content src="w0083.html"/>
+		 <navPoint id="w0083" playOrder="98">
+		   <navLabel>
+			   <text>Underlying Intent of Process Improvement</text>
+		   </navLabel>
+		   <content src="w0083.html"/>
+		 </navPoint>
+		 <navPoint id="w0084" playOrder="99">
+		   <navLabel>
+			   <text>Software more than Code</text>
+		   </navLabel>
+		   <content src="w0084.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0085" playOrder="100">
+       <navLabel>
+		     <text>Robert L. Glass</text>
+       </navLabel>
+       <content src="w0085.html"/>
+		 <navPoint id="w0085" playOrder="100">
+		   <navLabel>
+			   <text>Rigorous Software Inspections</text>
+		   </navLabel>
+		   <content src="w0085.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0086" playOrder="101">
+       <navLabel>
+		     <text>John Guillebaud</text>
+       </navLabel>
+       <content src="w0086.html"/>
+		 <navPoint id="w0086" playOrder="101">
+		   <navLabel>
+			   <text>Climate Changers</text>
+		   </navLabel>
+		   <content src="w0086.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0087" playOrder="102">
+       <navLabel>
+		     <text>Dashiell Hammett</text>
+       </navLabel>
+       <content src="w0087.html"/>
+		 <navPoint id="w0087" playOrder="102">
+		   <navLabel>
+			   <text>Thinking's a Dizzy Business</text>
+		   </navLabel>
+		   <content src="w0087.html"/>
+		 </navPoint>
+		 <navPoint id="w0088" playOrder="103">
+		   <navLabel>
+			   <text>Successful Planning</text>
+		   </navLabel>
+		   <content src="w0088.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0089" playOrder="104">
+       <navLabel>
+		     <text>Sydney Harris</text>
+       </navLabel>
+       <content src="w0089.html"/>
+		 <navPoint id="w0089" playOrder="104">
+		   <navLabel>
+			   <text>The Change Dilemma</text>
+		   </navLabel>
+		   <content src="w0089.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0090" playOrder="105">
+       <navLabel>
+		     <text>Paul Heckel</text>
+       </navLabel>
+       <content src="w0090.html"/>
+		 <navPoint id="w0090" playOrder="105">
+		   <navLabel>
+			   <text>Software Designer as Communications Artist</text>
+		   </navLabel>
+		   <content src="w0090.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0091" playOrder="106">
+       <navLabel>
+		     <text>Jim Highsmith</text>
+       </navLabel>
+       <content src="w0091.html"/>
+		 <navPoint id="w0091" playOrder="106">
+		   <navLabel>
+			   <text>Value of Coding and Testing</text>
+		   </navLabel>
+		   <content src="w0091.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0092" playOrder="107">
+       <navLabel>
+		     <text>Watts Humphrey</text>
+       </navLabel>
+       <content src="w0092.html"/>
+		 <navPoint id="w0092" playOrder="107">
+		   <navLabel>
+			   <text>Control Over Plans and Commitments</text>
+		   </navLabel>
+		   <content src="w0092.html"/>
+		 </navPoint>
+		 <navPoint id="w0093" playOrder="108">
+		   <navLabel>
+			   <text>Key Software Problems</text>
+		   </navLabel>
+		   <content src="w0093.html"/>
+		 </navPoint>
+		 <navPoint id="w0094" playOrder="109">
+		   <navLabel>
+			   <text>Magic Answers to Software Crisis</text>
+		   </navLabel>
+		   <content src="w0094.html"/>
+		 </navPoint>
+		 <navPoint id="w0095" playOrder="110">
+		   <navLabel>
+			   <text>Starting with Firm Requirements</text>
+		   </navLabel>
+		   <content src="w0095.html"/>
+		 </navPoint>
+		 <navPoint id="w0096" playOrder="111">
+		   <navLabel>
+			   <text>Talented People</text>
+		   </navLabel>
+		   <content src="w0096.html"/>
+		 </navPoint>
+		 <navPoint id="w0097" playOrder="112">
+		   <navLabel>
+			   <text>Herding Software Engineers</text>
+		   </navLabel>
+		   <content src="w0097.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0225" playOrder="113">
+       <navLabel>
+		     <text>Mark Hurst</text>
+       </navLabel>
+       <content src="w0225.html"/>
+		 <navPoint id="w0225" playOrder="113">
+		   <navLabel>
+			   <text>Technology and Productivity</text>
+		   </navLabel>
+		   <content src="w0225.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0098" playOrder="114">
+       <navLabel>
+		     <text>Michael Innes</text>
+       </navLabel>
+       <content src="w0098.html"/>
+		 <navPoint id="w0098" playOrder="114">
+		   <navLabel>
+			   <text>Merely a Muddle</text>
+		   </navLabel>
+		   <content src="w0098.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0099" playOrder="115">
+       <navLabel>
+		     <text>Thomas Jefferson</text>
+       </navLabel>
+       <content src="w0099.html"/>
+		 <navPoint id="w0099" playOrder="115">
+		   <navLabel>
+			   <text>Unintelligible Propositions</text>
+		   </navLabel>
+		   <content src="w0099.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0100" playOrder="116">
+       <navLabel>
+		     <text>Scott Jenson</text>
+       </navLabel>
+       <content src="w0100.html"/>
+		 <navPoint id="w0100" playOrder="116">
+		   <navLabel>
+			   <text>A Simplicity Shift</text>
+		   </navLabel>
+		   <content src="w0100.html"/>
+		 </navPoint>
+		 <navPoint id="w0101" playOrder="117">
+		   <navLabel>
+			   <text>Simplicity as a Design Goal</text>
+		   </navLabel>
+		   <content src="w0101.html"/>
+		 </navPoint>
+		 <navPoint id="w0102" playOrder="118">
+		   <navLabel>
+			   <text>User Interfaces Don't Exist</text>
+		   </navLabel>
+		   <content src="w0102.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0103" playOrder="119">
+       <navLabel>
+		     <text>Steve Jobs</text>
+       </navLabel>
+       <content src="w0103.html"/>
+		 <navPoint id="w0103" playOrder="119">
+		   <navLabel>
+			   <text>People Don't Know What They Want Until You Show It To Them</text>
+		   </navLabel>
+		   <content src="w0103.html"/>
+		 </navPoint>
+		 <navPoint id="w0104" playOrder="120">
+		   <navLabel>
+			   <text>Design is the fundamental soul of a human-made creation</text>
+		   </navLabel>
+		   <content src="w0104.html"/>
+		 </navPoint>
+		 <navPoint id="w0105" playOrder="121">
+		   <navLabel>
+			   <text>The Underlying Principle of the Problem</text>
+		   </navLabel>
+		   <content src="w0105.html"/>
+		 </navPoint>
+		 <navPoint id="w0106" playOrder="122">
+		   <navLabel>
+			   <text>Where the Puck is Going to Be</text>
+		   </navLabel>
+		   <content src="w0106.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0107" playOrder="123">
+       <navLabel>
+		     <text>Alan Kay</text>
+       </navLabel>
+       <content src="w0107.html"/>
+		 <navPoint id="w0107" playOrder="123">
+		   <navLabel>
+			   <text>Simple Things Should be Simple</text>
+		   </navLabel>
+		   <content src="w0107.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0108" playOrder="124">
+       <navLabel>
+		     <text>Beverly Kaye and Sharon Jordan-Evans</text>
+       </navLabel>
+       <content src="w0108.html"/>
+		 <navPoint id="w0108" playOrder="124">
+		   <navLabel>
+			   <text>Satisfied Employees are In the Know</text>
+		   </navLabel>
+		   <content src="w0108.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0109" playOrder="125">
+       <navLabel>
+		     <text>Eamonn Kelly</text>
+       </navLabel>
+       <content src="w0109.html"/>
+		 <navPoint id="w0109" playOrder="125">
+		   <navLabel>
+			   <text>The Fragile Constructs of History</text>
+		   </navLabel>
+		   <content src="w0109.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0110" playOrder="126">
+       <navLabel>
+		     <text>John F. Kennedy</text>
+       </navLabel>
+       <content src="w0110.html"/>
+		 <navPoint id="w0110" playOrder="126">
+		   <navLabel>
+			   <text>The Discomfort of Thought</text>
+		   </navLabel>
+		   <content src="w0110.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0111" playOrder="127">
+       <navLabel>
+		     <text>Martin Luther King Jr.</text>
+       </navLabel>
+       <content src="w0111.html"/>
+		 <navPoint id="w0111" playOrder="127">
+		   <navLabel>
+			   <text>Ends for which We Live</text>
+		   </navLabel>
+		   <content src="w0111.html"/>
+		 </navPoint>
+		 <navPoint id="w0112" playOrder="128">
+		   <navLabel>
+			   <text>Ten thousand fools proclaim themselves</text>
+		   </navLabel>
+		   <content src="w0112.html"/>
+		 </navPoint>
+		 <navPoint id="w0113" playOrder="129">
+		   <navLabel>
+			   <text>The Arc of History</text>
+		   </navLabel>
+		   <content src="w0113.html"/>
+		 </navPoint>
+		 <navPoint id="w0114" playOrder="130">
+		   <navLabel>
+			   <text>Unarmed Truth and Unconditional Love</text>
+		   </navLabel>
+		   <content src="w0114.html"/>
+		 </navPoint>
+		 <navPoint id="w0115" playOrder="131">
+		   <navLabel>
+			   <text>Single Garment of Destiny</text>
+		   </navLabel>
+		   <content src="w0115.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0116" playOrder="132">
+       <navLabel>
+		     <text>Donald Knuth</text>
+       </navLabel>
+       <content src="w0116.html"/>
+		 <navPoint id="w0116" playOrder="132">
+		   <navLabel>
+			   <text>Aesthetics of Programming</text>
+		   </navLabel>
+		   <content src="w0116.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0117" playOrder="133">
+       <navLabel>
+		     <text>Benjamin L. Kovitz</text>
+       </navLabel>
+       <content src="w0117.html"/>
+		 <navPoint id="w0117" playOrder="133">
+		   <navLabel>
+			   <text>Design Patterns</text>
+		   </navLabel>
+		   <content src="w0117.html"/>
+		 </navPoint>
+		 <navPoint id="w0118" playOrder="134">
+		   <navLabel>
+			   <text>Solution Reuse</text>
+		   </navLabel>
+		   <content src="w0118.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0217" playOrder="135">
+       <navLabel>
+		     <text>John Lennon</text>
+       </navLabel>
+       <content src="w0217.html"/>
+		 <navPoint id="w0217" playOrder="135">
+		   <navLabel>
+			   <text>I'm a Record Fan</text>
+		   </navLabel>
+		   <content src="w0217.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0119" playOrder="136">
+       <navLabel>
+		     <text>Bob Lewis</text>
+       </navLabel>
+       <content src="w0119.html"/>
+		 <navPoint id="w0119" playOrder="136">
+		   <navLabel>
+			   <text>Extensible Systems</text>
+		   </navLabel>
+		   <content src="w0119.html"/>
+		 </navPoint>
+		 <navPoint id="w0120" playOrder="137">
+		   <navLabel>
+			   <text>Good Mission Statements</text>
+		   </navLabel>
+		   <content src="w0120.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0121" playOrder="138">
+       <navLabel>
+		     <text>Peter van der Linden</text>
+       </navLabel>
+       <content src="w0121.html"/>
+		 <navPoint id="w0121" playOrder="138">
+		   <navLabel>
+			   <text>Java</text>
+		   </navLabel>
+		   <content src="w0121.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0122" playOrder="139">
+       <navLabel>
+		     <text>Steve Lohr</text>
+       </navLabel>
+       <content src="w0122.html"/>
+		 <navPoint id="w0122" playOrder="139">
+		   <navLabel>
+			   <text>Computer Programming Remains a Black Art</text>
+		   </navLabel>
+		   <content src="w0122.html"/>
+		 </navPoint>
+		 <navPoint id="w0123" playOrder="140">
+		   <navLabel>
+			   <text>Serviceable Things, But Not Great Things</text>
+		   </navLabel>
+		   <content src="w0123.html"/>
+		 </navPoint>
+		 <navPoint id="w0124" playOrder="141">
+		   <navLabel>
+			   <text>Software Much More Plastic Than Hardware</text>
+		   </navLabel>
+		   <content src="w0124.html"/>
+		 </navPoint>
+		 <navPoint id="w0125" playOrder="142">
+		   <navLabel>
+			   <text>The Craftsman's Satisfactions</text>
+		   </navLabel>
+		   <content src="w0125.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0126" playOrder="143">
+       <navLabel>
+		     <text>Michael Lopp</text>
+       </navLabel>
+       <content src="w0126.html"/>
+		 <navPoint id="w0126" playOrder="143">
+		   <navLabel>
+			   <text>Delegation is a Slippery Slope</text>
+		   </navLabel>
+		   <content src="w0126.html"/>
+		 </navPoint>
+		 <navPoint id="w0127" playOrder="144">
+		   <navLabel>
+			   <text>Involve the Team in Every Decision</text>
+		   </navLabel>
+		   <content src="w0127.html"/>
+		 </navPoint>
+		 <navPoint id="w0128" playOrder="145">
+		   <navLabel>
+			   <text>Managers Can't Forget How to Develop Software</text>
+		   </navLabel>
+		   <content src="w0128.html"/>
+		 </navPoint>
+		 <navPoint id="w0129" playOrder="146">
+		   <navLabel>
+			   <text>Once-a-week Meetings</text>
+		   </navLabel>
+		   <content src="w0129.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0130" playOrder="147">
+       <navLabel>
+		     <text>Wynton Marsalis</text>
+       </navLabel>
+       <content src="w0130.html"/>
+		 <navPoint id="w0130" playOrder="147">
+		   <navLabel>
+			   <text>Integrity and Conviction</text>
+		   </navLabel>
+		   <content src="w0130.html"/>
+		 </navPoint>
+		 <navPoint id="w0131" playOrder="148">
+		   <navLabel>
+			   <text>Inextricably Linked in Freedom</text>
+		   </navLabel>
+		   <content src="w0131.html"/>
+		 </navPoint>
+		 <navPoint id="w0132" playOrder="149">
+		   <navLabel>
+			   <text>Moving an Art Form Forward</text>
+		   </navLabel>
+		   <content src="w0132.html"/>
+		 </navPoint>
+		 <navPoint id="w0133" playOrder="150">
+		   <navLabel>
+			   <text>The Challenge of Swing</text>
+		   </navLabel>
+		   <content src="w0133.html"/>
+		 </navPoint>
+		 <navPoint id="w0134" playOrder="151">
+		   <navLabel>
+			   <text>Balance is Required to Maintain Democracy</text>
+		   </navLabel>
+		   <content src="w0134.html"/>
+		 </navPoint>
+		 <navPoint id="w0135" playOrder="152">
+		   <navLabel>
+			   <text>The Philosophy of Jazz</text>
+		   </navLabel>
+		   <content src="w0135.html"/>
+		 </navPoint>
+		 <navPoint id="w0136" playOrder="153">
+		   <navLabel>
+			   <text>The Power of Art</text>
+		   </navLabel>
+		   <content src="w0136.html"/>
+		 </navPoint>
+		 <navPoint id="w0137" playOrder="154">
+		   <navLabel>
+			   <text>The Undisputed Sovereignty of the Human Being</text>
+		   </navLabel>
+		   <content src="w0137.html"/>
+		 </navPoint>
+		 <navPoint id="w0138" playOrder="155">
+		   <navLabel>
+			   <text>Their Job was Inventing Music</text>
+		   </navLabel>
+		   <content src="w0138.html"/>
+		 </navPoint>
+		 <navPoint id="w0208" playOrder="156">
+		   <navLabel>
+			   <text>The Love of What We are Doing</text>
+		   </navLabel>
+		   <content src="w0208.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0139" playOrder="157">
+       <navLabel>
+		     <text>Groucho Marx</text>
+       </navLabel>
+       <content src="w0139.html"/>
+		 <navPoint id="w0139" playOrder="157">
+		   <navLabel>
+			   <text>A book is a man's best friend</text>
+		   </navLabel>
+		   <content src="w0139.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0224" playOrder="158">
+       <navLabel>
+		     <text>W. Somerset Maugham</text>
+       </navLabel>
+       <content src="w0224.html"/>
+		 <navPoint id="w0224" playOrder="158">
+		   <navLabel>
+			   <text>Dying is a very dull, dreary affair</text>
+		   </navLabel>
+		   <content src="w0224.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0140" playOrder="159">
+       <navLabel>
+		     <text>Margaret Mead</text>
+       </navLabel>
+       <content src="w0140.html"/>
+		 <navPoint id="w0140" playOrder="159">
+		   <navLabel>
+			   <text>Changing the World</text>
+		   </navLabel>
+		   <content src="w0140.html"/>
+		 </navPoint>
+		 <navPoint id="w0141" playOrder="160">
+		   <navLabel>
+			   <text>Quality of Children vs. Quantity</text>
+		   </navLabel>
+		   <content src="w0141.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0142" playOrder="161">
+       <navLabel>
+		     <text>H. L. Mencken</text>
+       </navLabel>
+       <content src="w0142.html"/>
+		 <navPoint id="w0142" playOrder="161">
+		   <navLabel>
+			   <text>Easy Solutions</text>
+		   </navLabel>
+		   <content src="w0142.html"/>
+		 </navPoint>
+		 <navPoint id="w0143" playOrder="162">
+		   <navLabel>
+			   <text>We Must Respect the Other Fellow's Religion</text>
+		   </navLabel>
+		   <content src="w0143.html"/>
+		 </navPoint>
+		 <navPoint id="w0144" playOrder="163">
+		   <navLabel>
+			   <text>Every Third American</text>
+		   </navLabel>
+		   <content src="w0144.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0145" playOrder="164">
+       <navLabel>
+		     <text>John Stuart Mill</text>
+       </navLabel>
+       <content src="w0145.html"/>
+		 <navPoint id="w0145" playOrder="164">
+		   <navLabel>
+			   <text>Intellectual Debate</text>
+		   </navLabel>
+		   <content src="w0145.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0146" playOrder="165">
+       <navLabel>
+		     <text>Henry Miller</text>
+       </navLabel>
+       <content src="w0146.html"/>
+		 <navPoint id="w0146" playOrder="165">
+		   <navLabel>
+			   <text>Enemies of Art and Artist</text>
+		   </navLabel>
+		   <content src="w0146.html"/>
+		 </navPoint>
+		 <navPoint id="w0147" playOrder="166">
+		   <navLabel>
+			   <text>Plot, Plan, Calculate or Postulate</text>
+		   </navLabel>
+		   <content src="w0147.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0209" playOrder="167">
+       <navLabel>
+		     <text>Teruyuki Minoura</text>
+       </navLabel>
+       <content src="w0209.html"/>
+		 <navPoint id="w0209" playOrder="167">
+		   <navLabel>
+			   <text>Stopping the Production Line</text>
+		   </navLabel>
+		   <content src="w0209.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0148" playOrder="168">
+       <navLabel>
+		     <text>Henry Mintzberg</text>
+       </navLabel>
+       <content src="w0148.html"/>
+		 <navPoint id="w0148" playOrder="168">
+		   <navLabel>
+			   <text>Management Intuition</text>
+		   </navLabel>
+		   <content src="w0148.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0149" playOrder="169">
+       <navLabel>
+		     <text>James M. Morgan and Jeffrey K. Liker</text>
+       </navLabel>
+       <content src="w0149.html"/>
+		 <navPoint id="w0149" playOrder="169">
+		   <navLabel>
+			   <text>Leaders are the Primary Source of Energy</text>
+		   </navLabel>
+		   <content src="w0149.html"/>
+		 </navPoint>
+		 <navPoint id="w0150" playOrder="170">
+		   <navLabel>
+			   <text>Role of Managers</text>
+		   </navLabel>
+		   <content src="w0150.html"/>
+		 </navPoint>
+		 <navPoint id="w0151" playOrder="171">
+		   <navLabel>
+			   <text>The Toyota Chief Engineer</text>
+		   </navLabel>
+		   <content src="w0151.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0152" playOrder="172">
+       <navLabel>
+		     <text>Gilbert Murray</text>
+       </navLabel>
+       <content src="w0152.html"/>
+		 <navPoint id="w0152" playOrder="172">
+		   <navLabel>
+			   <text>Hard Discipline of Reasonableness and Honesty</text>
+		   </navLabel>
+		   <content src="w0152.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0153" playOrder="173">
+       <navLabel>
+		     <text>Jakob Nielsen</text>
+       </navLabel>
+       <content src="w0153.html"/>
+		 <navPoint id="w0153" playOrder="173">
+		   <navLabel>
+			   <text>Intranet Maintenance</text>
+		   </navLabel>
+		   <content src="w0153.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0154" playOrder="174">
+       <navLabel>
+		     <text>Barack Obama</text>
+       </navLabel>
+       <content src="w0154.html"/>
+		 <navPoint id="w0154" playOrder="174">
+		   <navLabel>
+			   <text>The Makers of Things</text>
+		   </navLabel>
+		   <content src="w0154.html"/>
+		 </navPoint>
+		 <navPoint id="w0155" playOrder="175">
+		   <navLabel>
+			   <text>A Return to These Truths</text>
+		   </navLabel>
+		   <content src="w0155.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0156" playOrder="176">
+       <navLabel>
+		     <text>Ray Oldenburg</text>
+       </navLabel>
+       <content src="w0156.html"/>
+		 <navPoint id="w0156" playOrder="176">
+		   <navLabel>
+			   <text>The Third Place</text>
+		   </navLabel>
+		   <content src="w0156.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0157" playOrder="177">
+       <navLabel>
+		     <text>Tom Peters and Robert H. Waterman Jr.</text>
+       </navLabel>
+       <content src="w0157.html"/>
+		 <navPoint id="w0157" playOrder="177">
+		   <navLabel>
+			   <text>Freedom of Expression in Business</text>
+		   </navLabel>
+		   <content src="w0157.html"/>
+		 </navPoint>
+		 <navPoint id="w0158" playOrder="178">
+		   <navLabel>
+			   <text>We Like to Think of Ourselves as Winners</text>
+		   </navLabel>
+		   <content src="w0158.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0159" playOrder="179">
+       <navLabel>
+		     <text>Mary Poppendieck and Tom Poppendieck</text>
+       </navLabel>
+       <content src="w0159.html"/>
+		 <navPoint id="w0159" playOrder="179">
+		   <navLabel>
+			   <text>Puzzling Aspect of Waterfall Development</text>
+		   </navLabel>
+		   <content src="w0159.html"/>
+		 </navPoint>
+		 <navPoint id="w0160" playOrder="180">
+		   <navLabel>
+			   <text>The Most Fundamental Lean Measurement is Cycle Time</text>
+		   </navLabel>
+		   <content src="w0160.html"/>
+		 </navPoint>
+		 <navPoint id="w0161" playOrder="181">
+		   <navLabel>
+			   <text>Evolving System Structures</text>
+		   </navLabel>
+		   <content src="w0161.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0162" playOrder="182">
+       <navLabel>
+		     <text>Jon Postel</text>
+       </navLabel>
+       <content src="w0162.html"/>
+		 <navPoint id="w0162" playOrder="182">
+		   <navLabel>
+			   <text>Postel’s Law</text>
+		   </navLabel>
+		   <content src="w0162.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0163" playOrder="183">
+       <navLabel>
+		     <text>Eric S. Raymond</text>
+       </navLabel>
+       <content src="w0163.html"/>
+		 <navPoint id="w0163" playOrder="183">
+		   <navLabel>
+			   <text>Open Source Development Styles</text>
+		   </navLabel>
+		   <content src="w0163.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0218" playOrder="184">
+       <navLabel>
+		     <text>Lou Reed</text>
+       </navLabel>
+       <content src="w0218.html"/>
+		 <navPoint id="w0218" playOrder="184">
+		   <navLabel>
+			   <text>Her Life Was Saved by Rock and Roll</text>
+		   </navLabel>
+		   <content src="w0218.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0216" playOrder="185">
+       <navLabel>
+		     <text>Robert Riskin</text>
+       </navLabel>
+       <content src="w0216.html"/>
+		 <navPoint id="w0216" playOrder="185">
+		   <navLabel>
+			   <text>Ism-mania</text>
+		   </navLabel>
+		   <content src="w0216.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0164" playOrder="186">
+       <navLabel>
+		     <text>Tom Robbins</text>
+       </navLabel>
+       <content src="w0164.html"/>
+		 <navPoint id="w0164" playOrder="186">
+		   <navLabel>
+			   <text>The World is a Wonderfully Weird Place</text>
+		   </navLabel>
+		   <content src="w0164.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0165" playOrder="187">
+       <navLabel>
+		     <text>Suzanne Robertson and James Robertson</text>
+       </navLabel>
+       <content src="w0165.html"/>
+		 <navPoint id="w0165" playOrder="187">
+		   <navLabel>
+			   <text>Active Requirements Analysis</text>
+		   </navLabel>
+		   <content src="w0165.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0166" playOrder="188">
+       <navLabel>
+		     <text>Bertrand Russell</text>
+       </navLabel>
+       <content src="w0166.html"/>
+		 <navPoint id="w0166" playOrder="188">
+		   <navLabel>
+			   <text>Men Fear Thought</text>
+		   </navLabel>
+		   <content src="w0166.html"/>
+		 </navPoint>
+		 <navPoint id="w0167" playOrder="189">
+		   <navLabel>
+			   <text>The Celestial Teapot</text>
+		   </navLabel>
+		   <content src="w0167.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0168" playOrder="190">
+       <navLabel>
+		     <text>Carl Sagan and Ann Druyan</text>
+       </navLabel>
+       <content src="w0168.html"/>
+		 <navPoint id="w0168" playOrder="190">
+		   <navLabel>
+			   <text>Apes and Humans</text>
+		   </navLabel>
+		   <content src="w0168.html"/>
+		 </navPoint>
+		 <navPoint id="w0169" playOrder="191">
+		   <navLabel>
+			   <text>Chimps and Humans</text>
+		   </navLabel>
+		   <content src="w0169.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0170" playOrder="192">
+       <navLabel>
+		     <text>George Santayana</text>
+       </navLabel>
+       <content src="w0170.html"/>
+		 <navPoint id="w0170" playOrder="192">
+		   <navLabel>
+			   <text>Progress Depends on Retentiveness</text>
+		   </navLabel>
+		   <content src="w0170.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0171" playOrder="193">
+       <navLabel>
+		     <text>Albert Schweitzer</text>
+       </navLabel>
+       <content src="w0171.html"/>
+		 <navPoint id="w0171" playOrder="193">
+		   <navLabel>
+			   <text>Small and Obscure Deeds</text>
+		   </navLabel>
+		   <content src="w0171.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0172" playOrder="194">
+       <navLabel>
+		     <text>Peter Senge</text>
+       </navLabel>
+       <content src="w0172.html"/>
+		 <navPoint id="w0172" playOrder="194">
+		   <navLabel>
+			   <text>Learning from Experience</text>
+		   </navLabel>
+		   <content src="w0172.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0173" playOrder="195">
+       <navLabel>
+		     <text>George Bernard Shaw</text>
+       </navLabel>
+       <content src="w0173.html"/>
+		 <navPoint id="w0173" playOrder="195">
+		   <navLabel>
+			   <text>I Dream Things That Never Were</text>
+		   </navLabel>
+		   <content src="w0173.html"/>
+		 </navPoint>
+		 <navPoint id="w0174" playOrder="196">
+		   <navLabel>
+			   <text>Progress Depends on the Unreasonable Man</text>
+		   </navLabel>
+		   <content src="w0174.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0175" playOrder="197">
+       <navLabel>
+		     <text>Baruch Spinoza</text>
+       </navLabel>
+       <content src="w0175.html"/>
+		 <navPoint id="w0175" playOrder="197">
+		   <navLabel>
+			   <text>Notions to Explain Nature</text>
+		   </navLabel>
+		   <content src="w0175.html"/>
+		 </navPoint>
+		 <navPoint id="w0176" playOrder="198">
+		   <navLabel>
+			   <text>Freedom of Judgment</text>
+		   </navLabel>
+		   <content src="w0176.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0177" playOrder="199">
+       <navLabel>
+		     <text>Joel Spolsky</text>
+       </navLabel>
+       <content src="w0177.html"/>
+		 <navPoint id="w0177" playOrder="199">
+		   <navLabel>
+			   <text>Deferred Design Decisions</text>
+		   </navLabel>
+		   <content src="w0177.html"/>
+		 </navPoint>
+		 <navPoint id="w0178" playOrder="200">
+		   <navLabel>
+			   <text>Desirable Employee Attributes</text>
+		   </navLabel>
+		   <content src="w0178.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0179" playOrder="201">
+       <navLabel>
+		     <text>Bruce Springsteen</text>
+       </navLabel>
+       <content src="w0179.html"/>
+		 <navPoint id="w0179" playOrder="201">
+		   <navLabel>
+			   <text>A Long Conversation</text>
+		   </navLabel>
+		   <content src="w0179.html"/>
+		 </navPoint>
+		 <navPoint id="w0180" playOrder="202">
+		   <navLabel>
+			   <text>The Trick in Keeping Bands Together</text>
+		   </navLabel>
+		   <content src="w0180.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0181" playOrder="203">
+       <navLabel>
+		     <text>Dennis Stauffer</text>
+       </navLabel>
+       <content src="w0181.html"/>
+		 <navPoint id="w0181" playOrder="203">
+		   <navLabel>
+			   <text>The Columbia Disaster</text>
+		   </navLabel>
+		   <content src="w0181.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0182" playOrder="204">
+       <navLabel>
+		     <text>Matthew Stewart</text>
+       </navLabel>
+       <content src="w0182.html"/>
+		 <navPoint id="w0182" playOrder="204">
+		   <navLabel>
+			   <text>A Work Ethic Gone Mad</text>
+		   </navLabel>
+		   <content src="w0182.html"/>
+		 </navPoint>
+		 <navPoint id="w0183" playOrder="205">
+		   <navLabel>
+			   <text>Behind the Times</text>
+		   </navLabel>
+		   <content src="w0183.html"/>
+		 </navPoint>
+		 <navPoint id="w0184" playOrder="206">
+		   <navLabel>
+			   <text>Preparing Managers to Manage</text>
+		   </navLabel>
+		   <content src="w0184.html"/>
+		 </navPoint>
+		 <navPoint id="w0185" playOrder="207">
+		   <navLabel>
+			   <text>Relieving Ignorance</text>
+		   </navLabel>
+		   <content src="w0185.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0186" playOrder="208">
+       <navLabel>
+		     <text>Bruce Tognazzini</text>
+       </navLabel>
+       <content src="w0186.html"/>
+		 <navPoint id="w0186" playOrder="208">
+		   <navLabel>
+			   <text>A Word is Worth a Thousand Pictures</text>
+		   </navLabel>
+		   <content src="w0186.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0187" playOrder="209">
+       <navLabel>
+		     <text>Robert Townsend</text>
+       </navLabel>
+       <content src="w0187.html"/>
+		 <navPoint id="w0187" playOrder="209">
+		   <navLabel>
+			   <text>Reorganizing</text>
+		   </navLabel>
+		   <content src="w0187.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0188" playOrder="210">
+       <navLabel>
+		     <text>Mark Twain</text>
+       </navLabel>
+       <content src="w0188.html"/>
+		 <navPoint id="w0188" playOrder="210">
+		   <navLabel>
+			   <text>Do the Right Thing</text>
+		   </navLabel>
+		   <content src="w0188.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0189" playOrder="211">
+       <navLabel>
+		     <text>John Updike</text>
+       </navLabel>
+       <content src="w0189.html"/>
+		 <navPoint id="w0189" playOrder="211">
+		   <navLabel>
+			   <text>Dreams Come True</text>
+		   </navLabel>
+		   <content src="w0189.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0190" playOrder="212">
+       <navLabel>
+		     <text>Thomas J. Watson, Jr</text>
+       </navLabel>
+       <content src="w0190.html"/>
+		 <navPoint id="w0190" playOrder="212">
+		   <navLabel>
+			   <text>Those Sharp, Scratchy, Harsh, Almost Unpleasant Guys</text>
+		   </navLabel>
+		   <content src="w0190.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0191" playOrder="213">
+       <navLabel>
+		     <text>Gerald Weinberg</text>
+       </navLabel>
+       <content src="w0191.html"/>
+		 <navPoint id="w0191" playOrder="213">
+		   <navLabel>
+			   <text>Elimination of Programmers</text>
+		   </navLabel>
+		   <content src="w0191.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0192" playOrder="214">
+       <navLabel>
+		     <text>Alfred North Whitehead</text>
+       </navLabel>
+       <content src="w0192.html"/>
+		 <navPoint id="w0192" playOrder="214">
+		   <navLabel>
+			   <text>The Art of Progress</text>
+		   </navLabel>
+		   <content src="w0192.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0193" playOrder="215">
+       <navLabel>
+		     <text>Walt Whitman</text>
+       </navLabel>
+       <content src="w0193.html"/>
+		 <navPoint id="w0193" playOrder="215">
+		   <navLabel>
+			   <text>The Loftiest and Purest Art</text>
+		   </navLabel>
+		   <content src="w0193.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0194" playOrder="216">
+       <navLabel>
+		     <text>Ken Wilber</text>
+       </navLabel>
+       <content src="w0194.html"/>
+		 <navPoint id="w0194" playOrder="216">
+		   <navLabel>
+			   <text>Everybody Has Some Important Pieces of the Truth</text>
+		   </navLabel>
+		   <content src="w0194.html"/>
+		 </navPoint>
+		 <navPoint id="w0195" playOrder="217">
+		   <navLabel>
+			   <text>Art and Spirit</text>
+		   </navLabel>
+		   <content src="w0195.html"/>
+		 </navPoint>
+		 <navPoint id="w0196" playOrder="218">
+		   <navLabel>
+			   <text>All the World's Cultures Now Available to Us</text>
+		   </navLabel>
+		   <content src="w0196.html"/>
+		 </navPoint>
+		 <navPoint id="w0197" playOrder="219">
+		   <navLabel>
+			   <text>Levels of Development</text>
+		   </navLabel>
+		   <content src="w0197.html"/>
+		 </navPoint>
+		 <navPoint id="w0198" playOrder="220">
+		   <navLabel>
+			   <text>A Short and Simple List</text>
+		   </navLabel>
+		   <content src="w0198.html"/>
+		 </navPoint>
+		 <navPoint id="w0199" playOrder="221">
+		   <navLabel>
+			   <text>An Integral God</text>
+		   </navLabel>
+		   <content src="w0199.html"/>
+		 </navPoint>
+		 <navPoint id="w0200" playOrder="222">
+		   <navLabel>
+			   <text>Homophobia</text>
+		   </navLabel>
+		   <content src="w0200.html"/>
+		 </navPoint>
+		 <navPoint id="w0201" playOrder="223">
+		   <navLabel>
+			   <text>The Beautiful, the Good and the True</text>
+		   </navLabel>
+		   <content src="w0201.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0210" playOrder="224">
+       <navLabel>
+		     <text>E. O. Wilson</text>
+       </navLabel>
+       <content src="w0210.html"/>
+		 <navPoint id="w0210" playOrder="224">
+		   <navLabel>
+			   <text>The Real Problem of Humanity</text>
+		   </navLabel>
+		   <content src="w0210.html"/>
+		 </navPoint>
+		 <navPoint id="w0211" playOrder="225">
+		   <navLabel>
+			   <text>The Toxic Mix of Religion and Tribalism</text>
+		   </navLabel>
+		   <content src="w0211.html"/>
+		 </navPoint>
+		 <navPoint id="w0212" playOrder="226">
+		   <navLabel>
+			   <text>True Character</text>
+		   </navLabel>
+		   <content src="w0212.html"/>
+		 </navPoint>
+		 <navPoint id="w0213" playOrder="227">
+		   <navLabel>
+			   <text>The Most Dangerous of Devotions</text>
+		   </navLabel>
+		   <content src="w0213.html"/>
+		 </navPoint>
+		 <navPoint id="w0214" playOrder="228">
+		   <navLabel>
+			   <text>A Planet-Sized Problem</text>
+		   </navLabel>
+		   <content src="w0214.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0202" playOrder="229">
+       <navLabel>
+		     <text>Tom Wolfe</text>
+       </navLabel>
+       <content src="w0202.html"/>
+		 <navPoint id="w0202" playOrder="229">
+		   <navLabel>
+			   <text>What You're Missing is the Beat</text>
+		   </navLabel>
+		   <content src="w0202.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0203" playOrder="230">
+       <navLabel>
+		     <text>Jim Womack</text>
+       </navLabel>
+       <content src="w0203.html"/>
+		 <navPoint id="w0203" playOrder="230">
+		   <navLabel>
+			   <text>Lean</text>
+		   </navLabel>
+		   <content src="w0203.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0204" playOrder="231">
+       <navLabel>
+		     <text>Frank Lloyd Wright</text>
+       </navLabel>
+       <content src="w0204.html"/>
+		 <navPoint id="w0204" playOrder="231">
+		   <navLabel>
+			   <text>Price of Success</text>
+		   </navLabel>
+		   <content src="w0204.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="w0205" playOrder="232">
+       <navLabel>
+		     <text>Edward Yourdon</text>
+       </navLabel>
+       <content src="w0205.html"/>
+		 <navPoint id="w0205" playOrder="232">
+		   <navLabel>
+			   <text>No Silver Bullet</text>
+		   </navLabel>
+		   <content src="w0205.html"/>
+		 </navPoint>
+		 <navPoint id="w0206" playOrder="233">
+		   <navLabel>
+			   <text>SEI Maturity Models</text>
+		   </navLabel>
+		   <content src="w0206.html"/>
+		 </navPoint>
+     </navPoint>
+     <navPoint id="index-page" playOrder="234">
+       <navLabel>
+		     <text>Index</text>
+       </navLabel>
+       <content src="index.html"/>
+		 </navPoint>
+  </navMap>
+</ncx>

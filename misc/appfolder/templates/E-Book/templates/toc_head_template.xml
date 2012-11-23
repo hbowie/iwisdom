@@ -1,0 +1,13 @@
+<?output "toc_head.xml"?>
+<?nextrec?>
+  <head>
+    <meta name="dtb:uid" content="=$link$==$path$=/=$title$=.epub"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+     <text>=$Title$=</text>
+  </docTitle>
+<?loop?>
+

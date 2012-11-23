@@ -1,0 +1,223 @@
+<tips>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Welcome to iWisdom
+    </font></h2>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        iWisdom is a desktop application for storing, organizing and displaying small bits of wisdom, such as quotations.
+      </font>
+    </p>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        When first run, iWisdom will show you a collection with one item.
+      </font>
+    </p>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        iWisdom is written in Java, which allows it to be easily run on almost any modern operating system, including Apple's Mac OS X and Microsoft's Windows. Java version 1.5 (aka 5.0) or better is required.
+      </font>
+    </p>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        iWisdom is donationware. 
+      </font>
+    </p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      iWisdom Tips
+    </font></h2>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        This Tips Window will display automatically when iWisdom is first launched, and at every following launch, until you uncheck the box saying "Show tips at startup?". This check box appears at the bottom of this window, and on the application's General Preferences.
+      </font>
+    </p>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        On each successive launch, this Tips Window will show the next tip. You may also navigate through tips at will, as your interests dictate, by clicking on the arrow buttons at the bottom of this window.
+      </font>
+    </p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Help
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The <b>Help</b> Menu contains several useful commands, and it is good to familiarize yourself with them. Most of these will cause information to be displayed in your preferred Web browser. The second section of Help commands will require an active Internet connection.  
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      <b>Reduce Window Size</b> restores the main iWisdom window to its default size and location. Note that this command has a shortcut so that it may be executed even when the iWisdom window is not visible. This command may sometimes prove useful if you use multiple monitors, but occasionally in different configurations. On Windows in particular, this sometimes results in iWisdom opening on a monitor that is no longer present, making it difficult to see.  
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Wisdom File Locations
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The default location for your initial Wisdom collection is in your <b>home directory</b>, then in a folder named <b>Wisdom</b>, then in a folder named <b>iWisdom</b>. This collection will open automatically each time you launch iWisdom.
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      You can create other Wisdom collections by selecting <b>New</b> from the File Menu. You can set one collection to be your primary collection by selecting <b>Information</b> from the File menu and then clicking on the check box to make the current folder your primary collection: your primary collection will then open automatically when launching iWisdom.
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Backing Up and Restoring Quotations
+    </font></h2>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        The File menu contains a <b>Backup</b> command, and a <b>Revert from Backup</b> command. When performing a backup, the file location and name will default to a folder in your current iWisdom folder, and a name containing the current date and time. The <b>Revert from Backup</b> command will default to the same folder.  
+      </font>
+    </p>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        It is recommended that you perform a backup before each <b>Import</b> (see the next tip for info about this) so that you can easily revert to your prior state if the import creates unwanted results. It is also recommended that you perform a backup before installing a new version of iWisdom.   
+      </font>
+    </p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Importing Quotations
+    </font></h2>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        To jump-start your Wisdom collection, select <b>Import</b> from the File menu, then select the Portable Wisdom collection from the Favorites drop-down, then click on Import. (You will need an active Internet connection to import any of the Favorites.)
+      </font>
+    </p>
+    <p>
+      <font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+        iWisdom is able to import wisdom from a number of different formats (including plain text and multiple XML-based formats). When importing, iWisdom will recognize duplicates (based on the actual content of each item's body) and intelligently combine duplicates if they contain differing degrees of detail. See the User Guide for details on the Import command. 
+      </font>
+    </p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Tabs and Windows
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The iWisdom interface consists of a number of <b>windows</b>. The main window shows a split pane. On the left/top you will see your current collection, either in a List or grouped by Categories. On the right/bottom you will see the currently selected piece of wisdom, either in Display mode or in Edit mode. 
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      Opening the Preferences window will allow you to modify a number of the operating characteristics of the program. The Preferences window can be found under the iWisdom menu on the Mac, and under Tools / Options on other operating systems. 
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Tool Bar
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The iWisdom interface also contains a <b>Tool Bar</b> containing a number of <b>Buttons</b>: the "+" and "-" buttons allow you to add a new item or delete an existing one, respectively. The next four buttons move you to the first item in your collection, the next item, the prior item or the last item, again respectively. Two other buttons allow you to quickly add or remove enclosing quotation marks around the Body of a piece of wisdom. The <b>Scan</b> button starts a process of briefly showing each item in your collection on a rotating basis. 
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The following text box allows you to enter a text string you wish to search for. The following button, initially labeled <b>Find</b>, causes the first item containing that text string to be found and displayed. After the first item is found, this button will be relabeled <b>Again</b>, and will then allow you to continue forward through the list of found items. 
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Menus and Keyboard Shortcuts
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      There are also a number of <b>Menus</b> listed across the top. If a command has a keyboard shortcut, then it will be listed as part of the command's menu item. 
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The most commonly used commands are accessible in multiple ways. For example, you may navigate to the first item in the collection by clicking on the Tool Bar Button, or by selecting the command from the Item Menu, or through a keyboard shortcut.
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Your Wisdom List
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The <b>List Tab</b> will list all the items in your collection. You may change the sequence of the items on the List Tab by selecting the appropriate <b>View</b> from the <b>View Menu</b>. You may create a new View in the <b>View Preferences</b>, by clicking on the + sign and then entering the name of your View and its sort fields. 
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Adding and Editing Wisdom
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The Edit Tab allows you to enter or modify information associated with a Wisdom item. To create a new item, click on the "+" Button on the Tool Bar, or select <b>New</b> from the Item Menu.  The data fields to be entered are then split between the Content, Author and Work tabs. 
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      When you are done editing an item, simply click on the Display Tab to leave the Edit Tab and save all your entries to disk.  
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Formatting Wisdom
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      On the Edit Tab, the Body field contains the actual wisdom or quotation. This field may be formatted using common HTML commands. If you wish to use quotation marks, enter normal "straight" quotation marks. For an em dash, use two consecutive hyphens--like this.  
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Wisdom Categories Tip 1
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      For each piece of wisdom, you may enter one or more categories and, for each, one or more sub-categories. Each category level is separated from the next by a forward slash or a period. Each separate category (including sub-categories) is separated from others by a comma.
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      Once a category is established for one piece of wisdom, you may assign it to other pieces of wisdom by selecting the desired category from the drop-down menu. You may do this by scrolling and clicking, or by typing the beginning letters of the desired category and pressing Return/Enter. 
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      If you don't see an appropriate category on the drop-down list, simply type in the new category that you want. Once you complete your edits for that item, your new category will become available the next time you select the drop-down list. 
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Wisdom Categories Tip 2
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      If you decide to stop using a category, simply remove it or change it on all the items to which it has been assigned. The next time you quit and relaunch iWisdom unused categories will disappear from the list.  
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The Categories Tab organizes your collection by Category. Click on a disclosure triangle to view enclosed items and sub-categories. 
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Authors and Source Titles
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      When entering an author, you may select an existing author from the drop-down menu by entering the beginning characters of their name (either first name first or last name first), or by scrolling down the list, then pressing Return/Enter to select the desired author.   
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      Selecting an existing source title may be done in the same way.  
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Book and Author Links
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      On the Edit tab, enter a book's 10-digit ISBN in the Source ID field, to enable access to the book's entry on Amazon.com from the Display tab.  
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      Similarly, entering the Author's name on the Edit tab will allow the author's Wikipedia entry to be accessed from the Display tab.  
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Displaying Wisdom
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The <b>Display Tab</b> allows you to view a piece of wisdom. Click on an author's name to use your Web browser to view the author's entry in Wikipedia. Click on the name of a book to view the books's entry on Amazon.com. 
+    </font></p>
+  </tip>
+  <tip>
+    <h2><font face="Lucida Grande, Verdana, Arial, sans-serif">
+      Sharing Wisdom
+    </font></h2>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      The Transfer command on the Item menu places a complete piece of wisdom on the system clipboard -- in effect, it performs a "copy" on an entire wisdom item. 
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      After performing a Transfer, you may then perform a normal paste in any other application to have the complete item appear there.  
+    </font></p>
+    <p><font size="4" face="Lucida Grande, Verdana, Arial, sans-serif">
+      To reverse the process -- say, after pasting into an e-mail program, and sending the item via e-mail -- select the entire block of formatted text, perform a normal copy in your other program, then perform an Item/Accept within iWisdom to add the item to a different wisdom collection.  
+    </font></p>
+  </tip>
+</tips>

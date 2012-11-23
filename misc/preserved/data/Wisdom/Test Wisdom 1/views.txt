@@ -1,0 +1,7 @@
+viewname	viewselect	viewcompare
+View 1	All	(All,Author,Ascending,Source Type,Ascending,Source,Ascending,Title,Ascending,Rating,Ascending,high)
+By Author	All	(All,Author,Ascending,Title,Ascending,Source,Ascending,Source Type,Ascending,Rating,Ascending,high)
+By Title	All	(All,Title,Ascending,Source Type,Ascending,Source,Ascending,Author,Ascending,Rating,Ascending,high)
+By Author and Title	All	(All,Author,Ascending,Title,Ascending,Source,Ascending,Source Type,Ascending,Rating,Ascending,high)
+By Source	All	(All,Source,Ascending,Source Type,Ascending,Title,Ascending,Author,Ascending,Rating,Ascending,high)
+By Category	All	(All,Category,Ascending,Author,Ascending,Source,Ascending,Title,Ascending,Source Type,Ascending,high)

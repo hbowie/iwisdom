@@ -1,0 +1,29 @@
+<?output "../epub/content.opf"?>
+<?xml version="1.0"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="dcidid" version="2.0">
+
+<?include "content_metadata.xml" copy ?>
+
+   <manifest>
+     <item id="ncx"         href="toc.ncx"                 media-type="application/x-dtbncx+xml" />
+     <item id="css"         href="styles.css"              media-type="text/css" />
+     <item id="title-page"  href="title.html"              media-type="application/xhtml+xml" />
+<?include "content_manifest.xml" copy ?>
+     <item id="index-page"  href="index.html"              media-type="application/xhtml+xml" />
+   </manifest>
+
+   <spine toc="ncx">
+      <itemref idref="title-page" />
+<?nextrec?>
+      <itemref idref="w=$itemid&r4$=" />
+<?loop?>
+			<itemref idref="index-page" />
+   </spine>
+   
+   <guide>
+   	  <reference type="title-page" title="Title Page" href="title.html" />
+   	  <reference type="index"      title="Index"      href="index.html" />
+   </guide>
+
+</package>

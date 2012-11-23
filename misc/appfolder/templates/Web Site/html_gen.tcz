@@ -1,0 +1,55 @@
+module	action	modifier	object	value
+input	set		normalization	0
+input	open	file		#PATH#data/info_export.tab
+template	open	file		#PATH#templates/site_title_template.html
+template	generate			
+template	open	file		#PATH#templates/nav_template.html
+template	generate			
+template	open	file		#PATH#templates/head_template.html
+template	generate			
+template	open	file		#PATH#templates/credits_template.html
+template	generate			
+template	open	file		#PATH#templates/index_template.html
+template	generate			
+template	open	file		#PATH#templates/about_template.html
+template	generate			
+template	open	file		#PATH#templates/search_template.html
+template	generate			
+template	open	file		#PATH#templates/rss_template_1.xml
+template	generate			
+template	open	file		#PATH#templates/random_page_template.html
+template	generate			
+template	open	file		#PATH#templates/footer_template.html
+template	generate			
+input	set		normalization	0
+input	open	file		#PATH#data/export.tab
+sort	add	Ascending	itemid	
+sort	set		params	
+template	open	file		#PATH#templates/wisdom_page_template.html
+template	generate			
+template	open	file		#PATH#templates/navigate_template.js
+template	generate			
+sort	clear			
+sort	set		params	
+sort	add	Ascending	authorlastnamefirst	
+sort	add	Ascending	title	
+sort	set		params	
+template	open	file		#PATH#templates/author_page_template.html
+template	generate			
+template	open	file		#PATH#templates/author_index_template.html
+template	generate			
+sort	clear			
+sort	set		params	
+sort	add	Descending	dateadded	
+sort	set		params	
+template	open	file		#PATH#templates/rss_template_2.xml
+template	generate			
+input	set		normalization	0
+input	open	file		#PATH#data/split_export.tab
+sort	add	Ascending	category	
+sort	add	Ascending	title	
+sort	set		params	
+template	open	file		#PATH#templates/tag_page_template.html
+template	generate			
+template	open	file		#PATH#templates/tag_index_template.html
+template	generate			

@@ -1,0 +1,28 @@
+<?output "../tags/index.html"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+<?include "head.html" copy ?>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Categories</h1>
+      </div>
+<?include "nav.html" copy ?>
+      <div id="content">
+        <div id="indexlist">
+          <ul>
+<?nextrec?>
+<?definegroup 1 "=$category$=" ?>
+<?ifnewgroup 1 ?>
+            <li><a href="=$linkedtags$=">
+              =$category$=</a></li>
+<?endif?>
+<?loop?>
+          </ul>
+        </div>
+      </div> <!-- end content -->
+    </div> <!-- end container -->
+  </body>
+</html>

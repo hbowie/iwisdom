@@ -1,0 +1,259 @@
+/* Styles that apply to all tags */
+
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+body
+{
+	background-color: #ddd; /* Background color */
+	color: #222;            /* Foreground color used for text */
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	/* line-height: 1.8em; */
+	margin: 0;              /* Amount of negative space around the outside of the body */
+	padding: 0;             /* Amount of negative space around the inside of the body */
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    border-bottom: 1px solid #666;
+    color: #222;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+} 
+
+#header h1 a {
+		color: #222;
+    text-decoration: none;
+}
+
+#header div.leftButton {
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    height: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    text-shadow: rgba(0,0,0,0.6) 0px -1px 0px;
+    line-height: 28px;
+    border-width: 0 8px 0 8px;
+    -webkit-border-image: url(images/button.png) 0 8 0 8;
+}
+
+#header div.pressed {
+    -webkit-border-image: url(images/button_clicked.png) 0 8 0 8;
+}
+
+#navlinks ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+#navlinks ul li a {
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -1px;
+    padding: 12px 10px;
+    text-decoration: none;
+}
+
+#navlinks ul li:first-child a {
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+}
+
+#navlinks ul li:last-child a {
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+}
+
+#navlinks ul.hide {
+    display: none;
+}
+
+#indexlist ul
+{
+	list-style: none;
+	margin: 10px 0 10px 0;
+	padding: 0;
+}
+
+#indexlist ul li a
+{
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	color: #222;
+	display: block;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+
+#content, #sidebar {
+    padding: 10px;
+}
+
+#content {
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+#wisdom a {
+	text-decoration: none;
+}
+
+#wisdom a:link {
+	text-decoration: none;
+	color: #222;
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+}
+
+#wisdom a:visited {
+	color: #222;
+	border-color: #999;
+	border-width: 0 0 1px 0;
+	border-style: none none dotted none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+}
+
+#wisdom a:hover {
+	color: #222;
+	text-decoration: none;
+	border-color: #aaa;
+}
+
+#content h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#wisdom h2 {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 0;
+}
+
+#content h3
+{
+	font-size: 1.0em;
+	font-weight: bold;
+	text-align: left;
+	margin: 1.1em 0.2em 1em 0.5em;
+}
+
+ul.navlist
+{
+	list-style: none;
+	margin: 10px 0 10px 0;
+	padding: 0;
+}
+
+ul.navlist li a
+{
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	color: #222;
+	display: block;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+
+ul.navlist li a:link {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	color: #222;
+	display: block;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+
+ul.navlist li a:visited {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	color: #222;
+	display: block;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+
+ul.navlist li a:hover {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	color: #222;
+	display: block;
+	font-size: 17px;
+	font-weight: 400;
+	margin-bottom: -1px;
+	padding: 12px 10px;
+	text-decoration: none;
+}
+
+dl {
+	line-height: 1.2em;
+	font-size: 1.0em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+
+dt {
+    margin-top: 0.8em;
+}
+  
+dd {
+    margin-top: 0.4em;
+    margin-left: 0.0em;
+}
+
+ol li {
+		margin-top: 0.4em;
+}
+
+div .wisdom {
+		background-color: #eee; 
+}
+
+
+
+#content blockquote { margin: 0 0 0 0; }
+
+#footer {
+    display: none;
+}
+

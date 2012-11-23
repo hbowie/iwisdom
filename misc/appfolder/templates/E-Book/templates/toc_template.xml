@@ -1,0 +1,40 @@
+<?output "../epub/toc.ncx"?>
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+<?include "toc_head.xml" copy ?>
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+	    <navLabel>
+		    <text>Title Page</text>
+	    </navLabel>
+	    <content src="title.html"/>
+	  </navPoint>
+<?set counter = 2 ?>
+<?nextrec?>
+<?definegroup 1 "=$authorfilename$=" ?>
+<?ifendgroup 1 ?>
+     </navPoint>
+<?ifnewgroup 1 ?>  
+     <navPoint id="w=$itemid&r4$=" playOrder="=$counter$=">
+       <navLabel>
+		     <text>=$author$=</text>
+       </navLabel>
+       <content src="w=$itemid&r4$=.html"/>
+<?endif?>  
+		 <navPoint id="w=$itemid&r4$=" playOrder="=$counter$=">
+		   <navLabel>
+			   <text>=$title$=</text>
+		   </navLabel>
+		   <content src="w=$itemid&r4$=.html"/>
+		 </navPoint>
+<?set counter ++ ?>
+<?loop?>
+     <navPoint id="index-page" playOrder="=$counter$=">
+       <navLabel>
+		     <text>Index</text>
+       </navLabel>
+       <content src="index.html"/>
+		 </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,53 @@
+<?nextrec?>
+<?output "../wisdom/w=$itemid&r4$=.html"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<?include "head.html" copy ?>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1><a href="javascript:randomQuote();" title="Random">Wisdom</a></h1>
+      </div>
+<?include "nav.html" copy ?>
+      <div id="content">
+        <div id="wisdom">
+          <h2>=$title$=</h2>
+          <blockquote>
+            =$body$=
+          </blockquote>
+          <p class="byline">
+            &mdash; 
+              <span class="authors">
+                <a href="../authors/=$authorfilename$=.html">
+                  =$author$=
+                </a>
+              </span>
+          </p>
+<?if "=$sourceline$=" ?>        
+          <p class="sourceline">
+            From =$sourceline$= 
+          </p>
+<?endif?>
+<?if "=$rightsline$=" ?>        
+          <p class="rightsline">
+            =$rightsline$= 
+          </p>
+<?endif?>
+<?if "=$linkedtags$=" ?> 
+          <p class="tagsline">
+            Tags: <i>=$linkedtags$=</i>
+          </p>
+<?endif?>
+          <p class="itemidline">
+            No. 
+            <span class="itemid">
+              =$itemid$=
+            </span>
+          </p>
+        </div> <!-- end wisdom -->
+      </div> <!-- end content -->
+    </div> <!-- end container -->
+  </body>
+</html>
+<?loop?>

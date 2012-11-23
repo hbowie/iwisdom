@@ -1,0 +1,480 @@
+html {
+	height: 100%;
+	margin-bottom: 1px;
+	}
+
+body {
+	margin-top: 0;
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	line-height: 1.8em;
+	color: #fff;
+	background-color: #6463ae; 
+	text-align: center;
+	font-size: 1.0em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	}
+	
+p {
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	line-height: 1.8em;
+	color: #fff;
+	background-color: #6463ae; 
+	text-align: left;
+	font-size: 0.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-weight: 400;
+} 
+	
+p.first {
+  margin-top: 0.4em;
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	line-height: 1.8em;
+	color: #fff;
+	background-color: #6463ae; 
+	text-align: left;
+	font-size: 0.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-weight: 400;
+  }
+  
+p.next {
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	line-height: 1.8em;
+	color: #fff;
+	background-color: #6463ae; 
+	text-align: left;
+	font-size: 0.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+  }
+  
+dl {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	line-height: 1.8em;
+	color: #fff;
+	text-align: left;
+	font-size: 0.8em;
+	font-weight: 400;
+}
+
+dt {
+  margin-top: 1.0em;
+  }
+  
+dd {
+  margin-top: 0.4em;
+  }
+
+h1 {
+  margin-top: 0.0em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	text-align: left;
+	letter-spacing: 0.1em;
+  font-size: 0.9em;
+	line-height: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ddd;
+	/*
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	*/
+  }
+	
+h2 {
+  margin-top: 2.0em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	letter-spacing: 0.1em;
+  font-size: 0.9em;
+	line-height: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ddd;
+	/*
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	*/
+  }
+	
+ul.mainlist {
+  list-style-type: square;
+  text-align: left;
+  padding-left: 2.0em;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	line-height: 1.8em;
+}
+
+
+a {
+	text-decoration: none;
+	}
+
+a:link {
+	text-decoration: none;
+	color: #ddd;
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a:visited {
+	color: #ddd;
+	border-color: #999;
+	border-width: 0 0 1px 0;
+	border-style: none none dotted none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #7473be;
+	border-color: #7473be;
+	}
+	
+td.leftside {
+/*
+	position: absolute;
+	top: 190px;
+	float: left;
+*/
+	height: auto;
+	/* border: 0px dotted gray; */
+	margin: 0;
+	padding: 5px 0 0 0;
+	background-color: transparent;
+	color: #eee;
+	text-align: right;
+	font-size: 0.91em;
+	line-height: 1.25em;
+	}
+
+ul.leftside { margin: 0 0 5em 3em; }
+
+li.leftside {
+	list-style: none;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-size: 0.8em;
+  border-width: 0 0 0px 0;
+	border-style: none none none none;
+	text-decoration: none;
+	}
+	
+li.leftsub
+{
+	list-style: none;
+	letter-spacing: .2em;
+	text-transform: none;
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 0.8em;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	text-decoration: none;
+	font-style: italic;
+}
+	
+a.leftside:link {
+	text-decoration: none;
+	color: #ddd;
+	border-width: 0 0 0 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a.leftside:visited {
+	color: #ddd;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+	
+a.leftside:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #7473be;
+	border-color: #7473be;
+	}
+
+td.quot {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+
+}
+
+td.bookstore {
+  color: #ddd;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+}
+
+td.quotitle
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	padding: 0 0 1em 0;
+}
+
+td.booktitle
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	padding: 0 0 1em 0;
+}
+
+/*
+p {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	line-height: 1.8em;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+} */
+.logoPortable
+{
+	font-family: Georgia, serif;
+	font-size: 2.0em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+}
+	
+.logoWisdom {
+  color: #F7980E;
+	font-family: Georgia, serif;
+	font-size: 2.0em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	font-style: normal;
+}
+
+.logo {
+  color: #F7980E;
+	font-family: Georgia, serif;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	font-style: normal;
+}
+
+a.logo:link {
+	text-decoration: none;
+	color: #F7980E;
+	border-width: 0 0 0 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a.logo:visited {
+	color: #F7980E;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+	
+a.logo:hover {
+	color: #F7980E;
+	text-decoration: none;
+	}
+
+.sitetitle
+{
+	font-family: Georgia, serif;
+	font-size: 1.4em;
+	line-height: 4.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+  color: #FFF;
+	font-style: normal;
+}
+
+.no
+{
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	text-align: right;
+}
+td.catHead {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+  color: #ddd;
+  margin-bottom: 1.0em;
+}
+
+.button
+{
+	background-color: #6463ae;
+	color: #fff;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 1.0em;
+	line-height: 1.2em;
+	font-weight: 500;
+	vertical-align: top;
+	text-align: center;
+	margin: 1px;
+	border-style: solid;
+}
+table {
+	font-size: 1.0em;
+	line-height: 1.8em;
+}
+
+.large		{
+	font: normal 1.2em/1.6em Verdana, "Bitstream Vera Sans", sans-serif; }
+	
+.category {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+  color: #ddd;
+  margin-top: 0;
+  margin-bottom: 1.0em;
+}
+
+.title
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	padding: 0 0 0 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.body {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+}
+
+.by {
+/*
+	color: #F79911;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	margin-top: 0em;
+	padding-top: 0em;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: 900;
+	*/
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	vertical-align: top;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.author {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	vertical-align: top;
+	margin-top: 0;
+	margin-bottom: 0;
+	/* line-height: 1.8em; */
+}
+
+.sourceType {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sourceTitle {
+	font-family: "Big Caslon", Georgia, serif;
+	font-style: italic;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sourceRights {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.authorIndexTitle
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}

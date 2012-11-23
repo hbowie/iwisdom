@@ -1,0 +1,29 @@
+<?nextrec?>
+<?definegroup 1 "=$category$=" ?>
+<?ifendgroup 1 ?>
+        </ul>
+      </div> <!-- end content -->
+    </div> <!-- end container -->
+  </body>
+</html>
+<?endif?>
+<?ifnewgroup 1 ?>
+<?output "../tags/=$linkedtags$="?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<?include "head.html" copy ?>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Category</h1>
+      </div>
+<?include "nav.html" copy ?>
+      <div id="content">
+        <h2>=$category$=</h2>
+        <ul class="navlist">
+<?endif?>
+           <li><a href="../wisdom/w=$itemid&r4$=.html">
+             =$title$=</a></li>
+<?loop?>
+

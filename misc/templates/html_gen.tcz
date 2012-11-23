@@ -1,0 +1,18 @@
+module	action	modifier	object	value
+input	set		normalization	0
+input	open	file		#PATH#iWisdom_export.tab
+sort	add	Ascending	itemid	
+sort	set		params	
+template	open	file		#PATH#templates/wisdom_page_template.html
+template	generate			
+template	open	file		#PATH#templates/random_template.js
+template	generate			
+sort	clear			
+sort	set		params	
+sort	add	Ascending	authorlastnamefirst	
+sort	add	Ascending	title	
+sort	set		params	
+template	open	file		#PATH#templates/authors_index_template.html
+template	generate			
+template	open	file		#PATH#templates/author_page_template.html
+template	generate			

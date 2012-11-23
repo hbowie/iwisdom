@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="dcidid" version="2.0">
+
+   <metadata xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:dcterms="http://purl.org/dc/terms/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:opf="http://www.idpf.org/2007/opf">
+      <dc:title>Portable Wisdom</dc:title>
+      <dc:language xsi:type="dcterms:RFC3066">en</dc:language>
+      <dc:identifier id="dcidid" opf:scheme="URI">http://www.PortableWisdom.org/wisdom/Portable Wisdom.epub</dc:identifier>
+      <dc:description>Herb Bowie's primary collection of insightful quotations.</dc:description>
+      <dc:creator>Herb Bowie</dc:creator>
+      <dc:date xsi:type="dcterms:W3CDTF">2011-04-28</dc:date>
+   </metadata>
+ 
+
+   <manifest>
+     <item id="ncx"         href="toc.ncx"                 media-type="application/x-dtbncx+xml" />
+     <item id="css"         href="styles.css"              media-type="text/css" />
+     <item id="title-page"  href="title.html"              media-type="application/xhtml+xml" />
+      <item id="w0002" href="w0002.html" media-type="application/xhtml+xml" />
+      <item id="w0001" href="w0001.html" media-type="application/xhtml+xml" />
+      <item id="w0004" href="w0004.html" media-type="application/xhtml+xml" />
+      <item id="w0005" href="w0005.html" media-type="application/xhtml+xml" />
+      <item id="w0006" href="w0006.html" media-type="application/xhtml+xml" />
+      <item id="w0007" href="w0007.html" media-type="application/xhtml+xml" />
+      <item id="w0008" href="w0008.html" media-type="application/xhtml+xml" />
+      <item id="w0009" href="w0009.html" media-type="application/xhtml+xml" />
+      <item id="w0010" href="w0010.html" media-type="application/xhtml+xml" />
+      <item id="w0011" href="w0011.html" media-type="application/xhtml+xml" />
+      <item id="w0012" href="w0012.html" media-type="application/xhtml+xml" />
+      <item id="w0014" href="w0014.html" media-type="application/xhtml+xml" />
+      <item id="w0013" href="w0013.html" media-type="application/xhtml+xml" />
+      <item id="w0015" href="w0015.html" media-type="application/xhtml+xml" />
+      <item id="w0220" href="w0220.html" media-type="application/xhtml+xml" />
+      <item id="w0016" href="w0016.html" media-type="application/xhtml+xml" />
+      <item id="w0017" href="w0017.html" media-type="application/xhtml+xml" />
+      <item id="w0018" href="w0018.html" media-type="application/xhtml+xml" />
+      <item id="w0222" href="w0222.html" media-type="application/xhtml+xml" />
+      <item id="w0019" href="w0019.html" media-type="application/xhtml+xml" />
+      <item id="w0020" href="w0020.html" media-type="application/xhtml+xml" />
+      <item id="w0021" href="w0021.html" media-type="application/xhtml+xml" />
+      <item id="w0022" href="w0022.html" media-type="application/xhtml+xml" />
+      <item id="w0023" href="w0023.html" media-type="application/xhtml+xml" />
+      <item id="w0024" href="w0024.html" media-type="application/xhtml+xml" />
+      <item id="w0207" href="w0207.html" media-type="application/xhtml+xml" />
+      <item id="w0219" href="w0219.html" media-type="application/xhtml+xml" />
+      <item id="w0026" href="w0026.html" media-type="application/xhtml+xml" />
+      <item id="w0027" href="w0027.html" media-type="application/xhtml+xml" />
+      <item id="w0028" href="w0028.html" media-type="application/xhtml+xml" />
+      <item id="w0029" href="w0029.html" media-type="application/xhtml+xml" />
+      <item id="w0030" href="w0030.html" media-type="application/xhtml+xml" />
+      <item id="w0031" href="w0031.html" media-type="application/xhtml+xml" />
+      <item id="w0032" href="w0032.html" media-type="application/xhtml+xml" />
+      <item id="w0033" href="w0033.html" media-type="application/xhtml+xml" />
+      <item id="w0034" href="w0034.html" media-type="application/xhtml+xml" />
+      <item id="w0035" href="w0035.html" media-type="application/xhtml+xml" />
+      <item id="w0036" href="w0036.html" media-type="application/xhtml+xml" />
+      <item id="w0037" href="w0037.html" media-type="application/xhtml+xml" />
+      <item id="w0038" href="w0038.html" media-type="application/xhtml+xml" />
+      <item id="w0039" href="w0039.html" media-type="application/xhtml+xml" />
+      <item id="w0040" href="w0040.html" media-type="application/xhtml+xml" />
+      <item id="w0041" href="w0041.html" media-type="application/xhtml+xml" />
+      <item id="w0042" href="w0042.html" media-type="application/xhtml+xml" />
+      <item id="w0043" href="w0043.html" media-type="application/xhtml+xml" />
+      <item id="w0044" href="w0044.html" media-type="application/xhtml+xml" />
+      <item id="w0045" href="w0045.html" media-type="application/xhtml+xml" />
+      <item id="w0046" href="w0046.html" media-type="application/xhtml+xml" />
+      <item id="w0047" href="w0047.html" media-type="application/xhtml+xml" />
+      <item id="w0221" href="w0221.html" media-type="application/xhtml+xml" />
+      <item id="w0048" href="w0048.html" media-type="application/xhtml+xml" />
+      <item id="w0049" href="w0049.html" media-type="application/xhtml+xml" />
+      <item id="w0050" href="w0050.html" media-type="application/xhtml+xml" />
+      <item id="w0227" href="w0227.html" media-type="application/xhtml+xml" />
+      <item id="w0228" href="w0228.html" media-type="application/xhtml+xml" />
+      <item id="w0229" href="w0229.html" media-type="application/xhtml+xml" />
+      <item id="w0230" href="w0230.html" media-type="application/xhtml+xml" />
+      <item id="w0231" href="w0231.html" media-type="application/xhtml+xml" />
+      <item id="w0232" href="w0232.html" media-type="application/xhtml+xml" />
+      <item id="w0233" href="w0233.html" media-type="application/xhtml+xml" />
+      <item id="w0234" href="w0234.html" media-type="application/xhtml+xml" />
+      <item id="w0235" href="w0235.html" media-type="application/xhtml+xml" />
+      <item id="w0051" href="w0051.html" media-type="application/xhtml+xml" />
+      <item id="w0223" href="w0223.html" media-type="application/xhtml+xml" />
+      <item id="w0052" href="w0052.html" media-type="application/xhtml+xml" />
+      <item id="w0053" href="w0053.html" media-type="application/xhtml+xml" />
+      <item id="w0054" href="w0054.html" media-type="application/xhtml+xml" />
+      <item id="w0055" href="w0055.html" media-type="application/xhtml+xml" />
+      <item id="w0056" href="w0056.html" media-type="application/xhtml+xml" />
+      <item id="w0057" href="w0057.html" media-type="application/xhtml+xml" />
+      <item id="w0058" href="w0058.html" media-type="application/xhtml+xml" />
+      <item id="w0059" href="w0059.html" media-type="application/xhtml+xml" />
+      <item id="w0060" href="w0060.html" media-type="application/xhtml+xml" />
+      <item id="w0061" href="w0061.html" media-type="application/xhtml+xml" />
+      <item id="w0062" href="w0062.html" media-type="application/xhtml+xml" />
+      <item id="w0063" href="w0063.html" media-type="application/xhtml+xml" />
+      <item id="w0064" href="w0064.html" media-type="application/xhtml+xml" />
+      <item id="w0065" href="w0065.html" media-type="application/xhtml+xml" />
+      <item id="w0066" href="w0066.html" media-type="application/xhtml+xml" />
+      <item id="w0067" href="w0067.html" media-type="application/xhtml+xml" />
+      <item id="w0068" href="w0068.html" media-type="application/xhtml+xml" />
+      <item id="w0069" href="w0069.html" media-type="application/xhtml+xml" />
+      <item id="w0070" href="w0070.html" media-type="application/xhtml+xml" />
+      <item id="w0071" href="w0071.html" media-type="application/xhtml+xml" />
+      <item id="w0072" href="w0072.html" media-type="application/xhtml+xml" />
+      <item id="w0073" href="w0073.html" media-type="application/xhtml+xml" />
+      <item id="w0215" href="w0215.html" media-type="application/xhtml+xml" />
+      <item id="w0074" href="w0074.html" media-type="application/xhtml+xml" />
+      <item id="w0075" href="w0075.html" media-type="application/xhtml+xml" />
+      <item id="w0076" href="w0076.html" media-type="application/xhtml+xml" />
+      <item id="w0077" href="w0077.html" media-type="application/xhtml+xml" />
+      <item id="w0078" href="w0078.html" media-type="application/xhtml+xml" />
+      <item id="w0079" href="w0079.html" media-type="application/xhtml+xml" />
+      <item id="w0080" href="w0080.html" media-type="application/xhtml+xml" />
+      <item id="w0081" href="w0081.html" media-type="application/xhtml+xml" />
+      <item id="w0082" href="w0082.html" media-type="application/xhtml+xml" />
+      <item id="w0083" href="w0083.html" media-type="application/xhtml+xml" />
+      <item id="w0084" href="w0084.html" media-type="application/xhtml+xml" />
+      <item id="w0085" href="w0085.html" media-type="application/xhtml+xml" />
+      <item id="w0086" href="w0086.html" media-type="application/xhtml+xml" />
+      <item id="w0087" href="w0087.html" media-type="application/xhtml+xml" />
+      <item id="w0088" href="w0088.html" media-type="application/xhtml+xml" />
+      <item id="w0089" href="w0089.html" media-type="application/xhtml+xml" />
+      <item id="w0090" href="w0090.html" media-type="application/xhtml+xml" />
+      <item id="w0091" href="w0091.html" media-type="application/xhtml+xml" />
+      <item id="w0092" href="w0092.html" media-type="application/xhtml+xml" />
+      <item id="w0093" href="w0093.html" media-type="application/xhtml+xml" />
+      <item id="w0094" href="w0094.html" media-type="application/xhtml+xml" />
+      <item id="w0095" href="w0095.html" media-type="application/xhtml+xml" />
+      <item id="w0096" href="w0096.html" media-type="application/xhtml+xml" />
+      <item id="w0097" href="w0097.html" media-type="application/xhtml+xml" />
+      <item id="w0225" href="w0225.html" media-type="application/xhtml+xml" />
+      <item id="w0098" href="w0098.html" media-type="application/xhtml+xml" />
+      <item id="w0099" href="w0099.html" media-type="application/xhtml+xml" />
+      <item id="w0100" href="w0100.html" media-type="application/xhtml+xml" />
+      <item id="w0101" href="w0101.html" media-type="application/xhtml+xml" />
+      <item id="w0102" href="w0102.html" media-type="application/xhtml+xml" />
+      <item id="w0103" href="w0103.html" media-type="application/xhtml+xml" />
+      <item id="w0104" href="w0104.html" media-type="application/xhtml+xml" />
+      <item id="w0105" href="w0105.html" media-type="application/xhtml+xml" />
+      <item id="w0106" href="w0106.html" media-type="application/xhtml+xml" />
+      <item id="w0107" href="w0107.html" media-type="application/xhtml+xml" />
+      <item id="w0108" href="w0108.html" media-type="application/xhtml+xml" />
+      <item id="w0109" href="w0109.html" media-type="application/xhtml+xml" />
+      <item id="w0110" href="w0110.html" media-type="application/xhtml+xml" />
+      <item id="w0111" href="w0111.html" media-type="application/xhtml+xml" />
+      <item id="w0112" href="w0112.html" media-type="application/xhtml+xml" />
+      <item id="w0113" href="w0113.html" media-type="application/xhtml+xml" />
+      <item id="w0114" href="w0114.html" media-type="application/xhtml+xml" />
+      <item id="w0115" href="w0115.html" media-type="application/xhtml+xml" />
+      <item id="w0116" href="w0116.html" media-type="application/xhtml+xml" />
+      <item id="w0117" href="w0117.html" media-type="application/xhtml+xml" />
+      <item id="w0118" href="w0118.html" media-type="application/xhtml+xml" />
+      <item id="w0217" href="w0217.html" media-type="application/xhtml+xml" />
+      <item id="w0119" href="w0119.html" media-type="application/xhtml+xml" />
+      <item id="w0120" href="w0120.html" media-type="application/xhtml+xml" />
+      <item id="w0121" href="w0121.html" media-type="application/xhtml+xml" />
+      <item id="w0122" href="w0122.html" media-type="application/xhtml+xml" />
+      <item id="w0123" href="w0123.html" media-type="application/xhtml+xml" />
+      <item id="w0124" href="w0124.html" media-type="application/xhtml+xml" />
+      <item id="w0125" href="w0125.html" media-type="application/xhtml+xml" />
+      <item id="w0126" href="w0126.html" media-type="application/xhtml+xml" />
+      <item id="w0127" href="w0127.html" media-type="application/xhtml+xml" />
+      <item id="w0128" href="w0128.html" media-type="application/xhtml+xml" />
+      <item id="w0129" href="w0129.html" media-type="application/xhtml+xml" />
+      <item id="w0130" href="w0130.html" media-type="application/xhtml+xml" />
+      <item id="w0131" href="w0131.html" media-type="application/xhtml+xml" />
+      <item id="w0132" href="w0132.html" media-type="application/xhtml+xml" />
+      <item id="w0133" href="w0133.html" media-type="application/xhtml+xml" />
+      <item id="w0134" href="w0134.html" media-type="application/xhtml+xml" />
+      <item id="w0135" href="w0135.html" media-type="application/xhtml+xml" />
+      <item id="w0136" href="w0136.html" media-type="application/xhtml+xml" />
+      <item id="w0137" href="w0137.html" media-type="application/xhtml+xml" />
+      <item id="w0138" href="w0138.html" media-type="application/xhtml+xml" />
+      <item id="w0208" href="w0208.html" media-type="application/xhtml+xml" />
+      <item id="w0139" href="w0139.html" media-type="application/xhtml+xml" />
+      <item id="w0224" href="w0224.html" media-type="application/xhtml+xml" />
+      <item id="w0140" href="w0140.html" media-type="application/xhtml+xml" />
+      <item id="w0141" href="w0141.html" media-type="application/xhtml+xml" />
+      <item id="w0142" href="w0142.html" media-type="application/xhtml+xml" />
+      <item id="w0143" href="w0143.html" media-type="application/xhtml+xml" />
+      <item id="w0144" href="w0144.html" media-type="application/xhtml+xml" />
+      <item id="w0145" href="w0145.html" media-type="application/xhtml+xml" />
+      <item id="w0146" href="w0146.html" media-type="application/xhtml+xml" />
+      <item id="w0147" href="w0147.html" media-type="application/xhtml+xml" />
+      <item id="w0209" href="w0209.html" media-type="application/xhtml+xml" />
+      <item id="w0148" href="w0148.html" media-type="application/xhtml+xml" />
+      <item id="w0149" href="w0149.html" media-type="application/xhtml+xml" />
+      <item id="w0150" href="w0150.html" media-type="application/xhtml+xml" />
+      <item id="w0151" href="w0151.html" media-type="application/xhtml+xml" />
+      <item id="w0152" href="w0152.html" media-type="application/xhtml+xml" />
+      <item id="w0153" href="w0153.html" media-type="application/xhtml+xml" />
+      <item id="w0154" href="w0154.html" media-type="application/xhtml+xml" />
+      <item id="w0155" href="w0155.html" media-type="application/xhtml+xml" />
+      <item id="w0156" href="w0156.html" media-type="application/xhtml+xml" />
+      <item id="w0157" href="w0157.html" media-type="application/xhtml+xml" />
+      <item id="w0158" href="w0158.html" media-type="application/xhtml+xml" />
+      <item id="w0159" href="w0159.html" media-type="application/xhtml+xml" />
+      <item id="w0160" href="w0160.html" media-type="application/xhtml+xml" />
+      <item id="w0161" href="w0161.html" media-type="application/xhtml+xml" />
+      <item id="w0162" href="w0162.html" media-type="application/xhtml+xml" />
+      <item id="w0163" href="w0163.html" media-type="application/xhtml+xml" />
+      <item id="w0218" href="w0218.html" media-type="application/xhtml+xml" />
+      <item id="w0216" href="w0216.html" media-type="application/xhtml+xml" />
+      <item id="w0164" href="w0164.html" media-type="application/xhtml+xml" />
+      <item id="w0165" href="w0165.html" media-type="application/xhtml+xml" />
+      <item id="w0166" href="w0166.html" media-type="application/xhtml+xml" />
+      <item id="w0167" href="w0167.html" media-type="application/xhtml+xml" />
+      <item id="w0168" href="w0168.html" media-type="application/xhtml+xml" />
+      <item id="w0169" href="w0169.html" media-type="application/xhtml+xml" />
+      <item id="w0170" href="w0170.html" media-type="application/xhtml+xml" />
+      <item id="w0171" href="w0171.html" media-type="application/xhtml+xml" />
+      <item id="w0172" href="w0172.html" media-type="application/xhtml+xml" />
+      <item id="w0173" href="w0173.html" media-type="application/xhtml+xml" />
+      <item id="w0174" href="w0174.html" media-type="application/xhtml+xml" />
+      <item id="w0175" href="w0175.html" media-type="application/xhtml+xml" />
+      <item id="w0176" href="w0176.html" media-type="application/xhtml+xml" />
+      <item id="w0177" href="w0177.html" media-type="application/xhtml+xml" />
+      <item id="w0178" href="w0178.html" media-type="application/xhtml+xml" />
+      <item id="w0179" href="w0179.html" media-type="application/xhtml+xml" />
+      <item id="w0180" href="w0180.html" media-type="application/xhtml+xml" />
+      <item id="w0181" href="w0181.html" media-type="application/xhtml+xml" />
+      <item id="w0182" href="w0182.html" media-type="application/xhtml+xml" />
+      <item id="w0183" href="w0183.html" media-type="application/xhtml+xml" />
+      <item id="w0184" href="w0184.html" media-type="application/xhtml+xml" />
+      <item id="w0185" href="w0185.html" media-type="application/xhtml+xml" />
+      <item id="w0186" href="w0186.html" media-type="application/xhtml+xml" />
+      <item id="w0187" href="w0187.html" media-type="application/xhtml+xml" />
+      <item id="w0188" href="w0188.html" media-type="application/xhtml+xml" />
+      <item id="w0189" href="w0189.html" media-type="application/xhtml+xml" />
+      <item id="w0190" href="w0190.html" media-type="application/xhtml+xml" />
+      <item id="w0191" href="w0191.html" media-type="application/xhtml+xml" />
+      <item id="w0192" href="w0192.html" media-type="application/xhtml+xml" />
+      <item id="w0193" href="w0193.html" media-type="application/xhtml+xml" />
+      <item id="w0194" href="w0194.html" media-type="application/xhtml+xml" />
+      <item id="w0195" href="w0195.html" media-type="application/xhtml+xml" />
+      <item id="w0196" href="w0196.html" media-type="application/xhtml+xml" />
+      <item id="w0197" href="w0197.html" media-type="application/xhtml+xml" />
+      <item id="w0198" href="w0198.html" media-type="application/xhtml+xml" />
+      <item id="w0199" href="w0199.html" media-type="application/xhtml+xml" />
+      <item id="w0200" href="w0200.html" media-type="application/xhtml+xml" />
+      <item id="w0201" href="w0201.html" media-type="application/xhtml+xml" />
+      <item id="w0210" href="w0210.html" media-type="application/xhtml+xml" />
+      <item id="w0211" href="w0211.html" media-type="application/xhtml+xml" />
+      <item id="w0212" href="w0212.html" media-type="application/xhtml+xml" />
+      <item id="w0213" href="w0213.html" media-type="application/xhtml+xml" />
+      <item id="w0214" href="w0214.html" media-type="application/xhtml+xml" />
+      <item id="w0202" href="w0202.html" media-type="application/xhtml+xml" />
+      <item id="w0203" href="w0203.html" media-type="application/xhtml+xml" />
+      <item id="w0204" href="w0204.html" media-type="application/xhtml+xml" />
+      <item id="w0205" href="w0205.html" media-type="application/xhtml+xml" />
+      <item id="w0206" href="w0206.html" media-type="application/xhtml+xml" />
+     <item id="index-page"  href="index.html"              media-type="application/xhtml+xml" />
+   </manifest>
+
+   <spine toc="ncx">
+      <itemref idref="title-page" />
+      <itemref idref="w0002" />
+      <itemref idref="w0001" />
+      <itemref idref="w0004" />
+      <itemref idref="w0005" />
+      <itemref idref="w0006" />
+      <itemref idref="w0007" />
+      <itemref idref="w0008" />
+      <itemref idref="w0009" />
+      <itemref idref="w0010" />
+      <itemref idref="w0011" />
+      <itemref idref="w0012" />
+      <itemref idref="w0014" />
+      <itemref idref="w0013" />
+      <itemref idref="w0015" />
+      <itemref idref="w0220" />
+      <itemref idref="w0016" />
+      <itemref idref="w0017" />
+      <itemref idref="w0018" />
+      <itemref idref="w0222" />
+      <itemref idref="w0019" />
+      <itemref idref="w0020" />
+      <itemref idref="w0021" />
+      <itemref idref="w0022" />
+      <itemref idref="w0023" />
+      <itemref idref="w0024" />
+      <itemref idref="w0207" />
+      <itemref idref="w0219" />
+      <itemref idref="w0026" />
+      <itemref idref="w0027" />
+      <itemref idref="w0028" />
+      <itemref idref="w0029" />
+      <itemref idref="w0030" />
+      <itemref idref="w0031" />
+      <itemref idref="w0032" />
+      <itemref idref="w0033" />
+      <itemref idref="w0034" />
+      <itemref idref="w0035" />
+      <itemref idref="w0036" />
+      <itemref idref="w0037" />
+      <itemref idref="w0038" />
+      <itemref idref="w0039" />
+      <itemref idref="w0040" />
+      <itemref idref="w0041" />
+      <itemref idref="w0042" />
+      <itemref idref="w0043" />
+      <itemref idref="w0044" />
+      <itemref idref="w0045" />
+      <itemref idref="w0046" />
+      <itemref idref="w0047" />
+      <itemref idref="w0221" />
+      <itemref idref="w0048" />
+      <itemref idref="w0049" />
+      <itemref idref="w0050" />
+      <itemref idref="w0227" />
+      <itemref idref="w0228" />
+      <itemref idref="w0229" />
+      <itemref idref="w0230" />
+      <itemref idref="w0231" />
+      <itemref idref="w0232" />
+      <itemref idref="w0233" />
+      <itemref idref="w0234" />
+      <itemref idref="w0235" />
+      <itemref idref="w0051" />
+      <itemref idref="w0223" />
+      <itemref idref="w0052" />
+      <itemref idref="w0053" />
+      <itemref idref="w0054" />
+      <itemref idref="w0055" />
+      <itemref idref="w0056" />
+      <itemref idref="w0057" />
+      <itemref idref="w0058" />
+      <itemref idref="w0059" />
+      <itemref idref="w0060" />
+      <itemref idref="w0061" />
+      <itemref idref="w0062" />
+      <itemref idref="w0063" />
+      <itemref idref="w0064" />
+      <itemref idref="w0065" />
+      <itemref idref="w0066" />
+      <itemref idref="w0067" />
+      <itemref idref="w0068" />
+      <itemref idref="w0069" />
+      <itemref idref="w0070" />
+      <itemref idref="w0071" />
+      <itemref idref="w0072" />
+      <itemref idref="w0073" />
+      <itemref idref="w0215" />
+      <itemref idref="w0074" />
+      <itemref idref="w0075" />
+      <itemref idref="w0076" />
+      <itemref idref="w0077" />
+      <itemref idref="w0078" />
+      <itemref idref="w0079" />
+      <itemref idref="w0080" />
+      <itemref idref="w0081" />
+      <itemref idref="w0082" />
+      <itemref idref="w0083" />
+      <itemref idref="w0084" />
+      <itemref idref="w0085" />
+      <itemref idref="w0086" />
+      <itemref idref="w0087" />
+      <itemref idref="w0088" />
+      <itemref idref="w0089" />
+      <itemref idref="w0090" />
+      <itemref idref="w0091" />
+      <itemref idref="w0092" />
+      <itemref idref="w0093" />
+      <itemref idref="w0094" />
+      <itemref idref="w0095" />
+      <itemref idref="w0096" />
+      <itemref idref="w0097" />
+      <itemref idref="w0225" />
+      <itemref idref="w0098" />
+      <itemref idref="w0099" />
+      <itemref idref="w0100" />
+      <itemref idref="w0101" />
+      <itemref idref="w0102" />
+      <itemref idref="w0103" />
+      <itemref idref="w0104" />
+      <itemref idref="w0105" />
+      <itemref idref="w0106" />
+      <itemref idref="w0107" />
+      <itemref idref="w0108" />
+      <itemref idref="w0109" />
+      <itemref idref="w0110" />
+      <itemref idref="w0111" />
+      <itemref idref="w0112" />
+      <itemref idref="w0113" />
+      <itemref idref="w0114" />
+      <itemref idref="w0115" />
+      <itemref idref="w0116" />
+      <itemref idref="w0117" />
+      <itemref idref="w0118" />
+      <itemref idref="w0217" />
+      <itemref idref="w0119" />
+      <itemref idref="w0120" />
+      <itemref idref="w0121" />
+      <itemref idref="w0122" />
+      <itemref idref="w0123" />
+      <itemref idref="w0124" />
+      <itemref idref="w0125" />
+      <itemref idref="w0126" />
+      <itemref idref="w0127" />
+      <itemref idref="w0128" />
+      <itemref idref="w0129" />
+      <itemref idref="w0130" />
+      <itemref idref="w0131" />
+      <itemref idref="w0132" />
+      <itemref idref="w0133" />
+      <itemref idref="w0134" />
+      <itemref idref="w0135" />
+      <itemref idref="w0136" />
+      <itemref idref="w0137" />
+      <itemref idref="w0138" />
+      <itemref idref="w0208" />
+      <itemref idref="w0139" />
+      <itemref idref="w0224" />
+      <itemref idref="w0140" />
+      <itemref idref="w0141" />
+      <itemref idref="w0142" />
+      <itemref idref="w0143" />
+      <itemref idref="w0144" />
+      <itemref idref="w0145" />
+      <itemref idref="w0146" />
+      <itemref idref="w0147" />
+      <itemref idref="w0209" />
+      <itemref idref="w0148" />
+      <itemref idref="w0149" />
+      <itemref idref="w0150" />
+      <itemref idref="w0151" />
+      <itemref idref="w0152" />
+      <itemref idref="w0153" />
+      <itemref idref="w0154" />
+      <itemref idref="w0155" />
+      <itemref idref="w0156" />
+      <itemref idref="w0157" />
+      <itemref idref="w0158" />
+      <itemref idref="w0159" />
+      <itemref idref="w0160" />
+      <itemref idref="w0161" />
+      <itemref idref="w0162" />
+      <itemref idref="w0163" />
+      <itemref idref="w0218" />
+      <itemref idref="w0216" />
+      <itemref idref="w0164" />
+      <itemref idref="w0165" />
+      <itemref idref="w0166" />
+      <itemref idref="w0167" />
+      <itemref idref="w0168" />
+      <itemref idref="w0169" />
+      <itemref idref="w0170" />
+      <itemref idref="w0171" />
+      <itemref idref="w0172" />
+      <itemref idref="w0173" />
+      <itemref idref="w0174" />
+      <itemref idref="w0175" />
+      <itemref idref="w0176" />
+      <itemref idref="w0177" />
+      <itemref idref="w0178" />
+      <itemref idref="w0179" />
+      <itemref idref="w0180" />
+      <itemref idref="w0181" />
+      <itemref idref="w0182" />
+      <itemref idref="w0183" />
+      <itemref idref="w0184" />
+      <itemref idref="w0185" />
+      <itemref idref="w0186" />
+      <itemref idref="w0187" />
+      <itemref idref="w0188" />
+      <itemref idref="w0189" />
+      <itemref idref="w0190" />
+      <itemref idref="w0191" />
+      <itemref idref="w0192" />
+      <itemref idref="w0193" />
+      <itemref idref="w0194" />
+      <itemref idref="w0195" />
+      <itemref idref="w0196" />
+      <itemref idref="w0197" />
+      <itemref idref="w0198" />
+      <itemref idref="w0199" />
+      <itemref idref="w0200" />
+      <itemref idref="w0201" />
+      <itemref idref="w0210" />
+      <itemref idref="w0211" />
+      <itemref idref="w0212" />
+      <itemref idref="w0213" />
+      <itemref idref="w0214" />
+      <itemref idref="w0202" />
+      <itemref idref="w0203" />
+      <itemref idref="w0204" />
+      <itemref idref="w0205" />
+      <itemref idref="w0206" />
+			<itemref idref="index-page" />
+   </spine>
+ 
+   <guide>
+   	  <reference type="title-page" title="Title Page" href="title.html" />
+   	  <reference type="index"      title="Index"      href="index.html" />
+   </guide>
+
+</package>

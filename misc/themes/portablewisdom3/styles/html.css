@@ -1,0 +1,677 @@
+/* Styles that apply to all tags */
+
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+body {
+	margin-top: 0;
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	line-height: 1.8em;
+	color: #fff;
+	background-color: #6463ae; 
+	font-size: 1.0em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+	color: #ddd;
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+}
+
+a:visited {
+	color: #ddd;
+	border-color: #999;
+	border-width: 0 0 1px 0;
+	border-style: none none dotted none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+}
+
+a:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #7473be;
+	border-color: #7473be;
+}
+
+h1 {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 0.9em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: #ddd;
+	font-weight: normal;
+    margin-top: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	text-align: left;
+	line-height: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+	text-decoration: none;
+  }
+	
+h2 {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+    margin-top: 2.0em;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	letter-spacing: 0.1em;
+    font-size: 0.9em;
+	line-height: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ddd;
+  }
+	
+p {
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	color: #fff;
+	background-color: #6463ae; 
+	font-size: 0.85em;
+	line-height: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-weight: 400;
+} 
+	
+p.first {
+    margin-top: 0.4em;
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	color: #fff;
+	background-color: #6463ae; 
+	font-size: 0.85em;
+	line-height: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-weight: 400;
+}
+  
+p.next {
+	padding: 0;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	color: #fff;
+	background-color: #6463ae; 
+	font-size: 0.85em;
+	line-height: 1.8em;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	font-weight: 400;
+} 
+
+h1 + p {
+  margin-top: 0.4em;
+}
+
+h2 + p {
+  margin-top: 0.4em;
+}
+  
+dl {
+	line-height: 1.8em;
+	font-size: 0.8em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+
+dt {
+    margin-top: 1.0em;
+}
+  
+dd {
+    margin-top: 0.4em;
+}
+
+/* Special styles for the Site Identifier division */
+
+#siteid {
+  color: #F7980E;
+	font-family: Georgia, serif;
+	font-size: 2.0em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	margin-left: 275px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+#siteid a:link {
+  color: inherit;
+  border-width: inherit;
+}
+
+#siteid a:visited {
+  color:inherit;
+  border-width: inherit;
+}
+
+#siteid a:hover {
+  color:inherit;
+  background-color: inherit;
+  border-width: inherit;
+}
+
+/* Special styles for the navigation links */
+
+#navlinks {
+	color: #eee;
+	text-align: right;
+	float: left;
+	width: 205px;
+}
+
+#navlinks a:link {
+	color: #ddd;
+	border-width: 0 0 0 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+#navlinks a:visited {
+	color: #ddd;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+	
+#navlinks a:hover {
+	color: white;
+	background-color: #7473be;
+	border-color: #7473be;
+	}
+	
+#navlinks ul {
+  margin-top: 0;
+}
+
+#navlinks li {
+	list-style: none;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	font-size: 0.7em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+#navlinks li li {
+  text-transform: none;
+  font-size: 1.0em;
+  margin-top: 1.6em;
+}
+
+/* Special division and span ids for RSS link */
+
+#rss {
+	margin-top: 30px;
+}
+
+#rss img 
+{
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#rss a:hover {
+  color:inherit;
+  background-color: inherit;
+  border-width: inherit;
+}
+
+/* Special ids for the logo */
+
+#pspublogo {
+  margin-top: 60px;
+}
+
+#pspublogo img 
+{
+  border-width: 0;
+  padding: 6px;
+  margin: 0;
+  background-color: white;
+}
+
+#pspublogo a:hover {
+  color:inherit;
+  background-color: inherit;
+  border-width: inherit;
+}
+
+/* Special styles for the page content */
+
+#content {
+  margin-left: 275px;
+  margin-right: 20px;
+}
+
+#quote {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+}
+
+#quote p {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+}
+
+#quote p.title
+{
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+    margin-bottom: 0;
+}
+
+.emdash {
+	float: left;
+	width: 40px;
+	height: 40px;
+	text-align: right;
+}
+
+.author {
+  margin-left: 44px;
+}
+
+.sourceType {
+  margin-top: 5px;;
+  margin-left: 44px;
+}
+
+.quoteSourceTitle {
+  margin-top: 5px;
+	margin-left: 44px;
+	font-style: italic;
+}
+
+.sourceRights {
+  margin-top: 5px;
+  margin-left: 44px;
+}
+
+.xmllink {
+  margin-top: 1.0em;
+  margin-left: 0px;
+}
+
+.authorIndexTitle
+{
+  margin-top: 1.0em;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+
+.sourceTitle {
+  margin-top: 1.0em;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+	font-style: italic;
+}
+
+.amazon {
+  margin-top: 1.0em;
+}
+
+.wikipedia {
+  margin-top: 1.0em;
+}
+
+ul.mainlist {
+  list-style-type: square;
+  text-align: left;
+  padding-left: 2.0em;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.1em;
+	letter-spacing: 0.08em;
+	font-weight: 400;
+	line-height: 1.8em;
+}
+	
+td.leftside {
+/*
+	position: absolute;
+	top: 190px;
+	float: left;
+*/
+	height: auto;
+	/* border: 0px dotted gray; */
+	margin: 0;
+	padding: 5px 0 0 0;
+	background-color: transparent;
+	color: #eee;
+	text-align: right;
+	font-size: 0.91em;
+	line-height: 1.25em;
+	}
+
+ul.leftside { margin: 0 0 5em 3em; }
+
+li.leftside {
+	list-style: none;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-size: 0.8em;
+  border-width: 0 0 0px 0;
+	border-style: none none none none;
+	text-decoration: none;
+	}
+	
+li.leftsub
+{
+	list-style: none;
+	letter-spacing: .2em;
+	text-transform: none;
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 0.8em;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	text-decoration: none;
+	font-style: italic;
+}
+	
+a.leftside:link {
+	text-decoration: none;
+	color: #ddd;
+	border-width: 0 0 0 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a.leftside:visited {
+	color: #ddd;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+	
+a.leftside:hover {
+	color: white;
+	text-decoration: none;
+	background-color: #7473be;
+	border-color: #7473be;
+	}
+
+td.quot {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+
+}
+
+td.bookstore {
+  color: #ddd;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+}
+
+td.quotitle
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	padding: 0 0 1em 0;
+}
+
+td.booktitle
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	padding: 0 0 1em 0;
+}
+
+/*
+p {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	line-height: 1.8em;
+	letter-spacing: 0.1em;
+	font-weight: 400;
+} */
+.logoPortable
+{
+	font-family: Georgia, serif;
+	font-size: 2.0em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+}
+	
+.logoWisdom {
+  color: #F7980E;
+	font-family: Georgia, serif;
+	font-size: 2.0em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	font-style: normal;
+}
+
+.logo {
+  color: #F7980E;
+	font-family: Georgia, serif;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+	font-style: normal;
+}
+
+a.logo:link {
+	text-decoration: none;
+	color: #F7980E;
+	border-width: 0 0 0 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+a.logo:visited {
+	color: #F7980E;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+	
+a.logo:hover {
+	color: #F7980E;
+	text-decoration: none;
+	}
+
+.sitetitle
+{
+	font-family: Georgia, serif;
+	font-size: 1.4em;
+	line-height: 4.1em;
+	text-align: left;
+	text-decoration: none;
+	font-weight: normal;
+	margin: 0px 0px 0px 0px;
+  color: #FFF;
+	font-style: normal;
+}
+
+.no
+{
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	text-align: right;
+}
+td.catHead {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+  color: #ddd;
+  margin-bottom: 1.0em;
+}
+
+.button
+{
+	background-color: #6463ae;
+	color: #fff;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	font-size: 1.0em;
+	line-height: 1.2em;
+	font-weight: 500;
+	vertical-align: top;
+	text-align: center;
+	margin: 1px;
+	border-style: solid;
+}
+table {
+	font-size: 1.0em;
+	line-height: 1.8em;
+}
+
+.large		{
+	font: normal 1.2em/1.6em Verdana, "Bitstream Vera Sans", sans-serif; }
+	
+.category {
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+  color: #ddd;
+  margin-top: 0;
+  margin-bottom: 1.0em;
+}
+
+.title
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	padding: 0 0 0 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.body {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+}
+
+.by {
+/*
+	color: #F79911;
+	font-family: Verdana, "Bitstream Vera Sans", sans-serif;
+	margin-top: 0em;
+	padding-top: 0em;
+	font-size: 1.2em;
+	line-height: 1.6em;
+	font-style: italic;
+	font-variant: small-caps;
+	font-weight: 900;
+	*/
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	vertical-align: top;
+	text-align: right;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.author {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	vertical-align: top;
+	margin-top: 0;
+	margin-bottom: 0;
+	/* line-height: 1.8em; */
+}
+
+.sourceType {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sourceTitle {
+	font-family: "Big Caslon", Georgia, serif;
+	font-style: italic;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.sourceRights {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+	line-height: 1.8em;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.authorIndexTitle
+{
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}

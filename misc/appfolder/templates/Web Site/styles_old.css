@@ -1,0 +1,414 @@
+/* Styles that apply to all tags */
+
+html {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+body
+{
+	background-color: #ddd; /* Background color */
+	color: #222;            /* Foreground color used for text */
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	/* line-height: 1.8em; */
+	margin: 0;              /* Amount of negative space around the outside of the body */
+	padding: 0;             /* Amount of negative space around the inside of the body */
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 0;
+} 
+
+#header h1 a {
+    background-color: #ccc;
+    border-bottom: 1px solid #666;
+    color: #222;
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+#header ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+}
+
+#header ul li a {
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -1px;
+    padding: 12px 10px;
+    text-decoration: none;
+}
+
+#content, #sidebar {
+    padding: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	text-decoration: none;
+	color: #222;
+	border-color: #888;
+	border-width: 0 0 1px 0;
+	border-style: none none solid none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+}
+
+a:visited {
+	color: #222;
+	border-color: #999;
+	border-width: 0 0 1px 0;
+	border-style: none none dotted none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+}
+
+a:hover {
+	color: #222;
+	text-decoration: none;
+	border-color: #aaa;
+}
+ 
+p {
+
+}
+
+p {
+  margin-top: 0.4em;
+}
+
+dl {
+	line-height: 1.8em;
+	font-size: 0.8em;
+	font-weight: 400;
+	letter-spacing: 0.1em;
+}
+
+dt {
+    margin-top: 1.0em;
+}
+  
+dd {
+    margin-top: 0.4em;
+}
+
+/* Special styles for the Site Identifier division */
+
+#siteid {
+  color: #F7980E;
+	font-family: Georgia, serif;
+	font-size: 2.0em;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	margin-left: 275px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+#siteid a:link {
+  color: inherit;
+  border-width: inherit;
+}
+
+#siteid a:visited {
+  color:inherit;
+  border-width: inherit;
+}
+
+#siteid a:hover {
+  color:inherit;
+  background-color: inherit;
+  border-width: inherit;
+}
+
+/* Special styles for the navigation links */
+
+#navlinks ul
+{
+	list-style: none;
+	margin: 10px 5px 10px 5px;
+	padding: 0;
+}
+#navlinks ul li {
+	display: inline;
+}
+#navlinks ul li a {
+	/* border: 1px dashed #000; */
+	border-bottom: 1px solid #666;
+	padding: 5px 15px 5px 15px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: #EAEAEA;
+	text-decoration: none;
+	color: #333;
+	/* text-shadow: 0px 1px 0px #fff; */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#ccc));
+/*
+    background-color: #FFFFFF;
+    border: 1px solid #999999;
+    color: #222222;
+    display: block;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: -1px;
+    padding: 12px 10px;
+    text-decoration: none;
+    width: 20em; */
+}
+
+/*
+#navlinks {
+	color: #eee;
+	text-align: right;
+	float: left;
+	width: 205px;
+}
+
+#navlinks a:link {
+	color: #ddd;
+	border-width: 0 0 0 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+
+#navlinks a:visited {
+	color: #ddd;
+	border-width: 0 0 0px 0;
+	border-style: none none none none;
+	padding: 3px 0px 2px 0px;
+	background-color: inherit;
+	}
+	
+#navlinks a:hover {
+	color: white;
+	background-color: #7473be;
+	border-color: #7473be;
+	}
+	
+#navlinks ul {
+  margin-top: 0;
+}
+
+#navlinks li {
+	list-style: none;
+	letter-spacing: .2em;
+	text-transform: none;
+	font-size: 0.8em;
+  line-height: 1em;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+#navlinks li li {
+  text-transform: none;
+  font-size: 1.0em;
+  margin-top: 1.6em;
+}
+*/
+
+/* Special styles for the item title */
+
+#header h1
+{
+	margin: 0;
+	background-color: #ccc;
+	/* border-top: 1px solid #666; */
+	border-bottom: 1px solid #666;
+	color: #222;
+	display: block;
+	font-size: 1.4em;
+	font-weight: bold;
+	padding: 10px 2px 10px 2px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow: 0px 1px 0px #fff;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#999));
+}
+
+/* Special division and span ids for RSS link */
+
+#rss {
+	margin-top: 30px;
+}
+
+#rss img 
+{
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#rss a:hover {
+  color:inherit;
+  background-color: inherit;
+  border-width: inherit;
+}
+
+.credits {
+	font-size: 0.8em;
+	color: #ddd;
+}
+
+/* Special ids for the logo */
+
+#pspublogo {
+  margin-top: 60px;
+}
+
+#pspublogo img 
+{
+  border-width: 0;
+  padding: 6px;
+  margin: 0;
+  background-color: white;
+}
+
+#pspublogo a:hover {
+  color:inherit;
+  background-color: inherit;
+  border-width: inherit;
+}
+
+/* Special styles for the page content */
+
+#content {
+    padding: 10px;
+}
+
+blockquote { margin: 0 4px 0 4px; }
+
+.byline { margin: 0 4px 0 4px; }
+
+/* #content {
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+}
+
+h1 {
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+
+h2 {
+	font-size: 1.2em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+  margin-bottom: 0;
+}
+*/
+
+/* .wisdom {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+} */
+
+
+
+/* .wisdom blockquote { margin: 1em 0 1em 0; }
+
+.wisdom blockquote p {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+}
+
+.wisdom p {
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.0em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+} */
+
+.emdash {
+	float: left;
+	width: 40px;
+	height: 40px;
+	text-align: right;
+}
+
+.author {
+  margin-left: 44px;
+}
+
+.sourceType {
+  margin-top: 5px;;
+  margin-left: 44px;
+}
+
+.quoteSourceTitle {
+  margin-top: 5px;
+	margin-left: 44px;
+	font-style: italic;
+}
+
+.sourceRights {
+  margin-top: 5px;
+  margin-left: 44px;
+}
+
+.xmllink {
+  margin-top: 1.0em;
+  margin-left: 0px;
+}
+
+.authorIndexTitle
+{
+  margin-top: 1.0em;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.6em;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+}
+
+.sourceTitle {
+  margin-top: 1.0em;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.2em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+	font-style: italic;
+}
+
+.amazon {
+  margin-top: 1.0em;
+}
+
+.wikipedia {
+  margin-top: 1.0em;
+}
+
+ul.mainlist {
+  list-style-type: square;
+  text-align: left;
+  padding-left: 2.0em;
+	font-family: "Big Caslon", Georgia, serif;
+	font-size: 1.1em;
+	letter-spacing: 0.08em;
+	font-weight: 400;
+	line-height: 1.8em;
+}

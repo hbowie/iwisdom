@@ -1,0 +1,8 @@
+module	action	modifier	object	value
+input	set		normalization	0
+input	open	file		#PATH#iWisdom_export.tab
+sort	add	Ascending	authorlastnamefirst	
+sort	add	Ascending	title	
+sort	set		params	
+template	open	file		#PATH#templates/authors_index_template.html
+template	generate			

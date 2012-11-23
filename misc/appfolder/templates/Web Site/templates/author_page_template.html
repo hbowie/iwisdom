@@ -1,0 +1,44 @@
+<?nextrec?>
+<?definegroup 1 "=$authorfilename$=" ?>
+<?ifendgroup 1 ?>
+        </ul>
+      </div> <!-- end content -->
+    </div> <!-- end container -->
+  </body>
+</html>
+<?endif?>
+<?ifnewgroup 1 ?>
+<?output "../authors/=$authorfilename$=.html"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<?include "head.html" copy ?>
+  <body>
+    <div id="container">
+      <div id="header">
+        <h1>Author</h1>
+      </div>
+<?include "nav.html" copy ?>
+      <div id="content">
+        <h2>=$author$=</h2>
+        <h3>About</h3>
+<?if "=$authorinfo$=" ?>
+          <p><li>=$authorinfo$=</li></p>
+<?endif?>
+        <ul class="navlist">
+<?if "=$authorlink$=" ?>
+          <li><a href="=$authorlink$=">
+            Web Page</a></li>
+<?endif?>
+          <li><a href="http://en.wikipedia.org/wiki/=$authorwikimediapage$=">
+            Wikipedia</a></li>
+          <li><a href="http://en.wikiquote.org/wiki/=$authorwikimediapage$=">
+            Wikiquote</a></li>
+        </ul>
+        <h3>Wisdom</h3>
+        <ul class="navlist">
+<?endif?>
+          <li><a href="../wisdom/w=$itemid&r4$=.html">
+            =$title$=</a></li>
+<?loop?>
+

@@ -1849,18 +1849,7 @@ public class iWisdomCommon
   }
   
   public void browseFile (File webFile) {
-    URI uri = webFile.toURI ();
-    URL url;
-    try {
-      url = uri.toURL();
-      openURL (url);
-    } catch (MalformedURLException e) {
-      trouble.report ("Trouble opening Web page " + uri.toString(), "Web Browser Problem");
-      Logger.getShared().recordEvent (LogEvent.MEDIUM, 
-        "Open URL Malformed URL " + e.toString(),
-        false);
-    }
-    // String url = "file://" + webFile.getAbsolutePath();
+    home.openURL(webFile);
   }
   
   public void donate () {
@@ -1875,19 +1864,12 @@ public class iWisdomCommon
     WindowMenuManager.getShared().makeVisible(registerWindow);
   }
   
-  public void openURL (URL url) {
-    openURL (url.toString());
+  public boolean openURL (URL url) {
+    return home.openURL(url);
   }
   
-  public void openURL (String url) {
-    try {
-      xos.openURL (StringUtils.cleanURLString(url));
-    } catch (java.io.IOException e) {
-      trouble.report ("Trouble opening Web page " + url, "Web Browser Problem");
-      Logger.getShared().recordEvent (LogEvent.MEDIUM, 
-        "Open URL IO Exception " + e.toString(),
-        false);
-    }
+  public boolean openURL (String url) {
+    return home.openURL(url);
   }
   
   /**

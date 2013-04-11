@@ -1,10 +1,8 @@
 package com.powersurgepub.iwisdom;
 
-import com.powersurgepub.psdatalib.ui.TextSelector;
-import com.powersurgepub.psdatalib.ui.TextHandler;
-import com.powersurgepub.psdatalib.txbio.HTMLFile;
-import com.powersurgepub.psdatalib.txbio.HTMLTag;
-import com.powersurgepub.psdatalib.txbmodel.TextType;
+  import com.powersurgepub.psdatalib.ui.*;
+  import com.powersurgepub.psdatalib.txbio.*;
+  import com.powersurgepub.psdatalib.txbmodel.*;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.psutils.*;
   import java.io.*;
@@ -18,7 +16,9 @@ import com.powersurgepub.psdatalib.txbmodel.TextType;
  */
 public class ImportWikiQuoteWindow 
     extends javax.swing.JFrame
-    implements TextHandler {
+      implements 
+        TextHandler,
+        WindowToManage {
 
   private static final String HREF_ISBN_PREFIX = "/wiki/Special:BookSources/";
 

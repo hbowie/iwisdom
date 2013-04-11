@@ -18,7 +18,8 @@ package com.powersurgepub.iwisdom;
  * @author  hbowie
  */
 public class PrefsWindow 
-  extends javax.swing.JFrame {
+  extends javax.swing.JFrame
+    implements WindowToManage {
   
   private iWisdomCommon      td;
   

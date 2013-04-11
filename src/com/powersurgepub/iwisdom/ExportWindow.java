@@ -6,16 +6,16 @@
 
 package com.powersurgepub.iwisdom;
 
-import com.powersurgepub.psdatalib.pstextio.FileMaker;
-import com.powersurgepub.psdatalib.pstextio.TextLineWriter;
-import com.powersurgepub.psdatalib.pstextio.ClipboardMaker;
+  import com.powersurgepub.psdatalib.pstextio.*;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psutils.*;
   import com.powersurgepub.xos2.*;
   import java.io.*;
   
-public class ExportWindow extends javax.swing.JFrame {
+public class ExportWindow 
+  extends javax.swing.JFrame 
+    implements WindowToManage {
   
   private             CategoryList     categories     = new CategoryList();
   

@@ -5,10 +5,10 @@
 
 package com.powersurgepub.iwisdom;
 
-import com.powersurgepub.psdatalib.txbio.HTMLFile;
-import com.powersurgepub.psdatalib.tabdelim.TabDelimFile;
-import com.powersurgepub.psdatalib.psexcel.ExcelFile;
-import com.powersurgepub.psdatalib.psdata.DataSource;
+  import com.powersurgepub.psdatalib.txbio.*;
+  import com.powersurgepub.psdatalib.tabdelim.*;
+  import com.powersurgepub.psdatalib.psexcel.*;
+  import com.powersurgepub.psdatalib.psdata.*;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psutils.*;
@@ -22,7 +22,9 @@ import com.powersurgepub.psdatalib.psdata.DataSource;
  *
  * @author  hbowie
  */
-public class ImportWindow extends javax.swing.JFrame {
+public class ImportWindow 
+  extends javax.swing.JFrame
+    implements WindowToManage {
   
   private iWisdomCommon         td;
   

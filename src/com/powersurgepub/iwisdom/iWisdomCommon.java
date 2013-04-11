@@ -2142,7 +2142,7 @@ public class iWisdomCommon
     }
   }
 
-  public void displayAuxiliaryWindow(JFrame window) {
+  public void displayAuxiliaryWindow(WindowToManage window) {
     window.setLocation(
         frame.getX() + 60,
         frame.getY() + 60);

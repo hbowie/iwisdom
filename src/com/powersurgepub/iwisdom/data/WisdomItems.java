@@ -1,9 +1,24 @@
+/*
+ * Copyright 2003 - 2013 Herb Bowie
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.powersurgepub.iwisdom.data;
 
   import com.powersurgepub.psdatalib.psdata.*;
 	import com.powersurgepub.psutils.*;
   import com.powersurgepub.iwisdom.*;
-  import com.powersurgepub.regcodes.*;
   import java.io.*;
   import java.text.*;
   import java.util.*;
@@ -12,24 +27,7 @@ package com.powersurgepub.iwisdom.data;
    A collection of wisdom items. New items are added to the end of the
    table. Deleted records are flagged as deleted, but are not removed
    from the table. An index pointing to an item in the table should always
-   point to the same item (it should not move).<p>
-  
-   This code is copyright (c) 2003 - 2011 by Herb Bowie.
-   All rights reserved. <p>
-  
-   Version History: <ul><li>
-    2003/11/09 - Originally written.
-       </ul>
-  
-   @author Herb Bowie (<a href="mailto:herb@powersurgepub.com">
-           herb@powersurgepub.com</a>)<br>
-           of PowerSurge Publishing 
-           (<a href="http://www.powersurgepub.com">
-           www.powersurgepub.com</a>)
-  
-   @version 
-    2004/06/27 - Added code to check item recurrence on an item add, 
-                 in case the item is closed.
+   point to the same item (it should not move).
  */
 
 public class WisdomItems 
@@ -92,8 +90,7 @@ public class WisdomItems
 	public WisdomItems (IDListHeader header, DateFormat fmt, iWisdomCommon td, 
       DataSource items, boolean respectItemID) 
         throws 
-          IOException,
-          RegistrationException {
+          IOException {
     super();
     this.td = td;
     recDef = WisdomItem.getRecDef();
@@ -125,12 +122,12 @@ public class WisdomItems
     @param  items A collection of items to be added to this collection.
    */
   public boolean addAll (DataSource items, boolean respectItemID) 
-      throws IOException, RegistrationException {
+      throws IOException {
     boolean ok = true;
     DataRecord next;
     int addedAt = 0;
     items.openForInput();
-    while ((! items.isAtEnd()) && (roomForMore())) {
+    while (! items.isAtEnd()) {
       next = items.nextRecordIn();
       if (next != null) {
         WisdomItem newItem = new WisdomItem (next);
@@ -143,24 +140,8 @@ public class WisdomItems
         }
       } // end if next data rec not null
     } // end while more items in data source
-    if (! items.isAtEnd()) {
-      next = items.nextRecordIn();
-      if (next != null) {
-        demoLimitExceeded = true;
-        throw new RegistrationException ("Some Records Skipped");
-      }
-    }
     return ok;
   } // end addAll method
-
-  /**
-   Can more records/items be added without exceeding the demo limitation?
-
-   @return     True if more can be added, false if we've hit the ceiling.
-   */
-  public boolean roomForMore() {
-    return RegisterWindow.getShared().roomForMore(items.size());
-  }
   
   public void resetCounts () {
     resetConsideredCount();
@@ -220,11 +201,6 @@ public class WisdomItems
       boolean saveToDisk,
       boolean respectItemID,
       boolean itemDuplicate) {
-
-    if (! roomForMore()) {
-      demoLimitExceeded = true;
-      return -1;
-    }
 
     // Make sure we are not adding a duplicate item.
     // If we are, merge the two items together instead of creating a new one. 

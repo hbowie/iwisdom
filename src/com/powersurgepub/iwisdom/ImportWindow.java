@@ -1,6 +1,17 @@
-/**
- Provides a window that allows the user to select an import file and format, 
- and methods to perform the import. 
+/*
+ * Copyright 2003 - 2013 Herb Bowie
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
  */
 
 package com.powersurgepub.iwisdom;
@@ -12,15 +23,14 @@ package com.powersurgepub.iwisdom;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psutils.*;
-  import com.powersurgepub.regcodes.*;
   import com.powersurgepub.xos2.*;
   import java.io.*;
   import java.net.*;
   import javax.swing.*;
 
 /**
- *
- * @author  hbowie
+ * Provides a window that allows the user to select an import file and format, 
+ * and methods to perform the import. 
  */
 public class ImportWindow 
   extends javax.swing.JFrame
@@ -227,9 +237,6 @@ public class ImportWindow
                 ("Trouble Reading File "
                 + importName,
                 "File I/O Problem");
-          }
-          catch (RegistrationException regExc) {
-            td.handleRegistrationException (regExc);
           }
         } // end if importFile available
       } // end if not text or XML

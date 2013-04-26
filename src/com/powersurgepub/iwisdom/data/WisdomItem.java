@@ -1,3 +1,19 @@
+/*
+ * Copyright 2003 - 2013 Herb Bowie
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.powersurgepub.iwisdom.data;
 
   import com.powersurgepub.psdatalib.markup.*;
@@ -13,38 +29,7 @@ package com.powersurgepub.iwisdom.data;
   import org.xml.sax.*;
 
 /**
- *   An object representing one iWisdom item. <p>
- *  
- *   This code is copyright (c) 2003-2004 by Herb Bowie.
- *   All rights reserved. <p>
- *  
- *   Version History: <ul><li>
- *      2004/06/18 - Modified to output due date in a year-month-day format. <li>
- *      2004/01/18 - Modified to allow input and output of 
- *                   time-related fields. <li>
- *      2004/01/17 - Modified to allow input and output of category as up to
- *                   five individual fields (in addition to one concatenated
- *                   field). <li>
- *      2003/11/22 - Modified to store a ToDoItems index within
- *                   each WisdomItem. <li>
- *      2003/11/18 - Changed Category to a separate Class, rather than a
- *                   simple String. <li>
- *      2003/11/09 - Added Category as a new field. Also added Deleted as a 
- *                   new field.
- *      2003/10/18 - Added five new fields. <li>
- *      2003/08/31 - Originally written.
- *       </ul>
- *  
- *   @author Herb Bowie (<a href="mailto:herb@powersurgepub.com">
- *           herb@powersurgepub.com</a>)<br>
- *           of PowerSurge Publishing 
- *           (<a href="http://www.powersurgepub.com">
- *           www.powersurgepub.com</a>)
- *  
- *   @version 
- *      2004/07/05 - Modified to add option of preserving line breaks
- *                   and double quotation marks in the description and
- *                   outcome fields.. 
+ *   An object representing one iWisdom item. 
  */
 
 public class WisdomItem {

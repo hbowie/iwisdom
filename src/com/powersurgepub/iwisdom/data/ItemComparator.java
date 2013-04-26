@@ -1,29 +1,29 @@
+/*
+ * Copyright 2003 - 2013 Herb Bowie
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.powersurgepub.iwisdom.data;
 
-import com.powersurgepub.psdatalib.psdata.RecordDefinition;
-import com.powersurgepub.iwisdom.ViewPrefs;
+  import com.powersurgepub.psdatalib.psdata.*;
+  import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.iwisdom.*;
 
 /**
    A comparator for a To Do item. Given a set of sort fields,
    will determine whether a particular To Do item is less than, greater than,
-   or equal to, another To Do item. <p>
-  
-   This code is copyright (c) 2003 by Herb Bowie.
-   All rights reserved. <p>
-  
-   Version History: <ul><li>
-      2003/11/09 - Added Category field. <li>
-      2003/08/31 - Originally written.
-       </ul>
-  
-   @author Herb Bowie (<a href="mailto:herb@powersurgepub.com">
-           herb@powersurgepub.com</a>)<br>
-           of PowerSurge Publishing 
-           (<a href="http://www.powersurgepub.com">
-           www.powersurgepub.com</a>)
-  
-   @version 2004/07/01 - Added Undated High/Low option. 
+   or equal to, another To Do item. 
  */
 public class ItemComparator
       implements java.util.Comparator {

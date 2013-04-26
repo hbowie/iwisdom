@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE properties
-  SYSTEM "http://java.sun.com/dtd/properties.dtd">
-<properties>
-   <comment>com.powersurgepub.pspub.PublishWindow properties</comment>
-   <entry key="publish-to-2">/Volumes/hbowie/Sites/iwisdom</entry>
-   <entry key="publish-to-1">/Users/hbowie/Sites/portablewisdom/web</entry>
-   <entry key="publish-to-0">/Users/hbowie/Wisdom/epubgen</entry>
-</properties>

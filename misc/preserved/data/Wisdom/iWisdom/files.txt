@@ -1,4 +1,0 @@
-file	primary	show	field1	seq1	field2	seq2	field3	seq3	field4	seq4	field5	seq5	undated	template	publishwhen	viewindex
-/Users/hbowie/Sites/portablewisdom/web/wisdom	false	All	Author	Ascending	Source Type	Ascending	Source	Ascending	Title	Ascending	Rating	Ascending	high	/Users/hbowie/Sites/portablewisdom/web/wisdom/template.html	0	0
-/Users/hbowie/Wisdom/Test Wisdom 1	false	All	Author	Ascending	Source Type	Ascending	Source	Ascending	Title	Ascending	Rating	Ascending	high	/Users/hbowie/Wisdom/iWisdom/template.html	0	0
-/Users/hbowie/Wisdom/iWisdom	true	All	Author	Ascending	Title	Ascending	Source	Ascending	Source Type	Ascending	Rating	Ascending	high	/Users/hbowie/Wisdom/iWisdom/template.html	0	1

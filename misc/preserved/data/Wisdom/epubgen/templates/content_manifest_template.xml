@@ -1,4 +1,0 @@
-<?output "content_manifest.xml"?>
-<?nextrec?>
-      <item id="w=$itemid&r4$=" href="w=$itemid&r4$=.html" media-type="application/xhtml+xml" />
-<?loop?>

@@ -1,3 +1,19 @@
+/*
+ * Copyright 2003 - 2013 Herb Bowie
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.powersurgepub.iwisdom;
 
   import com.powersurgepub.psfiles.*;
@@ -9,7 +25,6 @@ package com.powersurgepub.iwisdom;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.pspub.*;
   import com.powersurgepub.psutils.*;
-  import com.powersurgepub.regcodes.*;
   import com.powersurgepub.xos2.*;
   import java.awt.*;
   import java.awt.datatransfer.*;
@@ -22,19 +37,7 @@ package com.powersurgepub.iwisdom;
 
 /**
    An object accessible to most classes within the iwisdom package,
-   that intentionally exposes its data for direct access. <p>
-  
-   This code is copyright (c) 2003 by Herb Bowie.
-   All rights reserved. <p>
-  
-   Version History: <ul><li>
-      2003/11/01 - Originally written.
-       </ul>
-  
-   @author Herb Bowie of PowerSurge Publishing
-  
-   @version  
-      2004/06/24 - Added code to populate Edit menu.
+   that intentionally exposes its data for direct access. 
  */
 public class iWisdomCommon 
     implements 
@@ -154,12 +157,6 @@ public class iWisdomCommon
   AboutWindow         aboutWindow;
   PrefsWindow         prefsWindow;
   PublishWindow       publishWindow;
-
-  // Registration variables
-  RegisterWindow      registerWindow;
-  UnregisteredWindow  unregisteredWindow;
-  static final int    DEMO_LIMIT    = 20;
-  RegistrationCode    registrationCode;
   
   private StatusBar   statusBar = null;
   
@@ -336,11 +333,6 @@ public class iWisdomCommon
     /*
     midnightTimer = new javax.swing.Timer (ONE_HOUR, this);
     midnightTimer.start();
-    
-    // Check to see if program has been registered
-    registration = RegistrationCode.getShared();
-    regUser = registration.getUser();
-    registrationCode = registration.getCode();
     */
     
   }
@@ -381,10 +373,16 @@ public class iWisdomCommon
     importWindow = new ImportWindow (this);
     importWikiQuoteWindow = new ImportWikiQuoteWindow (this);
     exportWindow = new ExportWindow (this);
-    aboutWindow = new AboutWindow ();
+    aboutWindow = new AboutWindow (
+      false,   // loadFromDisk 
+      true,    // browserLauncher2Used
+      true,    // jxlUsed
+      true,    // pegdownUsed
+      true,    // xercesUsed
+      true,    // saxonUsed
+      "2003"   // copyRightYearFrom
+        );
     prefsWindow = new PrefsWindow (this);
-    registerWindow = RegisterWindow.getShared();
-    registerWindow.setDemoLimit(DEMO_LIMIT);
     publishWindow = new PublishWindow(this);
     publishWindow.setOnSaveOption(false);
     
@@ -397,24 +395,6 @@ public class iWisdomCommon
   public void setStatusBar (StatusBar statusBar) {
     this.statusBar = statusBar;
     publishWindow.setStatusBar(statusBar);
-  }
-
-  public void checkUnregistered(JFrame frame) {
-    if (! RegisterWindow.getShared().isRegistered()) {
-        unregisteredWindow 
-            = new UnregisteredWindow(
-            "You may continue to use it in demo mode for as long as you like, "
-            + "but the program will save no more than 20 wisdom items "
-            + "until it is registered.");
-        int w = frame.getWidth();
-        int h = frame.getHeight();
-        int x = frame.getX();
-        int y = frame.getY();
-        unregisteredWindow.setLocation(
-            x + ((w - unregisteredWindow.getWidth()) / 2),
-            y + ((h - unregisteredWindow.getHeight()) / 2));
-        WindowMenuManager.getShared().makeVisible(unregisteredWindow);
-    }
   }
   
   public void savePrefs () {
@@ -604,9 +584,6 @@ public class iWisdomCommon
         currentFileSpec = recentFiles.addRecentFile 
             ("file", diskStore.getPath(), "wisdom");
         currentFileModified = false;
-        if (items.wasDemoLimitExceeded()) {
-          this.handleRegistrationLimitation();
-        }
       } catch (IOException e) {
         openOK = false;
         storeNotFound (diskStore);
@@ -825,8 +802,6 @@ public class iWisdomCommon
         // diskStore.setTemplate (webTab.getTemplate());
         rememberLastFile (diskStore);
         boolean prefsOK = userPrefs.savePrefs();
-      } catch (RegistrationException reg) {
-        handleRegistrationException (reg);
       } catch (IOException e) {
           trouble.report ("iWisdom data could not be saved",
               "File Save Error");
@@ -1495,16 +1470,14 @@ public class iWisdomCommon
    *    Allocates a new WisdomItem.
    */
   public void newItem() {
-    if (items.roomForMore()) {
-      item = new WisdomItem ();
-      if (selectedTags.length() > 0) {
-        item.setCategory(selectedTags);
-      }
-      newItem = true;
-      displayItemNumber();
-    } else {
-      this.handleRegistrationLimitation();
+
+    item = new WisdomItem ();
+    if (selectedTags.length() > 0) {
+      item.setCategory(selectedTags);
     }
+    newItem = true;
+    displayItemNumber();
+
   }
   
   /**
@@ -1706,16 +1679,6 @@ public class iWisdomCommon
     displayItem();
   }
   
-  public void handleRegistrationException (RegistrationException reg) {
-    handleRegistrationLimitation();
-  }
-
-  public void handleRegistrationLimitation () {
-    Trouble.getShared().report("Unregistered copy will save no more than "
-        + String.valueOf(DEMO_LIMIT) + " items in Demo mode",
-        "Demo Warning");
-  }
-  
   public void setUnsavedChanges (boolean unsaved) {
     // xos.setUnsavedChanges (unsaved);
     // fileSaveButton.setEnabled (unsaved);
@@ -1726,34 +1689,9 @@ public class iWisdomCommon
     return xos.getUnsavedChanges();
   }
   
-  /*
-  public void setRegUser (String regUser) {
-    this.regUser = regUser;
-    registration.setUser (regUser);
-    boolean reg = checkRegistration();
-  }
-  
-  
-  public void setRegCode (String registrationCode) {
-    this.registrationCode = registrationCode;
-    registration.setCode (registrationCode);
-    boolean reg = checkRegistration();
-  }
-  */
-  
   public void newUserPrefs() {
 
   }
-  
-  /*
-  public boolean checkRegistration () {
-    regUser = registration.getUser();
-    registrationCode = registration.getCode();
-    registeredUser = registration.isRegistered();
-    maxRecs = -1;
-    return registeredUser;
-  }
-  */
   
   public void setSelItemTab (boolean selItemTab) {
     this.selItemTab = selItemTab;
@@ -1854,14 +1792,6 @@ public class iWisdomCommon
   
   public void donate () {
     openURL (DONATE_PAGE);
-  }
-
-  public void purchase () {
-    openURL (UnregisteredWindow.STORE);
-  }
-
-  public void register () {
-    WindowMenuManager.getShared().makeVisible(registerWindow);
   }
   
   public boolean openURL (URL url) {

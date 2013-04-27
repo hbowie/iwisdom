@@ -1287,7 +1287,7 @@ private void helpSoftwareUpdatesMenuItemActionPerformed(java.awt.event.ActionEve
 }//GEN-LAST:event_helpSoftwareUpdatesMenuItemActionPerformed
 
 private void submitFeedbackMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitFeedbackMenuItemActionPerformed
-  td.openURL ("mailto:support@powersurgepub.com?subject=iWisdom Feedback");
+  td.openURL ("mailto:support@powersurgepub.com");
 }//GEN-LAST:event_submitFeedbackMenuItemActionPerformed
 
 private void cleanUpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cleanUpMenuItemActionPerformed

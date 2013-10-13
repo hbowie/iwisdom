@@ -117,11 +117,13 @@ public class SortedItems
   }
   
   public void setComparator (ItemComparator comp) {
-    this.comp = comp;
-    setSelector (comp.getSelector());
-    if (columns != null) {
-      columns.setComparator (comp);
-      getDisplayColumns();
+    if (comp != null) {
+      this.comp = comp;
+      setSelector (comp.getSelector());
+      if (columns != null) {
+        columns.setComparator (comp);
+        getDisplayColumns();
+      }
     }
   }
   

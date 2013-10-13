@@ -1023,7 +1023,11 @@ public class WisdomDiskStore {
   }
   
   public ItemSelector getSelector () {
-    return comp.getSelector();
+    if (comp == null) {
+      return null;
+    } else {
+      return comp.getSelector();
+    }
   }
   
   public String getSelectString() {

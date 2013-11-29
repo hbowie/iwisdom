@@ -16,10 +16,11 @@
 
 package com.powersurgepub.iwisdom.disk;
 
+import com.powersurgepub.pstextio.TextLineWriter;
+import com.powersurgepub.pstextio.FileMaker;
   import com.powersurgepub.psdatalib.txbio.strtext.*;
   import com.powersurgepub.psdatalib.txbio.*;
   import com.powersurgepub.psdatalib.tabdelim.*;
-  import com.powersurgepub.psdatalib.pstextio.*;
   import com.powersurgepub.psdatalib.psdata.*;
   import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.iwisdom.data.*;

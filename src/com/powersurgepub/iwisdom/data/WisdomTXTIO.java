@@ -16,8 +16,8 @@
 
 package com.powersurgepub.iwisdom.data;
 
+import com.powersurgepub.pstextio.FileLineReader;
   import com.powersurgepub.psdatalib.markup.*;
-  import com.powersurgepub.psdatalib.pstextio.*;
   import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.psutils.*;
   import com.powersurgepub.xos2.*;

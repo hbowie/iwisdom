@@ -16,7 +16,7 @@
 
 package com.powersurgepub.iwisdom.data;
 
-  import com.powersurgepub.psdatalib.pstextio.FileLineReader;
+  import com.powersurgepub.pstextio.FileLineReader;
   import com.powersurgepub.psutils.*;
   import java.io.*;
   import java.net.*;

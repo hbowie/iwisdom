@@ -16,7 +16,9 @@
 
 package com.powersurgepub.iwisdom;
 
-  import com.powersurgepub.psdatalib.pstextio.*;
+  import com.powersurgepub.pstextio.TextLineWriter;
+import com.powersurgepub.pstextio.ClipboardMaker;
+import com.powersurgepub.pstextio.FileMaker;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psutils.*;

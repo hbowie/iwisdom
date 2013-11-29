@@ -16,8 +16,8 @@
 
 package com.powersurgepub.iwisdom.data;
 
+import com.powersurgepub.pstextio.TextLineWriter;
   import com.powersurgepub.psdatalib.txbio.*;
-  import com.powersurgepub.psdatalib.pstextio.*;
   import com.powersurgepub.iwisdom.*;
   import java.util.*;
   import javax.swing.*;

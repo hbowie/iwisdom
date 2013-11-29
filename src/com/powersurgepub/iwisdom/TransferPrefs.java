@@ -17,8 +17,8 @@
 package com.powersurgepub.iwisdom;
 
 import com.powersurgepub.psdatalib.tabdelim.TabDelimFile;
-import com.powersurgepub.psdatalib.pstextio.StringMaker;
-import com.powersurgepub.psdatalib.pstextio.TextLineWriter;
+import com.powersurgepub.pstextio.StringMaker;
+import com.powersurgepub.pstextio.TextLineWriter;
   import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.psutils.*;

@@ -588,7 +588,7 @@ public class WisdomTXTIO {
     }
     if (beginningOfLine
         && field.length() == 0
-        && lineChar == '„') {
+        && lineChar == '‚Äù') {
       lineChar = '"';
     }
     if (beginningOfLine 
@@ -615,7 +615,7 @@ public class WisdomTXTIO {
       quoteCount++;
     } 
     else
-    if (c == '’') {
+    if (c == '‚Äô') {
       field.append('\'');
     }  else {
       field.append (c);

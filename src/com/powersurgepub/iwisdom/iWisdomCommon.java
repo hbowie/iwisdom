@@ -16,10 +16,7 @@
 
 package com.powersurgepub.iwisdom;
 
-import com.powersurgepub.pstextio.TextLineWriter;
-import com.powersurgepub.pstextio.TextBlock;
-import com.powersurgepub.pstextio.ClipboardMaker;
-import com.powersurgepub.pstextio.FileMaker;
+  import com.powersurgepub.pstextio.*;
   import com.powersurgepub.psfiles.*;
   import com.powersurgepub.psdatalib.ui.*;
   import com.powersurgepub.psdatalib.txbio.*;
@@ -378,7 +375,6 @@ public class iWisdomCommon
     exportWindow = new ExportWindow (this);
     aboutWindow = new AboutWindow (
       false,   // loadFromDisk 
-      true,    // browserLauncher2Used
       true,    // jxlUsed
       true,    // pegdownUsed
       true,    // xercesUsed

@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2014 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -449,6 +449,7 @@ public class iWisdomCommon
   }
   
   public void addDefaultItem () {
+
     newItem();
     item.setTitle ("Fuzzy Concept");
     item.setAuthor ("Ansel Adams");
@@ -511,12 +512,18 @@ public class iWisdomCommon
     WisdomDiskStore defaultStore = files.getDefaultStore();
     if (defaultStore == null || defaultStore.isInvalid()) {
       fileOpen (files.getUsualLocation());
+      // addDefaultItem();
+      // modIfChanged();
+      // navigator.firstItem();
+      // displayItem();
+    } else {
+      fileOpen (defaultStore);
+    }
+    if (items.size() == 0) {
       addDefaultItem();
       modIfChanged();
       navigator.firstItem();
       displayItem();
-    } else {
-      fileOpen (defaultStore);
     }
   }
   

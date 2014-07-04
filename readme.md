@@ -1,7 +1,34 @@
 Introduction
------------- 
+------------
 
-iWisdom is a [PowerSurge Publishing](http://www.powersurgepub.com) application that manages collections of quotations. 
+iWisdom is a desktop application for storing, organizing and displaying small bits of wisdom, such as quotations. Some of its special features are:
+
+* a number of related fields, including title, category, author, source, year of initial publication, and rights;
+
+* storage of your wisdom in one of two open, non-proprietary formats: XML or Structured Text;
+
+* multiple sorting and selection fields;
+
+* multiple files with remembered viewing options for each;
+
+* multiple categories and levels of categorization, with a tree view to let you see your items within categories;
+
+* automatic Web Publishing;
+
+* automatic XML publishing (to create RSS feeds, for example);
+
+* a Find function;
+
+* a Category Mass Change function;
+
+* Web Page validation;
+
+* an import capability that can extract existing wisdom from a number of different file formats;
+
+* options to modify the look and feel of iWisdom;
+
+* a transfer function to convert a wisdom item to readable plain text, with a corresponding accept function to convert the plain text (after possible transmission via e-mail, etc.) into a new wisdom item on another iWisdom list.
+
 
 Documentation
 -------------
@@ -20,6 +47,7 @@ Source code for iWisdom is available at
 
 	https://github.com/hbowie/iwisdom
 	
+
 Source code for JExcelAPI is available at
 
 	http://sourceforge.net/projects/jexcelapi
@@ -29,7 +57,7 @@ Source code for parboiled is available at
 	https://github.com/sirthias/parboiled
 	
 Source code for pegdown is available at
-  
+ 
 	https://github.com/sirthias/pegdown
 
 Source code for Xerces is available at
@@ -39,25 +67,16 @@ Source code for Xerces is available at
 Source code for Saxon is available at
 
 	http://www.mozilla.org/MPL/
-	
+
 Rights
------- 
+------
 
-### iWisdom 
+### iWisdom
 
-Copyright 2003 - 2013 Herb Bowie
+Copyright 2003 - 2014 by Herb Bowie
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
-	http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 
 ### JExcelAPI
 
@@ -74,7 +93,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see 
+along with this program.  If not, see
 
 	http://www.gnu.org/licenses/
 	
@@ -94,8 +113,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 	
-### pegdown 
-
 Copyright 2010-2011 Mathias Doenitz
 
 Based on peg-markdown 2008-2010 John MacFarlane
@@ -112,7 +129,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-### Xerces 
+### Xerces
 
 Copyright 1999-2012 The Apache Software Foundation
 
@@ -128,7 +145,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-### Saxon 
+### Saxon
 
 Copyright Michael H. Kay
 

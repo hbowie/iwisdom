@@ -54,10 +54,10 @@ public class PrefsWindow
     this.setBounds (100, 100, 600, 540);
 
     commonPrefs = CommonPrefs.getShared();
-    prefsTabs.addTab("Common", commonPrefs);
+    prefsTabs.addTab("General", commonPrefs);
     
     generalPrefs = new GeneralPrefs (td, this);
-    prefsTabs.addTab("General", generalPrefs);
+    prefsTabs.addTab("Extra", generalPrefs);
     
     displayPrefs = new DisplayPrefs (td, this);
     prefsTabs.addTab ("Display", displayPrefs);

@@ -378,8 +378,3 @@
 
     This was the initial release of iWisdom.
 
-
-
-
-
-

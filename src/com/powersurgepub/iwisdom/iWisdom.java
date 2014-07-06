@@ -60,20 +60,11 @@ public class iWisdom
   private             Home home;
   private             UserPrefs userPrefs;
         
-  private static final String PROGRAM_HISTORY  
-      = "versions.html";
-  private static final String USER_GUIDE  
-      = "iwisdom.html";
-  private static final String HOME_PAGE   
-      = "http://www.powersurgepub.com/products/iwisdom.html";
   private static final String WISDOM_SOURCES
       = "http://www.powersurgepub.com/products/iwisdom/wisdom.html";
   public  static final String FIND = "Find";
   public  static final String FIND_AGAIN = "Again";
-  // private String              userGuide;
-  private URL                 userGuideURL;
-  private URL                 quickStartURL;
-  private URL                 programHistoryURL;
+
   private int                 shortcutKeyMask;
   
   private iWisdomCommon   td;
@@ -118,19 +109,6 @@ public class iWisdom
     
     getContentPane().add(statusBar, java.awt.BorderLayout.SOUTH);
 
-    try {
-      userGuideURL = new URL (td.pageURL, USER_GUIDE);
-    } catch (MalformedURLException e) {
-    }
-    try {
-      quickStartURL = new URL (td.pageURL, td.QUICK_START);
-    } catch (MalformedURLException e) {
-    }
-    try {
-      programHistoryURL = new URL (td.pageURL, PROGRAM_HISTORY);
-    } catch (MalformedURLException e) {
-    }
-    // userGuide = "file:/" + System.getProperty (GlobalConstants.USER_DIR) + USER_GUIDE;
     shortcutKeyMask = Toolkit.getDefaultToolkit().getMenuShortcutKeyMask();
     
     // navToolBar.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
@@ -142,7 +120,6 @@ public class iWisdom
         td.userPrefs.getPrefAsInt (td.HEIGHT, 540));
     CommonPrefs.getShared().setSplitPane(mainSplitPanel);
     CommonPrefs.getShared().setMainWindow(this);
-    xos.setHelpMenuItem (helpUserGuideMenuItem);
     
     // td.tabs = tabs;
     td.files = new WisdomDiskDirectory(this, Logger.getShared());
@@ -172,10 +149,11 @@ public class iWisdom
     
     // Set About, Quit and other Handlers in platform-specific ways
     xos.setFileMenu (fileMenu);
-    xos.setHelpMenu (helpMenu);
     xos.setXHandler (this);
     xos.setMainWindow (this);
     xos.enablePreferences();
+    home.setHelpMenu(this, helpMenu);
+    xos.setHelpMenu(helpMenu);
     
     CommonPrefs.getShared().appLaunch();
     // findText.grabFocus();
@@ -484,15 +462,6 @@ public class iWisdom
     optionsMenuItem = new javax.swing.JMenuItem();
     windowMenu = new javax.swing.JMenu();
     helpMenu = new javax.swing.JMenu();
-    helpHistoryMenuItem = new javax.swing.JMenuItem();
-    helpUserGuideMenuItem = new javax.swing.JMenuItem();
-    helpWebSeparator = new javax.swing.JSeparator();
-    helpSoftwareUpdatesMenuItem = new javax.swing.JMenuItem();
-    helpHomePageMenuItem = new javax.swing.JMenuItem();
-    submitFeedbackMenuItem = new javax.swing.JMenuItem();
-    helpWisdomSourcesMenuItem = new javax.swing.JMenuItem();
-    helpAppSeparator = new javax.swing.JSeparator();
-    helpReduceWindowSizeMenuItem = new javax.swing.JMenuItem();
 
     setTitle("iWisdom");
     addWindowListener(new java.awt.event.WindowAdapter() {
@@ -998,67 +967,6 @@ tabsItemMenuItem.addActionListener(new java.awt.event.ActionListener() {
   mainMenuBar.add(windowMenu);
 
   helpMenu.setText("Help");
-
-  helpHistoryMenuItem.setText("Program History");
-  helpHistoryMenuItem.addActionListener(new java.awt.event.ActionListener() {
-    public void actionPerformed(java.awt.event.ActionEvent evt) {
-      helpHistoryMenuItemActionPerformed(evt);
-    }
-  });
-  helpMenu.add(helpHistoryMenuItem);
-
-  helpUserGuideMenuItem.setText("User Guide");
-  helpUserGuideMenuItem.addActionListener(new java.awt.event.ActionListener() {
-    public void actionPerformed(java.awt.event.ActionEvent evt) {
-      helpUserGuideMenuItemActionPerformed(evt);
-    }
-  });
-  helpMenu.add(helpUserGuideMenuItem);
-  helpMenu.add(helpWebSeparator);
-
-  helpSoftwareUpdatesMenuItem.setText("Check for Updates...");
-  helpSoftwareUpdatesMenuItem.addActionListener(new java.awt.event.ActionListener() {
-    public void actionPerformed(java.awt.event.ActionEvent evt) {
-      helpSoftwareUpdatesMenuItemActionPerformed(evt);
-    }
-  });
-  helpMenu.add(helpSoftwareUpdatesMenuItem);
-
-  helpHomePageMenuItem.setText("iWisdom Home Page");
-  helpHomePageMenuItem.addActionListener(new java.awt.event.ActionListener() {
-    public void actionPerformed(java.awt.event.ActionEvent evt) {
-      helpHomePageMenuItemActionPerformed(evt);
-    }
-  });
-  helpMenu.add(helpHomePageMenuItem);
-
-  submitFeedbackMenuItem.setText("Submit Feedback");
-  submitFeedbackMenuItem.addActionListener(new java.awt.event.ActionListener() {
-    public void actionPerformed(java.awt.event.ActionEvent evt) {
-      submitFeedbackMenuItemActionPerformed(evt);
-    }
-  });
-  helpMenu.add(submitFeedbackMenuItem);
-
-  helpWisdomSourcesMenuItem.setText("iWisdom Import Sources");
-  helpWisdomSourcesMenuItem.addActionListener(new java.awt.event.ActionListener() {
-    public void actionPerformed(java.awt.event.ActionEvent evt) {
-      helpWisdomSourcesMenuItemActionPerformed(evt);
-    }
-  });
-  helpMenu.add(helpWisdomSourcesMenuItem);
-  helpMenu.add(helpAppSeparator);
-
-  helpReduceWindowSizeMenuItem.setText("Reduce Window Size");
-  helpReduceWindowSizeMenuItem.setAccelerator (KeyStroke.getKeyStroke (KeyEvent.VK_W,
-    Toolkit.getDefaultToolkit().getMenuShortcutKeyMask()));
-helpReduceWindowSizeMenuItem.addActionListener(new java.awt.event.ActionListener() {
-  public void actionPerformed(java.awt.event.ActionEvent evt) {
-    helpReduceWindowSizeMenuItemActionPerformed(evt);
-  }
-  });
-  helpMenu.add(helpReduceWindowSizeMenuItem);
-
   mainMenuBar.add(helpMenu);
 
   setJMenuBar(mainMenuBar);
@@ -1107,10 +1015,6 @@ helpReduceWindowSizeMenuItem.addActionListener(new java.awt.event.ActionListener
     WindowMenuManager.getShared().makeVisible(td.collectionWindow);
   }//GEN-LAST:event_filePropertiesMenuItemActionPerformed
 
-  private void helpWisdomSourcesMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpWisdomSourcesMenuItemActionPerformed
-    td.openURL (WISDOM_SOURCES);
-  }//GEN-LAST:event_helpWisdomSourcesMenuItemActionPerformed
-
   private void listRemoveQuotesMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listRemoveQuotesMenuItemActionPerformed
     td.removeQuotesFromAll();
   }//GEN-LAST:event_listRemoveQuotesMenuItemActionPerformed
@@ -1140,12 +1044,6 @@ helpReduceWindowSizeMenuItem.addActionListener(new java.awt.event.ActionListener
     td.itemPasteNew(true);
   }//GEN-LAST:event_recordDuplicateMenuItemActionPerformed
 
-  private void helpReduceWindowSizeMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpReduceWindowSizeMenuItemActionPerformed
-    setBounds(100, 100, 500, 500);
-    // pack();
-
-  }//GEN-LAST:event_helpReduceWindowSizeMenuItemActionPerformed
-
   private void recordPasteNewMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recordPasteNewMenuItemActionPerformed
     td.itemPasteNew(false);
   }//GEN-LAST:event_recordPasteNewMenuItemActionPerformed
@@ -1153,10 +1051,6 @@ helpReduceWindowSizeMenuItem.addActionListener(new java.awt.event.ActionListener
   private void recordCopyMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recordCopyMenuItemActionPerformed
     td.itemCopy(false);
   }//GEN-LAST:event_recordCopyMenuItemActionPerformed
-
-  private void helpHistoryMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpHistoryMenuItemActionPerformed
-    td.openURL (programHistoryURL);
-  }//GEN-LAST:event_helpHistoryMenuItemActionPerformed
 
   private void tabsItemMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tabsItemMenuItemActionPerformed
     td.activateItemTab();
@@ -1212,14 +1106,6 @@ helpReduceWindowSizeMenuItem.addActionListener(new java.awt.event.ActionListener
   private void recordNewMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recordNewMenuItemActionPerformed
     newItem();
   }//GEN-LAST:event_recordNewMenuItemActionPerformed
-
-  private void helpUserGuideMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpUserGuideMenuItemActionPerformed
-    td.openURL (userGuideURL);
-  }//GEN-LAST:event_helpUserGuideMenuItemActionPerformed
-
-  private void helpHomePageMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpHomePageMenuItemActionPerformed
-    td.openURL (HOME_PAGE);
-  }//GEN-LAST:event_helpHomePageMenuItemActionPerformed
 
   private void itemDeleteButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemDeleteButtonActionPerformed
     deleteItem();
@@ -1281,15 +1167,6 @@ private void publishMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//G
   td.displayPublishWindow();
 }//GEN-LAST:event_publishMenuItemActionPerformed
 
-private void helpSoftwareUpdatesMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_helpSoftwareUpdatesMenuItemActionPerformed
-  programVersion.informUserIfNewer();
-  programVersion.informUserIfLatest();
-}//GEN-LAST:event_helpSoftwareUpdatesMenuItemActionPerformed
-
-private void submitFeedbackMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_submitFeedbackMenuItemActionPerformed
-  td.openURL ("mailto:support@powersurgepub.com");
-}//GEN-LAST:event_submitFeedbackMenuItemActionPerformed
-
 private void cleanUpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cleanUpMenuItemActionPerformed
   int response = JOptionPane.showConfirmDialog(
       this, 
@@ -1332,15 +1209,7 @@ private void cleanUpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JMenuItem fileRevertMenuItem;
   private javax.swing.JButton findButton;
   private javax.swing.JTextField findText;
-  private javax.swing.JSeparator helpAppSeparator;
-  private javax.swing.JMenuItem helpHistoryMenuItem;
-  private javax.swing.JMenuItem helpHomePageMenuItem;
   private javax.swing.JMenu helpMenu;
-  private javax.swing.JMenuItem helpReduceWindowSizeMenuItem;
-  private javax.swing.JMenuItem helpSoftwareUpdatesMenuItem;
-  private javax.swing.JMenuItem helpUserGuideMenuItem;
-  private javax.swing.JSeparator helpWebSeparator;
-  private javax.swing.JMenuItem helpWisdomSourcesMenuItem;
   private javax.swing.JButton itemAddQuotesButton;
   private javax.swing.JButton itemDeleteButton;
   private javax.swing.JButton itemFirstButton;
@@ -1379,7 +1248,6 @@ private void cleanUpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//G
   private javax.swing.JMenuItem recordPriorMenuItem;
   private javax.swing.JMenuItem recordRemoveQuotesMenuItem;
   private javax.swing.JButton rotateButton;
-  private javax.swing.JMenuItem submitFeedbackMenuItem;
   private javax.swing.JTabbedPane tabs;
   private javax.swing.JTabbedPane tabs2;
   private javax.swing.JMenuItem tabsItemMenuItem;

@@ -247,7 +247,7 @@ public class iWisdom
   
   /**      
     Opens a file and sets its view options and Web template 
-    and publishing frequence.
+    and publishing frequency.
    
     @param inFile File to be opened.
     @param inView View options to be used with this file.

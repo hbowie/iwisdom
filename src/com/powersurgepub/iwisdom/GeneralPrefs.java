@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2014 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ package com.powersurgepub.iwisdom;
 
   import com.powersurgepub.psutils.*;
   import com.powersurgepub.iwisdom.disk.*;
-import com.powersurgepub.iwisdom.iWisdomCommon;
+  import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.xos2.*;
   import javax.swing.*;
 

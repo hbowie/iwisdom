@@ -378,7 +378,7 @@ public class SortedItems
       WisdomItem nextItem;
       for (int itemIndex = 0; itemIndex < size(); itemIndex++) {
         nextItem = get (itemIndex);
-        DataRecord nextRec = nextItem.getDataRec (recDef);
+        DataRecord nextRec = nextItem.getDataRec (recDef, null);
         try {
           dataOut.nextRecordOut (nextRec);
         } catch (IOException e2) {
@@ -561,7 +561,7 @@ public class SortedItems
     } else {
       WisdomItem item = get (dsIndex);
       dsIndex++;
-      return item.getDataRec(recDef);
+      return item.getDataRec(recDef, null);
     }
   }
   

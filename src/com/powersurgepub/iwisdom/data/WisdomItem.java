@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2014 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,14 @@
 
 package com.powersurgepub.iwisdom.data;
 
-import com.powersurgepub.pstextio.TextLineWriter;
-import com.powersurgepub.pstextio.TextBlock;
+  import com.powersurgepub.pstextio.*;
   import com.powersurgepub.psdatalib.markup.*;
   import com.powersurgepub.psdatalib.txbio.*;
   import com.powersurgepub.psdatalib.psdata.*;
   import com.powersurgepub.psutils.*;
   import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.iwisdom.disk.*;
+  import com.powersurgepub.psdatalib.pstags.*;
   import java.io.*;
   import java.text.*;
   import java.util.*;
@@ -878,8 +878,8 @@ public class WisdomItem {
    
     @param recDef Record Definition to be used in building the record. 
     */
-  public DataRecord getDataRec (RecordDefinition recDef) {
-    return getDataRec (recDef, -1);
+  public DataRecord getDataRec (RecordDefinition recDef, Tags suppressTags) {
+    return getDataRec (recDef, suppressTags, -1);
   }
 
   /**
@@ -887,12 +887,24 @@ public class WisdomItem {
 
     @param recDef Record Definition to be used in building the record.
     */
-  public DataRecord getDataRec (RecordDefinition recDef, int categoryIndex) {
+  public DataRecord getDataRec (
+      RecordDefinition recDef, 
+      Tags suppressTags, 
+      int categoryIndex) {
     // Create a date formatter
     DateFormat fmt = new SimpleDateFormat ("MM/dd/yyyy");
     DataRecord nextRec = new DataRecord();
+    String cleansedTagsStr;
+    String categoryString = getCategoryString();
+    Tags categoryTags = new Tags(categoryString);
+    if (suppressTags != null) {
+      cleansedTagsStr = categoryTags.suppress(suppressTags);
+    } else {
+      cleansedTagsStr = categoryTags.toString();
+    }
+    Tags cleansedTags = new Tags (cleansedTagsStr);
     if (categoryIndex < 0 || categoryIndex >= getCategories()) {
-      nextRec.addField (recDef, getCategory().toString());
+      nextRec.addField (recDef, cleansedTagsStr);
     } else {
       nextRec.addField (recDef, getCategory(categoryIndex));
     }
@@ -921,12 +933,12 @@ public class WisdomItem {
     nextRec.addField (recDef, getAuthor().getCompleteNameLastNamesFirst());
     nextRec.addField (recDef, getAuthor().getCompleteName(true));
     if (categoryIndex < 0 || categoryIndex >= getCategories()) {
-      nextRec.addField (recDef, getCategory().getLinkedTags("../tags/"));
+      nextRec.addField (recDef, cleansedTags.getLinkedTags("../tags/"));
     } else {
       nextRec.addField (recDef, getCategory().getTagFileName(categoryIndex));
     }
     if (categoryIndex < 0 || categoryIndex >= getCategories()) {
-      nextRec.addField (recDef, getCategory().getLinkedTags("../wisdom/tags/"));
+      nextRec.addField (recDef, cleansedTags.getLinkedTags("../wisdom/tags/"));
     } else {
       nextRec.addField (recDef, getCategory().getTagFileName(categoryIndex));
     }

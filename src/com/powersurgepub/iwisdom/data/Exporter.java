@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2014 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
 
 package com.powersurgepub.iwisdom.data;
 
-import com.powersurgepub.pstextio.TextLineWriter;
-import com.powersurgepub.pstextio.FileMaker;
   import com.powersurgepub.psdatalib.txbio.*;
   import com.powersurgepub.psdatalib.tabdelim.*;
   import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.iwisdom.disk.*;
+  import com.powersurgepub.psdatalib.pstags.*;
+  import com.powersurgepub.pstextio.*;
   import com.powersurgepub.psutils.*;
   import java.io.*;
 
@@ -66,6 +66,8 @@ public class Exporter {
       WisdomIOFormat ioFormat,
       int selectionScope,
       String selectedCategory,
+      String selectTagsStr,
+      String suppressTagsStr,
       boolean splitCategories) {
     TextLineWriter writerGen = new FileMaker (exportFile);
     return export (
@@ -77,6 +79,8 @@ public class Exporter {
         ioFormat,
         selectionScope,
         selectedCategory,
+        selectTagsStr,
+        suppressTagsStr,
         splitCategories);
   }
 
@@ -109,6 +113,8 @@ public class Exporter {
       WisdomIOFormat ioFormat,
       int selectionScope,
       String selectedCategory,
+      String selectTagsStr,
+      String suppressTagsStr,
       boolean splitCategories) {
 
     WisdomXMLIO xmlio = diskStore.getXMLIO();
@@ -155,6 +161,8 @@ public class Exporter {
     //
     // Perform the Export
     //
+    Tags selectTags = new Tags(selectTagsStr);
+    Tags suppressTags = new Tags(suppressTagsStr);
     if (ok) {
     // Export in XML Format
       if (exportType.equals(WisdomIOFormats.XML)) {
@@ -180,7 +188,9 @@ public class Exporter {
         if (selectionScope == ALL) {
           for (int itemIndex = 0; itemIndex < sorted.size(); itemIndex++) {
             WisdomItem nextItem = sorted.get (itemIndex);
-            if (nextItem != null && (! nextItem.isDeleted())) {
+            Tags nextTags = new Tags(nextItem.getCategoryString());
+            boolean tagSelected = nextTags.anyTagFound(selectTags);
+            if (nextItem != null && (! nextItem.isDeleted()) && tagSelected) {
               exportOneItem (
                   diskStore,
                   nextItem,
@@ -189,6 +199,7 @@ public class Exporter {
                   markupWriterGen,
                   exportType,
                   false,
+                  suppressTagsStr,
                   splitCategories);
             } // end if input record not null
           } // end while more wisdom items in collection
@@ -212,6 +223,7 @@ public class Exporter {
                       markupWriterGen,
                       exportType,
                       false,
+                      suppressTagsStr,
                       splitCategories);
                 } // end if category match
               } // end while more categories for this item
@@ -228,6 +240,7 @@ public class Exporter {
               markupWriterGen,
               exportType,
               false,
+              suppressTagsStr,
               splitCategories);
         }
       } // end if not xml export
@@ -303,6 +316,7 @@ public class Exporter {
           markupWriter,
           ioFormat.getType(),
           authorLinksSeparate,
+          "",
           splitCategories);
     }
 
@@ -351,14 +365,22 @@ public class Exporter {
       MarkupWriter markupWriter,
       String exportType,
       boolean authorLinksSeparate,
+      String suppressTagsStr,
       boolean splitCategories) {
     boolean ok = true;
     WisdomXMLIO xmlio = diskStore.getXMLIO();
+    Tags suppressTags = null;
+    if (suppressTagsStr != null) {
+      suppressTags = new Tags(suppressTagsStr);
+    } 
     if (exportType.equals (WisdomIOFormats.TAB_DELIMITED)) {
       if (splitCategories) {
         for (int i = 0; i < oneItem.getCategories(); i++) {
+          String nextCategory = oneItem.getCategory(i);
+          
           try {
-            tdf.nextRecordOut (oneItem.getDataRec(WisdomItem.getRecDef(), i));
+            tdf.nextRecordOut (oneItem.getDataRec(WisdomItem.getRecDef(), 
+                suppressTags, i));
           } catch (java.io.IOException e) {
             ok = false;
             Trouble.getShared().report ("Trouble writing tab-delimited export file",
@@ -367,7 +389,8 @@ public class Exporter {
         }
       } else {
         try {
-          tdf.nextRecordOut (oneItem.getDataRec(WisdomItem.getRecDef()));
+          tdf.nextRecordOut (oneItem.getDataRec(WisdomItem.getRecDef(), 
+              suppressTags));
         } catch (java.io.IOException e) {
           ok = false;
           Trouble.getShared().report ("Trouble writing tab-delimited export file",

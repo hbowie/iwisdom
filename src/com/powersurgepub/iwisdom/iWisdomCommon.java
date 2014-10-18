@@ -403,6 +403,10 @@ public class iWisdomCommon
     recentFiles.savePrefs();
   }
   
+  public PrefsWindow getPrefsWindow() {
+    return prefsWindow;
+  }
+  
   public void setSplit (boolean splitPaneHorizontal) {
     int splitOrientation = JSplitPane.VERTICAL_SPLIT;
     if (splitPaneHorizontal) {
@@ -674,6 +678,7 @@ public class iWisdomCommon
     categories = new CategoryList();
     categories.registerValue("");
     items.addView (categories);
+    prefsWindow.getTagsPrefs().setTagsValueList(categories);
     
     sorted = new SortedItems 
         (items, diskStore.getComparator(), diskStore.getSelector());
@@ -1848,6 +1853,10 @@ public class iWisdomCommon
     diskStore.prePub(publishTo, collectionWindow, sorted);
     File dataFolder = new File (publishTo, "data");
     File exportFile = new File (dataFolder, "export.tab");
+    String selectTagsStr 
+        = prefsWindow.getTagsPrefs().getSelectTagsAsString();
+    String suppressTagsStr 
+        = prefsWindow.getTagsPrefs().getSuppressTagsAsString();
 
     Exporter.export(
           diskStore,
@@ -1858,6 +1867,8 @@ public class iWisdomCommon
           wisdomIO.get(WisdomIOFormats.TAB_DELIMITED),
           Exporter.ALL,
           "",
+          selectTagsStr,
+          suppressTagsStr,
           false);
 
     exportFile = new File (dataFolder, "split_export.tab");
@@ -1870,6 +1881,8 @@ public class iWisdomCommon
           wisdomIO.get(WisdomIOFormats.TAB_DELIMITED),
           Exporter.ALL,
           "",
+          selectTagsStr,
+          suppressTagsStr,
           true);
 
     exportFile = new File (dataFolder, "info_export.tab");

@@ -16,7 +16,8 @@
 
 package com.powersurgepub.iwisdom;
 
-  import com.powersurgepub.psfiles.FilePrefs;
+  import com.powersurgepub.psfiles.*;
+  import com.powersurgepub.psdatalib.pstags.*;
   import com.powersurgepub.psdatalib.ui.*;
   import com.powersurgepub.psutils.*;
   import com.powersurgepub.iwisdom.disk.*;
@@ -43,7 +44,8 @@ public class PrefsWindow
   private DisplayPrefs      displayPrefs;
   private ViewPrefs         viewPrefs;
   private TransferPrefs     transferPrefs;
-  private FilePrefs       backupPrefs;
+  private FilePrefs         backupPrefs;
+  private TagsPrefs         tagsPrefs;
   
   /** Creates new form PrefsWindow */
   public PrefsWindow(iWisdomCommon td) {
@@ -71,6 +73,9 @@ public class PrefsWindow
     backupPrefs = FilePrefs.getShared(td);
     prefsTabs.addTab ("Backups", backupPrefs);
     
+    tagsPrefs = new TagsPrefs();
+    prefsTabs.addTab ("Tags Export", tagsPrefs);
+    
     setupComplete = true;
   }
   
@@ -84,6 +89,10 @@ public class PrefsWindow
 
   public TransferPrefs getTransferPrefs() {
     return transferPrefs;
+  }
+  
+  public TagsPrefs getTagsPrefs() {
+    return tagsPrefs;
   }
   
   /**
@@ -125,6 +134,7 @@ public class PrefsWindow
 
   public void savePrefs() {
     commonPrefs.savePrefs();
+    tagsPrefs.savePrefs();
   }
   
   /** This method is called from within the constructor to

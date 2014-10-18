@@ -1,4 +1,11 @@
 
+## Version 2.60 (2014-10-18)
+
+1. **Added Tags Export Preferences**
+
+    Added Tags Export application preferences, allowing the user to specify tags to select for export, and/or tags to suppress.
+
+
 ## Version 2.50 (2013-04-25)
 
 1. **Released as Open Source**

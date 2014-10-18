@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2014 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,9 +16,7 @@
 
 package com.powersurgepub.iwisdom;
 
-  import com.powersurgepub.pstextio.TextLineWriter;
-import com.powersurgepub.pstextio.ClipboardMaker;
-import com.powersurgepub.pstextio.FileMaker;
+  import com.powersurgepub.pstextio.*;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psutils.*;
@@ -472,26 +470,10 @@ public class ExportWindow
     }
     
     if (writerGen != null) {
-  /**
-   Export some wisdom data.
-
-   @param diskStore           The WisdomDiskStore from which the item is to
-                              be exported.
-   @param collectionWindow    The window representing the collection metadata.
-   @param sorted              The sorted list of items to be exported.
-   @param oneItem             The currently selected item.
-   @param writer              The line writer to receive the formatted output.
-   @param ioFormat            The input/output format to be used.
-   @param selectionScope      An indicator of whether the all of the list is
-                              to be exported, or only one specific category,
-                              or only the currently selected item.
-   @param selectedCategory    The selected category, if the scope is constrained
-                              to a single category.
-   @param splitCategories     Should a separate record be written out for each
-                              category?
-   @return                    A string containing the name of the output file,
-                              or an error message.
-   */
+      String selectTagsStr 
+        = td.getPrefsWindow().getTagsPrefs().getSelectTagsAsString();
+      String suppressTagsStr 
+        = td.getPrefsWindow().getTagsPrefs().getSuppressTagsAsString();
       int selectionScope = Exporter.ALL;
       if (selectedCategoryRadioButton.isSelected()) {
         selectionScope = Exporter.CATEGORY;
@@ -509,6 +491,8 @@ public class ExportWindow
           wisdomIO.getSelectedFormat(),
           selectionScope,
           categoryComboBox.getSelectedItem().toString(),
+          selectTagsStr,
+          suppressTagsStr,
           categorySplitCheckBox.isSelected());
     }
   }//GEN-LAST:event_exportButtonActionPerformed

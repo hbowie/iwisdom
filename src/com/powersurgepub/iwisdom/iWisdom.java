@@ -43,7 +43,7 @@ public class iWisdom
           {
   
   public static final String PROGRAM_NAME = "iWisdom";
-  public static final String PROGRAM_VERSION = "2.50";
+  public static final String PROGRAM_VERSION = "2.60";
   
   public static final int    CHILD_WINDOW_X_OFFSET = 60;
   public static final int    CHILD_WINDOW_Y_OFFSET = 60;

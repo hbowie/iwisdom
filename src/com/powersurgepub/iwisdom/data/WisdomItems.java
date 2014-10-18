@@ -400,7 +400,7 @@ public class WisdomItems
       for (itemIndex = 0; itemIndex < size(); itemIndex++) {
         nextItem = get (itemIndex);
         if (! nextItem.isDeleted()) {
-          DataRecord nextRec = nextItem.getDataRec (recDef);
+          DataRecord nextRec = nextItem.getDataRec (recDef, null);
           try {
             dataOut.nextRecordOut (nextRec);
           } catch (IOException e2) {
@@ -546,7 +546,7 @@ public class WisdomItems
         dsIndex++;
       } while ((! isAtEnd()) && (item.isDeleted()));
       if (goodRec) {
-        return item.getDataRec(recDef);
+        return item.getDataRec(recDef, null);
       }
     }
     return null;

@@ -16,12 +16,13 @@
 
 package com.powersurgepub.iwisdom.data;
 
-import com.powersurgepub.pstextio.FileMaker;
-  import com.powersurgepub.psdatalib.markup.*;
-  import com.powersurgepub.psdatalib.txbio.*;
-  import com.powersurgepub.psdatalib.psdata.*;
   import com.powersurgepub.iwisdom.*; 
   import com.powersurgepub.iwisdom.disk.*;
+  import com.powersurgepub.psdatalib.markup.*;
+  import com.powersurgepub.psdatalib.psdata.*;
+  import com.powersurgepub.psdatalib.txbio.*;
+  import com.powersurgepub.psdatalib.psdata.*;
+  import com.powersurgepub.pstextio.*;
   import com.powersurgepub.psutils.*;
   import java.io.*;
   import java.net.*;

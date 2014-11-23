@@ -16,6 +16,7 @@
 
 package com.powersurgepub.iwisdom.data;
 
+  import com.powersurgepub.psdatalib.psdata.*;
   import com.powersurgepub.psdatalib.txbio.*;
   import com.powersurgepub.psdatalib.tabdelim.*;
   import com.powersurgepub.iwisdom.*;

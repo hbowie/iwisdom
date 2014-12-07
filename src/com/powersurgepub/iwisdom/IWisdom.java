@@ -35,7 +35,7 @@ package com.powersurgepub.iwisdom;
    of wisdom. 
  */
 
-public class iWisdom 
+public class IWisdom 
     extends javax.swing.JFrame 
       implements 
         com.powersurgepub.iwisdom.disk.FileOpener, 
@@ -87,9 +87,9 @@ public class iWisdom
   
   /**
    * 
-   *    Creates new form iWisdom.
+   *    Creates new form IWisdom.
    */
-  public iWisdom() {
+  public IWisdom() {
     
     // Perform Platform-Specific Initialization
     appster = new Appster
@@ -1189,7 +1189,7 @@ private void cleanUpMenuItemActionPerformed(java.awt.event.ActionEvent evt) {//G
   public static void main(String args[]) {
     java.awt.EventQueue.invokeLater(new Runnable() {
         public void run() {
-            new iWisdom().setVisible(true);
+            new IWisdom().setVisible(true);
         }
     });
   }

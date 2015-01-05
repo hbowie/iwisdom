@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2015 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,8 +16,9 @@
 
 package com.powersurgepub.iwisdom.data;
 
-import com.powersurgepub.pstextio.TextLineWriter;
+
   import com.powersurgepub.psdatalib.txbio.*;
+  import com.powersurgepub.pstextio.*;
   import com.powersurgepub.iwisdom.*;
   import java.util.*;
   import javax.swing.*;
@@ -52,6 +53,8 @@ public class WisdomIOFormats {
   public static final String STRUCTURED_TEXT_FILE_EXT = "txt";
   public static final String SPREADSHEET             = "Spreadsheet";
   public static final String SPREADSHEET_FILE_EXT    = "xls";
+  public static final String NOTENIK                 = "Notenik";
+  public static final String NOTENIK_FILE_EXT        = "md";
   
   private ArrayList ioFormats = new ArrayList();
 
@@ -130,6 +133,11 @@ public class WisdomIOFormats {
         false, false, false, true, 0, 
         MarkupWriter.UNDEFINED_FORMAT,
         WisdomIOFormat.TAB_DELIMITED_WRITER));
+    
+    ioFormats.add(new WisdomIOFormat(NOTENIK, NOTENIK_FILE_EXT,
+        true, true, false, false, 4, 
+        MarkupWriter.UNDEFINED_FORMAT,
+        WisdomIOFormat.LINE_WRITER_ONLY));
 
     selectedFormat = get(ioFormats.size() - 1);
   }

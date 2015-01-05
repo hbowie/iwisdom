@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2015 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,10 +16,10 @@
 
 package com.powersurgepub.iwisdom;
 
-import com.powersurgepub.psdatalib.psdata.widgets.TextSelector;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psdatalib.markup.*;
+  import com.powersurgepub.psdatalib.psdata.widgets.*;
   import com.powersurgepub.psdatalib.ui.*;
 	import com.powersurgepub.psutils.*;
 

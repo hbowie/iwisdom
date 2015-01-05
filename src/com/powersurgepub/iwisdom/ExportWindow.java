@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2014 Herb Bowie
+ * Copyright 2003 - 2015 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,6 +36,7 @@ public class ExportWindow
 
   private             WisdomIOFormats       wisdomIO = new WisdomIOFormats();
 
+  private             File           exportFile;
   private             TextLineWriter writerGen;
   
   private boolean allFieldsFormatsLoaded = false;
@@ -119,24 +120,27 @@ public class ExportWindow
     }
   }
   
-  public void selectFile () {
+  private void selectFile () {
     diskStore = td.diskStore;
     boolean ok = true;
     writerGen = null;
+    exportFile = null;
     
     wisdomIO.select((WisdomIOFormat)exportTypeComboBox.getSelectedItem());
     XFileChooser chooser = new XFileChooser (); 
-    chooser.setFileSelectionMode(XFileChooser.FILES_ONLY); 
+    if (wisdomIO.getSelectedFormat().getType().equalsIgnoreCase(WisdomIOFormats.NOTENIK)) {
+      chooser.setFileSelectionMode(XFileChooser.DIRECTORIES_ONLY);
+    } else {
+      chooser.setFileSelectionMode(XFileChooser.FILES_ONLY); 
+      File defaultExportFile = new File 
+          (diskStore.getExportFolder(),
+          wisdomIO.addFileExtension("iWisdom_export"));
+      chooser.setFile (defaultExportFile);
+    }
     chooser.setCurrentDirectory (diskStore.getExportFolder()); 
-    File defaultExportFile = new File 
-        (diskStore.getExportFolder(),
-        wisdomIO.addFileExtension("iWisdom_export"));
-    chooser.setFile (defaultExportFile);
     File result = chooser.showSaveDialog (this); 
     if (result != null) {
-      System.out.println ("ExportWindow.selectFile result = " + result.toString());
-      System.out.println ("  chooser.getSelectedFile      = " 
-          + chooser.getSelectedFile().toString());
+      exportFile = chooser.getSelectedFile();
       writerGen = new FileMaker (chooser.getSelectedFile());
     }
   }
@@ -328,7 +332,7 @@ public class ExportWindow
     gridBagConstraints.insets = new java.awt.Insets(12, 4, 4, 4);
     getContentPane().add(exportTypeLabel, gridBagConstraints);
 
-    exportTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "XML", "Tab Delimited Text", "Plain Text (Markdown)", "Plain Text (Textile)" }));
+    exportTypeComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Notenik", "Plain Text (Markdown)", "Plain Text (Textile)", "Tab Delimited Text", "XML", " ", " " }));
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.gridx = 1;
     gridBagConstraints.gridy = 3;
@@ -487,6 +491,7 @@ public class ExportWindow
           td.collectionWindow,
           td.sorted,
           td.item,
+          exportFile,
           writerGen,
           wisdomIO.getSelectedFormat(),
           selectionScope,

@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2014 Herb Bowie
+ * Copyright 2003 - 2015 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,14 @@
 
 package com.powersurgepub.iwisdom.data;
 
-import com.powersurgepub.psdatalib.psdata.values.Author;
+  import com.powersurgepub.psdatalib.notenik.*;
   import com.powersurgepub.psdatalib.psdata.*;
+  import com.powersurgepub.psdatalib.psdata.values.*;
   import com.powersurgepub.psdatalib.txbio.*;
   import com.powersurgepub.psdatalib.tabdelim.*;
   import com.powersurgepub.iwisdom.*;
   import com.powersurgepub.iwisdom.disk.*;
+import com.powersurgepub.psdatalib.markup.*;
   import com.powersurgepub.psdatalib.pstags.*;
   import com.powersurgepub.pstextio.*;
   import com.powersurgepub.psutils.*;
@@ -40,53 +42,6 @@ public class Exporter {
   public static final boolean ONE_PARAGRAPH_ONLY = false;
 
   /**
-   Export some wisdom data to a disk file.
-
-   @param diskStore           The WisdomDiskStore from which the item is to
-                              be exported.
-   @param collectionWindow    The window representing the collection metadata.
-   @param sorted              The sorted list of items to be exported.
-   @param item                The currently selected item.
-   @param exportFile          The file to receive the formatted output.
-   @param ioFormat            The input/output format to be used.
-   @param selectionScope      An indicator of whether the all of the list is
-                              to be exported, or only one specific category,
-                              or only the currently selected item.
-   @param selectedCategory    The selected category, if the scope is constrained
-                              to a single category.
-   @param splitCategories     Should a separate record be written out for each
-                              category?
-   @return                    A string containing the name of the output file,
-                              or an error message.
-   */
-  public static String export(
-      WisdomDiskStore diskStore,
-      CollectionWindow collectionWindow,
-      SortedItems sorted,
-      WisdomItem item,
-      File exportFile,
-      WisdomIOFormat ioFormat,
-      int selectionScope,
-      String selectedCategory,
-      String selectTagsStr,
-      String suppressTagsStr,
-      boolean splitCategories) {
-    TextLineWriter writerGen = new FileMaker (exportFile);
-    return export (
-        diskStore,
-        collectionWindow,
-        sorted,
-        item,
-        writerGen,
-        ioFormat,
-        selectionScope,
-        selectedCategory,
-        selectTagsStr,
-        suppressTagsStr,
-        splitCategories);
-  }
-
-  /**
    Export some wisdom data.
 
    @param diskStore           The WisdomDiskStore from which the item is to
@@ -94,6 +49,7 @@ public class Exporter {
    @param collectionWindow    The window representing the collection metadata.
    @param sorted              The sorted list of items to be exported.
    @param oneItem             The currently selected item.
+   @param exportFile          The file/folder to receive the formatted output.
    @param writer              The line writer to receive the formatted output.
    @param ioFormat            The input/output format to be used.
    @param selectionScope      An indicator of whether the all of the list is
@@ -111,13 +67,26 @@ public class Exporter {
       CollectionWindow collectionWindow,
       SortedItems sorted,
       WisdomItem item,
-      TextLineWriter writer,
+      File exportFile,
+      TextLineWriter inWriter,
       WisdomIOFormat ioFormat,
       int selectionScope,
       String selectedCategory,
       String selectTagsStr,
       String suppressTagsStr,
       boolean splitCategories) {
+    
+    TextLineWriter writer;
+    if (inWriter != null) {
+      writer = inWriter;
+    }
+    else
+    if (exportFile != null
+        && exportFile.isFile()) {
+      writer = new FileMaker (exportFile);
+    } else {
+      writer = null;
+    }
 
     WisdomXMLIO xmlio = diskStore.getXMLIO();
     String exportType = ioFormat.getType();
@@ -129,6 +98,10 @@ public class Exporter {
 
     TabDelimFile tdf = null;
     MarkupWriter markupWriterGen = null;
+    
+    NoteIO noteIO = null;
+    NoteParms noteParms = null;
+    RecordDefinition notenikRecDef = null;
 
     // Export in Tab-Delimited format
     if (exportType.equals(WisdomIOFormats.TAB_DELIMITED)) {
@@ -145,6 +118,13 @@ public class Exporter {
     if (exportType.equals (WisdomIOFormats.TEXTBLOCK)) {
       writer.openForOutput();
     }
+    else
+    if (exportType.equals (WisdomIOFormats.NOTENIK)) {
+      noteIO = new NoteIO(exportFile, NoteParms.QUOTE_TYPE);
+      noteParms = noteIO.getNoteParms();
+      noteParms.buildRecordDefinition();
+      notenikRecDef = noteParms.getRecDef();
+    }
     else {
       markupWriterGen = getMarkupWriter
           (writer, ioFormat.getMarkupFormat());
@@ -157,7 +137,6 @@ public class Exporter {
         markupWriterGen.endHead();
         markupWriterGen.startBody();
       }
-
     }
 
     //
@@ -193,6 +172,12 @@ public class Exporter {
             Tags nextTags = new Tags(nextItem.getCategoryString());
             boolean tagSelected = nextTags.anyTagFound(selectTags);
             if (nextItem != null && (! nextItem.isDeleted()) && tagSelected) {
+              if (exportType.equals(WisdomIOFormats.NOTENIK)) {
+                File notenikFile = new File(exportFile, 
+                    StringUtils.makeReadableFileName(nextItem.getTitle()) 
+                      + "." + noteParms.getPreferredFileExt());
+                writer = new FileMaker(notenikFile);
+              }
               exportOneItem (
                   diskStore,
                   nextItem,
@@ -202,7 +187,8 @@ public class Exporter {
                   exportType,
                   false,
                   suppressTagsStr,
-                  splitCategories);
+                  splitCategories,
+                  noteIO);
             } // end if input record not null
           } // end while more wisdom items in collection
         } // end if entire collection is to be output
@@ -217,6 +203,12 @@ public class Exporter {
               while (itemCategory.hasNextCategory()) {
                 String nextCategory = itemCategory.nextCategory();
                 if (nextCategory.equalsIgnoreCase(selectedCategory)) {
+                  if (exportType.equals(WisdomIOFormats.NOTENIK)) {
+                    File notenikFile = new File(exportFile, 
+                      StringUtils.makeReadableFileName(nextItem.getTitle()) 
+                        + "." + noteParms.getPreferredFileExt());
+                    writer = new FileMaker(notenikFile);
+                  }
                   exportOneItem (
                       diskStore,
                       nextItem,
@@ -226,7 +218,8 @@ public class Exporter {
                       exportType,
                       false,
                       suppressTagsStr,
-                      splitCategories);
+                      splitCategories,
+                      noteIO);
                 } // end if category match
               } // end while more categories for this item
             } // end if not deleted
@@ -234,6 +227,12 @@ public class Exporter {
         } // end if selected category is to be output
         else
         if (selectionScope == CURRENT) {
+          if (exportType.equals(WisdomIOFormats.NOTENIK)) {
+            File notenikFile = new File(exportFile, 
+              StringUtils.makeReadableFileName(item.getTitle()) 
+                + "." + noteParms.getPreferredFileExt());
+            writer = new FileMaker(notenikFile);
+          }
           exportOneItem (
               diskStore,
               item,
@@ -243,7 +242,8 @@ public class Exporter {
               exportType,
               false,
               suppressTagsStr,
-              splitCategories);
+              splitCategories,
+              noteIO);
         }
       } // end if not xml export
     } // end if ok
@@ -264,6 +264,10 @@ public class Exporter {
     else
     if (exportType.equals (WisdomIOFormats.TEXTBLOCK)) {
       writer.close();
+    }
+    else
+    if (exportType.equals(WisdomIOFormats.NOTENIK)) {
+      ok = writer.close();
     }
     else
     if (exportType.equals (WisdomIOFormats.XML)) {
@@ -319,7 +323,8 @@ public class Exporter {
           ioFormat.getType(),
           authorLinksSeparate,
           "",
-          splitCategories);
+          splitCategories,
+          null);
     }
 
     if (ok) {
@@ -357,6 +362,7 @@ public class Exporter {
    @param authorLinksSeparate Should author links be separated from their names?
    @param splitCategories     Should a separate record be written out for each
                               category?
+   @param noteIO              A noteIO object, if applicable, else null.
    @return                    True if all went well.
    */
   public static boolean exportOneItem (
@@ -368,7 +374,8 @@ public class Exporter {
       String exportType,
       boolean authorLinksSeparate,
       String suppressTagsStr,
-      boolean splitCategories) {
+      boolean splitCategories,
+      NoteIO noteIO) {
     boolean ok = true;
     WisdomXMLIO xmlio = diskStore.getXMLIO();
     Tags suppressTags = null;
@@ -421,6 +428,10 @@ public class Exporter {
     else
     if (exportType.equals(WisdomIOFormats.STRUCTURED_TEXT)) {
       oneItem.writeMarkup(markupWriter, null, false, false);
+    }
+    else
+    if (exportType.equals(WisdomIOFormats.NOTENIK)) {
+      ok = exportWisdomItemToNote(oneItem, suppressTags, noteIO, writer);
     } else {
       ok = exportWisdomItemToMarkup
           (oneItem, markupWriter, exportType, authorLinksSeparate);
@@ -691,6 +702,49 @@ public class Exporter {
       }
       markupWriter.write (" ");
     }
+  }
+  
+  private static boolean exportWisdomItemToNote(
+      WisdomItem oneItem, 
+      Tags suppressTags,
+      NoteIO noteIO, 
+      TextLineWriter writer) {
+    
+    RecordDefinition recDef = noteIO.getRecDef();
+    
+    Note note = new Note(recDef);
+    
+    note.setTitle(oneItem.getTitle());
+    
+    String cleansedTagsStr;
+    String tagsString = oneItem.getCategoryString();
+    Tags tags = new Tags(tagsString);
+    if (suppressTags != null) {
+      cleansedTagsStr = tags.suppress(suppressTags);
+    } else {
+      cleansedTagsStr = tagsString;
+    }
+    note.addField(recDef, cleansedTagsStr);
+    
+    
+    note.addField(recDef, oneItem.getAuthorCompleteName());
+    note.addField(recDef, oneItem.getAuthorInfo());
+    note.addField(recDef, oneItem.getAuthorLink());
+    note.addField(recDef, oneItem.getSourceAsString());
+    note.addField(recDef, oneItem.getSourceTypeLabel());
+    note.addField(recDef, oneItem.getYear());
+    note.addField(recDef, oneItem.getMinorTitle());
+    note.addField(recDef, oneItem.getSourceLink());
+    note.addField(recDef, oneItem.getSourceID());
+    note.addField(recDef, oneItem.getPages());
+    note.addField(recDef, oneItem.getRights());
+    note.addField(recDef, oneItem.getRightsOwner());
+    note.addField(recDef, oneItem.getPublisher());
+    note.addField(recDef, oneItem.getCity());
+    note.addField(recDef, "");
+    note.setBody(oneItem.getBody(MarkupElement.MINIMAL_HTML, false));
+    
+    return noteIO.save(note, writer);
   }
 
 }

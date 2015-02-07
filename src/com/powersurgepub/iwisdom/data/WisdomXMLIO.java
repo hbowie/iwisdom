@@ -16,7 +16,7 @@
 
 package com.powersurgepub.iwisdom.data;
 
-import com.powersurgepub.psdatalib.psdata.values.Author;
+  import com.powersurgepub.psdatalib.psdata.values.*;
   import com.powersurgepub.iwisdom.*; 
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psdatalib.markup.*;

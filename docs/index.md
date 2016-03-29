@@ -156,7 +156,7 @@ Because iWisdom may be run on multiple platforms, it may look slightly different
 <h3 id="rights">Rights</h3>
 
 
-iWisdom Copyright 2003 - 2014 by Herb Bowie
+iWisdom Copyright 2003 - 2016 by Herb Bowie
 
 iWisdom is [open source software](http://opensource.org/osd). Source code is available at [GitHub](http://github.com/hbowie/iwisdom).
 

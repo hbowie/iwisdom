@@ -1,4 +1,11 @@
 
+## Version 3.00 (2016-03-28)
+
+1. **Available Once Again as a Mac App**
+
+    iWisdom is once again available as a full-fledged Mac Application.
+
+
 ## Version 2.60 (2014-10-18)
 
 1. **Added Tags Export Preferences**

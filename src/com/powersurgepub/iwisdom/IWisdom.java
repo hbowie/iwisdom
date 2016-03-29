@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2016 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -43,7 +43,7 @@ public class IWisdom
           {
   
   public static final String PROGRAM_NAME = "iWisdom";
-  public static final String PROGRAM_VERSION = "2.60";
+  public static final String PROGRAM_VERSION = "3.00";
   
   public static final int    CHILD_WINDOW_X_OFFSET = 60;
   public static final int    CHILD_WINDOW_Y_OFFSET = 60;

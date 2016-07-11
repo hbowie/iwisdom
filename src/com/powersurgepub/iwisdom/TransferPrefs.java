@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2013 Herb Bowie
+ * Copyright 2003 - 2016 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,10 +16,8 @@
 
 package com.powersurgepub.iwisdom;
 
-import com.powersurgepub.psdatalib.tabdelim.TabDelimFile;
-import com.powersurgepub.pstextio.StringMaker;
-import com.powersurgepub.pstextio.TextLineWriter;
-  import com.powersurgepub.iwisdom.*;
+  import com.powersurgepub.psdatalib.tabdelim.*;
+  import com.powersurgepub.pstextio.*;
   import com.powersurgepub.iwisdom.data.*;
   import com.powersurgepub.psutils.*;
 

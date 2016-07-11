@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2015 Herb Bowie
+ * Copyright 2003 - 2016 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,7 +15,6 @@
  */
 
 package com.powersurgepub.iwisdom.data;
-
 
   import com.powersurgepub.psdatalib.txbio.*;
   import com.powersurgepub.pstextio.*;
@@ -55,6 +54,7 @@ public class WisdomIOFormats {
   public static final String SPREADSHEET_FILE_EXT    = "xls";
   public static final String NOTENIK                 = "Notenik";
   public static final String NOTENIK_FILE_EXT        = "md";
+  public static final String BOOTSTRAP               = "HTML for Bootstrap";
   
   private ArrayList ioFormats = new ArrayList();
 
@@ -81,6 +81,11 @@ public class WisdomIOFormats {
 
     ioFormats.add(new WisdomIOFormat(HTML, HTML_FILE_EXT,
         false, true, false, true, 8, 
+        MarkupWriter.HTML_FORMAT,
+        WisdomIOFormat.MARKUP_WRITER));
+    
+    ioFormats.add(new WisdomIOFormat(BOOTSTRAP, HTML_FILE_EXT,
+        false, true, true, false, 6, 
         MarkupWriter.HTML_FORMAT,
         WisdomIOFormat.MARKUP_WRITER));
 

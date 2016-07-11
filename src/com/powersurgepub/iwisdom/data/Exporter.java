@@ -1,5 +1,5 @@
 /*
- * Copyright 2003 - 2015 Herb Bowie
+ * Copyright 2003 - 2016 Herb Bowie
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -25,6 +25,7 @@ package com.powersurgepub.iwisdom.data;
   import com.powersurgepub.iwisdom.disk.*;
   import com.powersurgepub.psdatalib.markup.*;
   import com.powersurgepub.psdatalib.pstags.*;
+  import com.powersurgepub.psdatalib.txbmodel.*;
   import com.powersurgepub.pstextio.*;
   import com.powersurgepub.psutils.*;
   import java.io.*;
@@ -430,6 +431,11 @@ public class Exporter {
       oneItem.writeMarkup(markupWriter, null, false, false);
     }
     else
+    if (exportType.equals(WisdomIOFormats.BOOTSTRAP)) {
+      ok = exportWisdomItemToBootstrap
+          (oneItem, markupWriter, exportType, authorLinksSeparate);
+    }
+    else
     if (exportType.equals(WisdomIOFormats.NOTENIK)) {
       ok = exportWisdomItemToNote(oneItem, suppressTags, noteIO, writer);
     } else {
@@ -590,6 +596,118 @@ public class Exporter {
     }
 
     markupWriter.writeLinks();
+
+    return ok;
+  }
+  
+ /**
+   Export one wisdom item to a markup format (HTML, Textile, Markdown, etc.)
+
+   @param oneItem The item to be written.
+   @return True if the item was written successfully.
+   */
+  public static boolean exportWisdomItemToBootstrap (
+      WisdomItem oneItem,
+      MarkupWriter markupWriter,
+      String exportType,
+      boolean authorLinksSeparate) {
+
+    boolean ok = true;
+    if (markupWriter == null) {
+      System.out.println
+          ("ExportWindow exportWisdomItemToBootstrap markupWriter is null");
+    }
+
+    // Write Body
+    markupWriter.startBlockQuote("", true);
+    oneItem.getBodyAsMarkup().writeMarkup (markupWriter);
+    markupWriter.startXML (TextType.FOOTER, "", true, true, false);
+
+    // Write Author(s), if any
+    String authorCompleteName = oneItem.getAuthorCompleteName();
+    if (authorCompleteName.length() > 0) {
+      Author author = oneItem.getAuthor();
+      String authorLink;
+      int numberOfAuthors = author.getNumberOfAuthors();
+      if (author.isCompound()) {
+        for (int i = 0; i < numberOfAuthors; i++) {
+          Author nextAuthor = author.getAuthor (i);
+          authorLink = nextAuthor.getALink();
+          markupWriter.writeItemInFlatList (
+              nextAuthor.getCompleteName(),
+              authorLink,
+              i,
+              numberOfAuthors);
+        }
+      } else {
+        authorLink = author.getALink();
+        markupWriter.writeItemInFlatList
+            (authorCompleteName, authorLink, 0, 1);
+      }
+      String authorInfo = oneItem.getAuthorInfo();
+      if (authorInfo.length() > 0) {
+        markupWriter.writeItemInFlatList (", " + authorInfo, "",  0, 1);
+      }
+    } // end if we have any author names at all
+
+    // Display Source, if any
+    if (oneItem.getSourceAsString().length() > 0
+        && (! oneItem.getSourceAsString().equalsIgnoreCase("unknown"))) {
+      markupWriter.write (" from ");
+      if (oneItem.getSourceType() != WisdomSource.UNKNOWN_TYPE) {
+        markupWriter.write ("the ");
+        markupWriter.write (oneItem.getSourceTypeLabel().toLowerCase());
+        markupWriter.write (" ");
+      }
+      markupWriter.startCitation ("");
+      markupWriter.writeLink
+          (oneItem.getSourceAsString(), oneItem.getASourceLink());
+      markupWriter.endCitation();
+      if (oneItem.getMinorTitle().length() > 0) {
+        markupWriter.write(", ");
+        StringBuffer minorTitle = new StringBuffer(oneItem.getMinorTitle());
+        if (minorTitle.charAt(0) != '"') {
+          minorTitle.insert(0, '"');
+          minorTitle.append('"');
+        }
+        markupWriter.cleanAndWrite(minorTitle.toString());
+      }
+      if (oneItem.getRights().length() == 0) {
+        if (oneItem.getYear().length() > 0) {
+          markupWriter.write (" (" + oneItem.getYear() + ")");
+        }
+      }
+    }
+
+    // Display Rights / Publication Year
+    if (oneItem.getRights().length() > 0) {
+      StringBuffer yearRights = new StringBuffer();
+      String rights = oneItem.getRights();
+      if (rights.length() > 0
+          && rights.startsWith ("Copyright")) {
+        yearRights.append ("Copyright &copy;");
+      } else {
+        yearRights.append (rights);
+      }
+      if (! oneItem.getYear().equals("")) {
+        if (yearRights.length() > 0) {
+          yearRights.append (" ");
+        }
+        yearRights.append (oneItem.getYear());
+      }
+      if (oneItem.getRightsOwner().length() > 0) {
+        if (yearRights.length() > 0) {
+          yearRights.append (" by ");
+        }
+        yearRights.append (oneItem.getRightsOwner());
+      }
+      if (yearRights.length() > 0) {
+        markupWriter.cleanAndWrite (" " + yearRights.toString());
+      }
+    }
+
+    markupWriter.endXML(TextType.FOOTER, true, true, false);
+    markupWriter.endBlockQuote();
 
     return ok;
   }

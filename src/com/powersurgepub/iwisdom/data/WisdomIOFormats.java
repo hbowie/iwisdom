@@ -18,7 +18,6 @@ package com.powersurgepub.iwisdom.data;
 
   import com.powersurgepub.psdatalib.txbio.*;
   import com.powersurgepub.pstextio.*;
-  import com.powersurgepub.iwisdom.*;
   import java.util.*;
   import javax.swing.*;
 
@@ -86,7 +85,7 @@ public class WisdomIOFormats {
     
     ioFormats.add(new WisdomIOFormat(BOOTSTRAP, HTML_FILE_EXT,
         false, true, true, false, 6, 
-        MarkupWriter.HTML_FORMAT,
+        MarkupWriter.HTML_FRAGMENT_FORMAT,
         WisdomIOFormat.MARKUP_WRITER));
 
     ioFormats.add(new WisdomIOFormat(MARKDOWN, MARKDOWN_FILE_EXT,

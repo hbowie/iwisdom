@@ -1,4 +1,11 @@
 
+## Version 3.10 (2016-07-10)
+
+1. **Added an "HTML for Bootstrap" Transfer Option**
+
+    Added a new Transfer format, to format a quotation in HTML in a manner suitable for use with Bootstrap.
+
+
 ## Version 3.00 (2016-03-28)
 
 1. **Available Once Again as a Mac App**

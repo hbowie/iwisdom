@@ -365,7 +365,7 @@ public class iWisdomCommon
     workTab = new WorkPanel (this);
     tabs2.addTab ("Work", workTab);
     
-    this.activateDisplayTab();
+    activateDisplayTab();
     
     newUserPrefs();
     

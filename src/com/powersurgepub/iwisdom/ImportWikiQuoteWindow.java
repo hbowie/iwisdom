@@ -800,7 +800,7 @@ private void searchButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-
 
 private void formComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentHidden
   closePage();
-  WindowMenuManager.getShared().hide(this);
+  WindowMenuManager.getShared().hideAndRemove(this);
 }//GEN-LAST:event_formComponentHidden
 
 private void nextButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextButtonActionPerformed

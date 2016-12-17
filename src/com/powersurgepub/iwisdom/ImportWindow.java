@@ -514,7 +514,7 @@ public class ImportWindow
   }//GEN-LAST:event_selectFileButtonActionPerformed
 
 private void formComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_formComponentHidden
-  WindowMenuManager.getShared().hide(this);
+  WindowMenuManager.getShared().hideAndRemove(this);
 }//GEN-LAST:event_formComponentHidden
 
 private void importURLTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_importURLTextActionPerformed

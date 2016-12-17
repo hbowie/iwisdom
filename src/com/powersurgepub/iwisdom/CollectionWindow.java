@@ -771,7 +771,7 @@ private void formComponentHidden(java.awt.event.ComponentEvent evt) {//GEN-FIRST
     saveCollectionHeader();
     td.rewrite();
   }
-  WindowMenuManager.getShared().hide(this);
+  WindowMenuManager.getShared().hideAndRemove(this);
 }//GEN-LAST:event_formComponentHidden
 
 private void storageFormatComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_storageFormatComboBoxActionPerformed

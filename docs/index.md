@@ -172,7 +172,7 @@ iWisdom also incorporates or adapts the following open source software libraries
 
 * parboiled — Copyright 2009-2011 Mathias Doenitz, used under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-* pegdown — Copyright 2009-2011 Mathias Doenitz, used under the terms of the [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
+* flexmark-java — Copyright 2016 Vladimir Schneider, used under the terms of the [2-Clause BSD License](2-Clause BSD License).
 
 * Xerces &#8212; Copyright 1999-2012 The Apache Software Foundation, used under the terms of the [Apache License, Version 2.0][apache].
 
